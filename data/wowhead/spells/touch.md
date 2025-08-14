@@ -1,0 +1,1 @@
+# Folder for scraped spells
