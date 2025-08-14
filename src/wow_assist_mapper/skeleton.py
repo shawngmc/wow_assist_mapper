@@ -49,15 +49,15 @@ class OutputFormat(Enum):
     TEXT = "text"
 
 class PlayerClass(Enum):
-    DEATH_KNIGHT = "Death_knight"
-    DEMON_HUNTER = "Demon_hunter"
+    DEATH_KNIGHT = "DeathKnight"
+    DEMON_HUNTER = "DemonHunter"
     DRUID = "Druid"
     EVOKER = "Evoker"
     HUNTER = "Hunter"
     MAGE = "Mage"
     MONK = "Monk"
     PALADIN = "Paladin"
-    PRIEST = "{riest"
+    PRIEST = "Priest"
     ROGUE = "Rogue"
     SHAMAN = "Shaman"
     WARLOCK = "Warlock"
@@ -221,12 +221,13 @@ def parse_and_build_db_dumps():
         classes[class_key]["Name"] = row['Name_lang']
         classes[class_key]["specs"] = {}
 
+    # TODO: Fix this - specs on diff classes with same name collide
     # Find the class that matches the spec ID
     # and add the spec to that class
     specs = {}
     for index, row in chr_specs.iterrows():
         _logger.info(f"Spec Row {index}: {row.to_dict()}")
-        spec_key = row['Name_lang']
+        spec_key = row['ID']
         specs[spec_key] = {}
         specs[spec_key]["raw_data"] = row.to_dict()
         specs[spec_key]["ID"] = int(row['ID'])
@@ -244,7 +245,7 @@ def parse_and_build_db_dumps():
         assist_plans[assist_key]["steps"] = {}
         assist_plans[assist_key]["ID"] = int(row['ID'])
         for player_spec, spec_data in specs.items():
-            if spec_data["ID"] == row["ChrSpecializationID"]:
+            if player_spec == row["ChrSpecializationID"]:
                 spec_data["assist_plan"] = assist_plans[assist_key]
 
     # Add steps to plans
@@ -313,12 +314,17 @@ def get_plaintext_rotation(classes, class_name, spec_name, condition_map):
 def find_rotation(classes, class_name, spec_name):
     """Get the rotation for a given class and spec in plaintext format."""
     rotation = []
-    class_data = classes.get(class_name)
+    clean_class_name = re.sub(r'(?<!^)(?=[A-Z])', ' ', class_name)
+    class_data = classes.get(clean_class_name)
     if class_data:
         clean_spec_name = re.sub(r'(?<!^)(?=[A-Z])', ' ', spec_name)
-        spec_data = class_data["specs"].get(clean_spec_name)
-        if spec_data:
-            assist_plan = spec_data.get("assist_plan")
+        print(clean_spec_name)
+        spec = None
+        for spec_key, spec_data in class_data["specs"].items():
+            if spec_data["Name"] == clean_spec_name:
+                spec = spec_data
+        if spec:
+            assist_plan = spec.get("assist_plan")
             if assist_plan:
                 for step in assist_plan.get("steps", {}).values():
                     step_object = {}
@@ -326,7 +332,9 @@ def find_rotation(classes, class_name, spec_name):
                     step_object["rules"] = step["rules"]
                     rotation.append(step_object)
         else:
-            _logger.error(f"Spec not found: {spec_name}")
+            _logger.error(f"Spec not found: {clean_spec_name}")   
+    else:
+        _logger.error(f"Class not found: {clean_class_name}")
     return rotation
 
 def scrape_spell_from_wowhead(spellID):
