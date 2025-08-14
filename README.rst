@@ -38,6 +38,12 @@ Why?
 - You can learn the rotation better by seeing why it decides what it does
 - You can mix between single button and one/two spells to improve GCD loss
 
+TODOs
+- Make an HTML visual representation of the rotations
+- Figure out why some rules are contradictory (implied ORs?)
+- Audit these - balance druid step 24 (Moonfire w/o rules) should never be worked past?
+- Make printed numbering 1-based instead of 0-based
+
 Example rotation for a Balance Druid:
 ```
 0: Spell: Sunfire
