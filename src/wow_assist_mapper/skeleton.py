@@ -149,7 +149,7 @@ def setup_logging(loglevel):
     )
 
 def check_spell_data(spellID):
-    spell_data_dir = "data/wowhead_spellscrape"
+    spell_data_dir = "data/wowhead/spells"
     spell_file = f'{spell_data_dir}/spell_{spellID}.json'
     if not os.path.exists(spell_file):
         _logger.info(f"Spell data for {spellID} does not exist, scraping from Wowhead")
