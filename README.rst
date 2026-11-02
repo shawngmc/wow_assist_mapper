@@ -41,7 +41,7 @@ Why?
 Usage
 - assist_fetch: download the game data tables from wago.tools (latest retail build by default)
 - assist_mapper -c Druid -s Balance -f text: print one spec's rotation as text
-- assist_html: write every spec's rotation to out/rotations.html
+- assist_html: write every spec's rotation to out/rotations.html, with the data in out/rotations.json beside it (serve the folder to view it, e.g. python -m http.server in out/)
 - assist_condition_report -t 70: list every step gated by a condition type
 
 Suspected useless rules

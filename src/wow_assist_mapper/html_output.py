@@ -68,11 +68,12 @@ def build_rotations(classes, condition_map):
     return rotations
 
 
-def render_page(rotations, build):
-    data = json.dumps({"build": build, "rotations": rotations}, ensure_ascii=False)
-    # Keep "</script>" inside the data from closing the script tag
-    data = data.replace("</", "<\\/")
-    return PAGE_TEMPLATE.replace("__DATA__", data).replace("__BUILD__", build)
+def render_page(data_file_name):
+    return PAGE_TEMPLATE.replace("__DATA_URL__", json.dumps(data_file_name))
+
+
+def render_data(rotations, build):
+    return json.dumps({"build": build, "rotations": rotations}, ensure_ascii=False, indent=1)
 
 
 PAGE_TEMPLATE = """<!doctype html>
@@ -175,7 +176,7 @@ ul.conditions li { margin: 2px 0; }
 <body>
 <main>
   <h1>Assisted Combat Rotations</h1>
-  <p class="subtitle">Build __BUILD__</p>
+  <p class="subtitle" id="subtitle">Loading rotation data…</p>
   <div class="controls">
     <select id="spec" aria-label="Class and spec"></select>
     <label><input type="checkbox" id="show-all"> Show every rule as text</label>
@@ -189,9 +190,10 @@ ul.conditions li { margin: 2px 0; }
     <ol class="steps" id="steps"></ol>
   </section>
 </main>
-<script id="rotation-data" type="application/json">__DATA__</script>
 <script>
-const data = JSON.parse(document.getElementById("rotation-data").textContent);
+const DATA_URL = __DATA_URL__;
+let data;
+const subtitle = document.getElementById("subtitle");
 const select = document.getElementById("spec");
 const showAll = document.getElementById("show-all");
 const list = document.getElementById("steps");
@@ -199,16 +201,19 @@ const section = document.getElementById("rotation");
 const specTitle = document.getElementById("spec-title");
 
 const key = (r) => `${r.class}/${r.spec}`;
-const byClass = new Map();
-for (const r of data.rotations) {
-  if (!byClass.has(r.class)) byClass.set(r.class, []);
-  byClass.get(r.class).push(r);
-}
-for (const [className, specs] of byClass) {
-  const group = document.createElement("optgroup");
-  group.label = className;
-  for (const r of specs) group.append(new Option(`${r.spec} ${className}`, key(r)));
-  select.append(group);
+
+function buildPicker() {
+  const byClass = new Map();
+  for (const r of data.rotations) {
+    if (!byClass.has(r.class)) byClass.set(r.class, []);
+    byClass.get(r.class).push(r);
+  }
+  for (const [className, specs] of byClass) {
+    const group = document.createElement("optgroup");
+    group.label = className;
+    for (const r of specs) group.append(new Option(`${r.spec} ${className}`, key(r)));
+    select.append(group);
+  }
 }
 
 function el(tag, className, text) {
@@ -267,11 +272,26 @@ function selectFromHash() {
   if (data.rotations.some((r) => key(r) === wanted)) select.value = wanted;
 }
 
-select.addEventListener("change", () => { history.replaceState(null, "", "#" + encodeURIComponent(select.value)); render(); });
-showAll.addEventListener("change", render);
-window.addEventListener("hashchange", () => { selectFromHash(); render(); });
-selectFromHash();
-render();
+fetch(DATA_URL)
+  .then((response) => {
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return response.json();
+  })
+  .then((loaded) => {
+    data = loaded;
+    subtitle.textContent = `Build ${data.build}`;
+    buildPicker();
+    select.addEventListener("change", () => { history.replaceState(null, "", "#" + encodeURIComponent(select.value)); render(); });
+    showAll.addEventListener("change", render);
+    window.addEventListener("hashchange", () => { selectFromHash(); render(); });
+    selectFromHash();
+    render();
+  })
+  .catch((error) => {
+    // Browsers block fetch() for pages opened straight from disk (file://)
+    subtitle.textContent = `Could not load ${DATA_URL} (${error.message}). ` +
+      "If you opened this file directly, serve the folder instead, e.g. python -m http.server";
+  });
 </script>
 </body>
 </html>
@@ -301,11 +321,15 @@ def main(args):
     build = resolve_build(args.build)
     condition_map = pd.read_csv('data/ConditionTypeMap.csv', quoting=0, engine='python', quotechar='"')
     classes, _ = parse_and_build_db_dumps(build)
-    page = render_page(build_rotations(classes, condition_map), build)
+    # The data is written beside the page, e.g. out/rotations.html -> out/rotations.json
+    data_file = os.path.splitext(args.out_file)[0] + ".json"
     os.makedirs(os.path.dirname(args.out_file) or ".", exist_ok=True)
+    with open(data_file, "w", encoding="utf-8") as f:
+        f.write(render_data(build_rotations(classes, condition_map), build))
     with open(args.out_file, "w", encoding="utf-8") as f:
-        f.write(page)
+        f.write(render_page(os.path.basename(data_file)))
     print(args.out_file)
+    print(data_file)
 
 
 def run():
