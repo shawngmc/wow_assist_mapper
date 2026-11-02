@@ -43,6 +43,11 @@ __license__ = "MIT"
 
 _logger = logging.getLogger(__name__)
 
+CSV_TABLE_DIR = "data/csv_table"
+
+# Spell ID -> name, loaded from the SpellName DB2 table
+spell_names = {}
+
 
 class OutputFormat(Enum):
     RAW = "raw"
@@ -134,6 +139,12 @@ def parse_args(args):
         help=f"Output format ({', '.join(e.value for e in OutputFormat)})",
         required=True
     )
+    parser.add_argument(
+        "-b",
+        "--build",
+        type=str,
+        help="Game build of the CSVs in data/csv_table to use (e.g. 12.1.5.70688; default: newest available)",
+    )
     return parser.parse_args(args)
 
 
@@ -145,8 +156,22 @@ def setup_logging(loglevel):
     """
     logformat = "[%(asctime)s] %(levelname)s:%(name)s:%(message)s"
     logging.basicConfig(
-        level=loglevel, stream=sys.stdout, format=logformat, datefmt="%Y-%m-%d %H:%M:%S"
+        level=loglevel, stream=sys.stderr, format=logformat, datefmt="%Y-%m-%d %H:%M:%S"
     )
+
+def load_spell_names(build):
+    spell_name_table = read_db_table('SpellName', build)
+    spell_names.clear()
+    spell_names.update(zip(spell_name_table['ID'].astype(int), spell_name_table['Name_lang']))
+
+
+def get_spell_name(spellID):
+    name = spell_names.get(int(spellID))
+    if name is None:
+        _logger.warning(f"Spell {spellID} not found in SpellName table")
+        return f"Spell #{spellID}"
+    return name
+
 
 def check_spell_data(spellID):
     spell_data_dir = "data/wowhead/spells"
@@ -164,6 +189,16 @@ def check_spell_data(spellID):
             return json.load(f)
 
 
+def find_available_builds(csv_dir=CSV_TABLE_DIR):
+    """List builds that have AssistedCombat CSVs downloaded, oldest first."""
+    builds = []
+    for file_name in os.listdir(csv_dir):
+        match = re.fullmatch(r"AssistedCombat\.(\d+(?:\.\d+)*)\.csv", file_name)
+        if match:
+            builds.append(match.group(1))
+    return sorted(builds, key=lambda build: tuple(int(part) for part in build.split(".")))
+
+
 def main(args):
     """Wrapper allowing CLI usage
 
@@ -179,7 +214,15 @@ def main(args):
     _logger.debug("Starting...")
 
     condition_map = pd.read_csv('data/ConditionTypeMap.csv', quoting=0, engine='python', quotechar='"')
-    classes, condition_types = parse_and_build_db_dumps()
+    build = args.build
+    if not build:
+        available_builds = find_available_builds()
+        if not available_builds:
+            _logger.error(f"No AssistedCombat CSVs found in {CSV_TABLE_DIR}; run assist_fetch first")
+            sys.exit(1)
+        build = available_builds[-1]
+    _logger.info(f"Using data from build {build}")
+    classes, condition_types = parse_and_build_db_dumps(build)
 
     if args.format == OutputFormat.RAW.value:
         rotation = find_rotation(classes, args.charclass, args.spec)
@@ -203,12 +246,17 @@ def main(args):
 #     return types
 
 
-def parse_and_build_db_dumps():
-    chr_specs = pd.read_csv('data/csv_table/ChrSpecialization.11.2.0.62493.csv', quoting=0, engine='python', quotechar='"')
-    chr_classes = pd.read_csv('data/csv_table/ChrClasses.11.2.0.62493.csv', quoting=0, engine='python', quotechar='"')
-    assisted_combat = pd.read_csv('data/csv_table/AssistedCombat.11.2.0.62493.csv', quoting=0, engine='python', quotechar='"')
-    assisted_combat_rule = pd.read_csv('data/csv_table/AssistedCombatRule.11.2.0.62493.csv', quoting=0, engine='python', quotechar='"')
-    assisted_combat_step = pd.read_csv('data/csv_table/AssistedCombatStep.11.2.0.62493.csv', quoting=0, engine='python', quotechar='"')
+def read_db_table(table, build):
+    return pd.read_csv(f'{CSV_TABLE_DIR}/{table}.{build}.csv', quoting=0, engine='python', quotechar='"')
+
+
+def parse_and_build_db_dumps(build):
+    chr_specs = read_db_table('ChrSpecialization', build)
+    chr_classes = read_db_table('ChrClasses', build)
+    assisted_combat = read_db_table('AssistedCombat', build)
+    assisted_combat_rule = read_db_table('AssistedCombatRule', build)
+    assisted_combat_step = read_db_table('AssistedCombatStep', build)
+    load_spell_names(build)
 
     # Map character classes
     classes = {}
@@ -257,10 +305,7 @@ def parse_and_build_db_dumps():
         assist_steps[step_key] = {}
         assist_steps[step_key]["ID"] = int(row['ID'])
         assist_steps[step_key]["SpellID"] = int(row['SpellID'])
-        # Check if spell data exists, if not scrape it
-        spell_data = check_spell_data(assist_steps[step_key]["SpellID"])
-        assist_steps[step_key]["SpellData"] = spell_data
-        assist_steps[step_key]["SpellName"] = spell_data['name']
+        assist_steps[step_key]["SpellName"] = get_spell_name(assist_steps[step_key]["SpellID"])
         assist_steps[step_key]["OrderIndex"] = int(row['OrderIndex'])
         assist_steps[step_key]["rules"] = {}
         assist_plans[assist_key]["steps"][int(row['OrderIndex'])] = assist_steps[step_key]
@@ -295,18 +340,23 @@ def get_plaintext_rotation(classes, class_name, spec_name, condition_map):
             # Select conditionmap based on condition type
             cond_type = rule['raw'].get('ConditionType')
             rule_props = condition_map[condition_map['Type'] == cond_type]
+            if rule_props.empty:
+                raw = rule['raw']
+                _logger.warning(f"Condition type {cond_type} is not in ConditionTypeMap.csv")
+                lines.append(f"    if unknown condition type {cond_type} ({raw.get('ConditionValue1')},{raw.get('ConditionValue2')},{raw.get('ConditionValue3')})")
+                continue
 
             # Prep vars, including resolving spells
             spell = f"'{spell_name}'"
             arg1 = rule['raw'].get('ConditionValue1')
             if rule_props.iloc[0]['Value1'].lower().startswith("spell"):
-                arg1 = f"'{check_spell_data(arg1)['name']}'"
+                arg1 = f"'{get_spell_name(arg1)}'"
             arg2 = rule['raw'].get('ConditionValue2')
             if rule_props.iloc[0]['Value2'].lower().startswith("spell"):
-                arg2 = f"'{check_spell_data(arg2)['name']}'"
+                arg2 = f"'{get_spell_name(arg2)}'"
             arg3 = rule['raw'].get('ConditionValue3')
             if rule_props.iloc[0]['Value3'].lower().startswith("spell"):
-                arg3 = f"'{check_spell_data(arg3)['name']}'"
+                arg3 = f"'{get_spell_name(arg3)}'"
             template = rule_props.iloc[0]['Description']
             lines.append("    " + eval('f"' + template + '"'))
     return "\n".join(lines)

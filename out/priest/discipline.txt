@@ -34,3 +34,8 @@ Discipline
     if player has buff/debuff 'Void Blast'
     if spell 'Smite' can be successfully cast
 7: Spell: Penance
+8: Spell: Power Word: Fortitude
+    if talent 'Power Word: Fortitude' is taken
+    if player has resources to cast spell 'Power Word: Fortitude'
+    if spell 'Power Word: Fortitude' is off cooldown
+    if player has buff/debuff 'Power Word: Fortitude Highlight'

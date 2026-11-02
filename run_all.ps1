@@ -4,6 +4,7 @@ mkdir out
 New-Item -ItemType Directory -Path out/demonhunter -Force
 assist_mapper.exe -c DemonHunter -s Havoc -f text > ./out/demonhunter/havoc.txt
 assist_mapper.exe -c DemonHunter -s Vengeance -f text > ./out/demonhunter/vengeance.txt
+assist_mapper.exe -c DemonHunter -s Devourer -f text > ./out/demonhunter/devourer.txt
 
 New-Item -ItemType Directory -Path out/deathknight -Force
 assist_mapper.exe -c DeathKnight -s Blood -f text > ./out/deathknight/blood.txt

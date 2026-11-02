@@ -73,3 +73,8 @@ Restoration
     if player does not have buff/debuff 'Cat Form'
     if spell 'Wrath' can be successfully cast
 11: Spell: Moonfire
+12: Spell: Mark of the Wild
+    if talent 'Mark of the Wild' is taken
+    if player has resources to cast spell 'Mark of the Wild'
+    if spell 'Mark of the Wild' is off cooldown
+    if player has buff/debuff 'Mark of the Wild Highlight'

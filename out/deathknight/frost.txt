@@ -92,7 +92,7 @@ Frost
     if player has resources to cast spell 'Empower Rune Weapon'
     if spell 'Empower Rune Weapon' is off cooldown
     if spell 'Empower Rune Weapon' is within allowed range
-    if player has less than 80 runic power
+    if player has less than 800 runic power
     if player has less than 1 stacks of buff/debuff 'Killing Machine'
 16: Spell: Empower Rune Weapon
     if talent 'Empower Rune Weapon' is taken
@@ -113,3 +113,8 @@ Frost
     if player has resources to cast spell 'Frostwyrm's Fury'
     if spell 'Frostwyrm's Fury' is off cooldown
     if target is less than 30 yards away
+20: Spell: Breath of Sindragosa
+    if talent 'Breath of Sindragosa' is taken
+    if player has resources to cast spell 'Breath of Sindragosa'
+    if spell 'Breath of Sindragosa' is off cooldown
+    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)

@@ -12,7 +12,7 @@ Type,Enum,Active,Description,Value1,Value2,Value3
 10,ASSISTED_COMBAT_RULE_TYPE_AURA_ON_TARGET,Y,if target has buff/debuff {arg1},Spell:Buff,UNUSED,UNUSED
 11,ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_TARGET_GREATER,Y,if there are more than {arg1} targets within {arg2} yards of target,Unit Count,Distance,UNUSED
 12,ASSISTED_COMBAT_RULE_TYPE_TARGET_COUNT_NEAR_PLAYER_GREATER,Y,if there are more than {arg1} targets within {arg2} yards of player,Unit Count,Distance,UNUSED
-13,ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_GREATER,N,if there are more than {arg1} targets within {arg2} yards of player with buff/debuff {arg3},UNUSED,UNUSED,UNUSED
+13,ASSISTED_COMBAT_RULE_TYPE_AURA_COUNT_NEAR_PLAYER_GREATER,Y,if there are more than {arg1} targets within {arg2} yards of player with buff/debuff {arg3},Units with Buff Count,Distance,Spell:Buff
 14,ASSISTED_COMBAT_RULE_TYPE_AFFORD_COST,Y,if player has resources to cast spell {spell},UNUSED,UNUSED,UNUSED
 15,ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_TARGET,Y,if target does not have buff/debuff {arg1},Spell:Buff,UNUSED,UNUSED
 16,ASSISTED_COMBAT_RULE_TYPE_AURA_MISSING_PLAYER,Y,if player does not have buff/debuff {arg1},Spell:Buff,UNUSED,UNUSED
@@ -23,9 +23,9 @@ Type,Enum,Active,Description,Value1,Value2,Value3
 21,ASSISTED_COMBAT_RULE_TYPE_RAGE_GREATER,Y,if player has more than {arg1} rage,Rage amount,UNUSED,UNUSED
 22,ASSISTED_COMBAT_RULE_TYPE_RAGE_LESS,N,if player has less than {arg1} rage,Rage amount,UNUSED,UNUSED
 23,ASSISTED_COMBAT_RULE_TYPE_FOCUS_GREATER,Y,if player has more than {arg1} focus,Focus amount,UNUSED,UNUSED
-24,ASSISTED_COMBAT_RULE_TYPE_FOCUS_LESS,N,if player has less than {arg1} focus,Focus amount,UNUSED,UNUSED
+24,ASSISTED_COMBAT_RULE_TYPE_FOCUS_LESS,Y,if player has less than {arg1} focus,Focus amount,UNUSED,UNUSED
 25,ASSISTED_COMBAT_RULE_TYPE_ENERGY_GREATER,Y,if player has more than {arg1} energy,Energy amount,UNUSED,UNUSED
-26,ASSISTED_COMBAT_RULE_TYPE_ENERGY_LESS,N,if player has less than {arg1} energy,Energy amount,UNUSED,UNUSED
+26,ASSISTED_COMBAT_RULE_TYPE_ENERGY_LESS,Y,if player has less than {arg1} energy,Energy amount,UNUSED,UNUSED
 27,ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_GREATER,Y,if player has more than {arg1} combo points,Combo Point amount,UNUSED,UNUSED
 28,ASSISTED_COMBAT_RULE_TYPE_COMBO_POINTS_LESS,Y,if player has less than {arg1} combo points,Combo Point amount,UNUSED,UNUSED
 29,ASSISTED_COMBAT_RULE_TYPE_RUNES_GREATER,Y,if player has more than {arg1} runes,DK Rune amount,UNUSED,UNUSED
@@ -35,7 +35,7 @@ Type,Enum,Active,Description,Value1,Value2,Value3
 33,ASSISTED_COMBAT_RULE_TYPE_SOUL_SHARDS_GREATER,Y,if player has more than {arg1} soul shards,Soul Shard amount,UNUSED,UNUSED
 34,ASSISTED_COMBAT_RULE_TYPE_SOUL_SHARDS_LESS,Y,if player has less than {arg1} soul shards,Soul Shard amount,UNUSED,UNUSED
 35,ASSISTED_COMBAT_RULE_TYPE_LUNAR_POWER_GREATER,Y,if player has more than {arg1} lunar power,Lunar Power amount,UNUSED,UNUSED
-36,ASSISTED_COMBAT_RULE_TYPE_LUNAR_POWER_LESS,N,if player has less than {arg1} lunar power,Lunar Power amount,UNUSED,UNUSED
+36,ASSISTED_COMBAT_RULE_TYPE_LUNAR_POWER_LESS,Y,if player has less than {arg1} lunar power,Lunar Power amount,UNUSED,UNUSED
 37,ASSISTED_COMBAT_RULE_TYPE_HOLY_POWER_GREATER,Y,if player has more than {arg1} holy power,Holy Power amount,UNUSED,UNUSED
 38,ASSISTED_COMBAT_RULE_TYPE_HOLY_POWER_LESS,Y,if player has less than {arg1} holy power,Holy Power amount,UNUSED,UNUSED
 39,ASSISTED_COMBAT_RULE_TYPE_MAELSTROM_GREATER,N,if player has more than {arg1} maelstrom,Maelstrom amount,UNUSED,UNUSED
@@ -62,10 +62,11 @@ Type,Enum,Active,Description,Value1,Value2,Value3
 60,ASSISTED_COMBAT_RULE_TYPE_FURY_LESS,N,if player has less than {arg1} fury,Fury amount,UNUSED,UNUSED
 61,ASSISTED_COMBAT_RULE_TYPE_PAIN_GREATER,N,if player has more than {arg1} pain,Pain amount,UNUSED,UNUSED
 62,ASSISTED_COMBAT_RULE_TYPE_PAIN_LESS,N,if player has less than {arg1} pain,Pain amount,UNUSED,UNUSED
-63,ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER,Y,if player has more than {arg1} charges of spell {spell},Spell Charges,UNUSED,UNUSED
-64,ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_LESS,N,if player has less than {arg1} charges of spell {spell},Spell Charges,UNUSED,UNUSED
+63,ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_GREATER,Y,if player has more than {arg1} charges of spell {spell},Charge Count,UNUSED,UNUSED
+64,ASSISTED_COMBAT_RULE_TYPE_SPELL_CHARGES_LESS,N,if player has less than {arg1} charges of spell {spell},Charge Count,UNUSED,UNUSED
 65,ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_REMAINING_GREATER,Y,if cooldown on spell {arg1} is more than {arg2} ms,Spell,CD Duration,UNUSED
 66,ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_REMAINING_LESS,Y,if cooldown on spell {arg1} is less than {arg2} ms,Spell,CD Duration,UNUSED
 67,ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS,Y,if spell {spell} can be successfully cast,UNUSED,UNUSED,UNUSED
 68,ASSISTED_COMBAT_RULE_TYPE_PLAYER_HEALTH_PCT_GREATER,Y,if player has more than {arg1}% health,Player Health %,UNUSED,UNUSED
 69,ASSISTED_COMBAT_RULE_TYPE_PLAYER_HEALTH_PCT_LESS,Y,if player has less than {arg1}% health,Player Health %,UNUSED,UNUSED
+70,ASSISTED_COMBAT_RULE_TYPE_UNKNOWN_70,Y,if major cooldowns are enabled (inferred: no args; only seen on major cooldowns),UNUSED,UNUSED,UNUSED

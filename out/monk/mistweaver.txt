@@ -45,8 +45,8 @@ Mistweaver
     if player has resources to cast spell 'Jadefire Stomp'
     if spell 'Jadefire Stomp' is off cooldown
     if target is less than 10 yards away
-    if player does not have buff/debuff 'Awakened Jadefire'
-    if player has buff/debuff 'Awakened Jadefire'
+    if player does not have buff/debuff 'Spell #389387'
+    if player has buff/debuff 'Way of the Crane'
 8: Spell: Spinning Crane Kick
     if talent 'Spinning Crane Kick' is taken
     if player has resources to cast spell 'Spinning Crane Kick'

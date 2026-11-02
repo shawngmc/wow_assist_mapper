@@ -24,5 +24,25 @@ Restoration
     if talent 'Lava Burst' is taken
     if player has resources to cast spell 'Lava Burst'
     if spell 'Lava Burst' is off cooldown
-    if player has more than 'Spells' charges of spell 'Lava Burst'
+    if player has more than 2 charges of spell 'Lava Burst'
     if spell 'Lava Burst' can be successfully cast
+6: Spell: Water Shield
+    if talent 'Water Shield' is taken
+    if player has resources to cast spell 'Water Shield'
+    if spell 'Water Shield' is off cooldown
+    if player does not have buff/debuff 'Water Shield'
+7: Spell: Earthliving Weapon
+    if talent 'Earthliving Weapon' is taken
+    if player has resources to cast spell 'Earthliving Weapon'
+    if spell 'Earthliving Weapon' is off cooldown
+    if player does not have buff/debuff 'Earthliving Weapon'
+8: Spell: Tidecaller's Guard
+    if talent 'Tidecaller's Guard' is taken
+    if player has resources to cast spell 'Tidecaller's Guard'
+    if spell 'Tidecaller's Guard' is off cooldown
+    if player does not have buff/debuff 'Tidecaller's Guard'
+9: Spell: Skyfury
+    if talent 'Skyfury' is taken
+    if player has resources to cast spell 'Skyfury'
+    if spell 'Skyfury' is off cooldown
+    if player has buff/debuff 'Skyfury Highlight'

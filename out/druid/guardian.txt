@@ -46,21 +46,30 @@ Guardian
     if talent 'Lunar Beam' is taken
     if player has resources to cast spell 'Lunar Beam'
     if spell 'Lunar Beam' is off cooldown
-9: Spell: Maul
-    if talent 'Maul' is taken
-    if player has resources to cast spell 'Maul'
-    if spell 'Maul' is off cooldown
-    if player has buff/debuff 'Tooth and Claw'
-    if spell 'Maul' is within allowed range
-10: Spell: Thrash
-11: Spell: Convoke the Spirits
+9: Spell: Swipe
+10: Spell: Convoke the Spirits
     if talent 'Convoke the Spirits' is taken
     if player has resources to cast spell 'Convoke the Spirits'
     if spell 'Convoke the Spirits' is off cooldown
     if target is less than 5 yards away
-12: Spell: Moonfire
+11: Spell: Moonfire
     if talent 'Moonfire' is taken
     if player has resources to cast spell 'Moonfire'
     if spell 'Moonfire' is off cooldown
     if spell 'Moonfire' is within allowed range
     if target is more than 10 yards away
+12: Spell: Berserk
+    if talent 'Berserk' is taken
+    if player has resources to cast spell 'Berserk'
+    if spell 'Berserk' is off cooldown
+    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+13: Spell: Convoke the Spirits
+    if talent 'Convoke the Spirits' is taken
+    if player has resources to cast spell 'Convoke the Spirits'
+    if spell 'Convoke the Spirits' is off cooldown
+    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+14: Spell: Mark of the Wild
+    if talent 'Mark of the Wild' is taken
+    if player has resources to cast spell 'Mark of the Wild'
+    if spell 'Mark of the Wild' is off cooldown
+    if player has buff/debuff 'Mark of the Wild Highlight'
