@@ -333,7 +333,7 @@ def get_plaintext_rotation(classes, class_name, spec_name, condition_map):
     """Get the rotation for a given class and spec in plaintext format."""
     lines = []
     rotation = find_rotation(classes, class_name, spec_name)
-    for index, step in enumerate(rotation):
+    for index, step in enumerate(rotation, start=1):
         spell_name = step['SpellName']
         lines.append(f"{index}: Spell: {spell_name}")
         for rule_index, rule in step['rules'].items():

@@ -1,59 +1,59 @@
 Devourer
-0: Spell: Void Ray
+1: Spell: Void Ray
     if talent 'Void Ray' is taken
     if player has resources to cast spell 'Void Ray'
     if spell 'Void Ray' is off cooldown
     if target is less than 30 yards away
-1: Spell: Immolation Aura
+2: Spell: Immolation Aura
     if talent 'Immolation Aura' is taken
     if player has resources to cast spell 'Immolation Aura'
     if spell 'Immolation Aura' is off cooldown
     if player does not have buff/debuff 'Spontaneous Immolation'
     if player does not have buff/debuff 'Soul Immolation'
-2: Spell: Void Metamorphosis
+3: Spell: Void Metamorphosis
     if talent 'Void Metamorphosis' is taken
     if player has resources to cast spell 'Void Metamorphosis'
     if spell 'Void Metamorphosis' is off cooldown
     if target is less than 25 yards away
     if player does not have buff/debuff 'Void Metamorphosis'
     if unknown condition 70 is met (seen gating cooldown and movement steps)
-3: Spell: Consume
+4: Spell: Consume
     if talent 'Consume' is taken
     if player has resources to cast spell 'Consume'
     if spell 'Consume' is off cooldown
     if spell 'Consume' is within allowed range
-4: Spell: Consume
-5: Spell: Reap
+5: Spell: Consume
+6: Spell: Reap
     if talent 'Reap' is taken
     if player has resources to cast spell 'Reap'
     if spell 'Reap' is off cooldown
     if spell 'Reap' is within allowed range
     if player has more than 4 stacks of buff/debuff 'Soul Fragments'
-6: Spell: Void Metamorphosis
+7: Spell: Void Metamorphosis
     if talent 'Void Metamorphosis' is taken
     if player has resources to cast spell 'Void Metamorphosis'
     if spell 'Void Metamorphosis' is off cooldown
     if player has buff/debuff 'Collapsing Star'
     if target is less than 30 yards away
-7: Spell: The Hunt
+8: Spell: The Hunt
     if talent 'The Hunt' is taken
     if player has resources to cast spell 'The Hunt'
     if spell 'The Hunt' is off cooldown
     if unknown condition 70 is met (seen gating cooldown and movement steps)
     if spell 'The Hunt' is within allowed range
-8: Spell: Voidblade
+9: Spell: Voidblade
     if talent 'Voidblade' is taken
     if player has resources to cast spell 'Voidblade'
     if spell 'Voidblade' is off cooldown
     if unknown condition 70 is met (seen gating cooldown and movement steps)
     if spell 'Voidblade' is within allowed range
-9: Spell: Reap
+10: Spell: Reap
     if talent 'Reap' is taken
     if player has resources to cast spell 'Reap'
     if spell 'Reap' is off cooldown
     if player has buff/debuff 'Moment of Craving'
     if spell 'Reap' is within allowed range
-10: Spell: Void Ray
+11: Spell: Void Ray
     if talent 'Void Ray' is taken
     if player has resources to cast spell 'Void Ray'
     if spell 'Void Ray' is off cooldown

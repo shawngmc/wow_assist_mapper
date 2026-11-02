@@ -41,28 +41,21 @@ Why?
 TODOs
 - Make an HTML visual representation of the rotations
 - Figure out why some rules are contradictory (implied ORs?)
-- Audit these - balance druid step 24 (Moonfire w/o rules) should never be worked past?
-- Make printed numbering 1-based instead of 0-based
+- Audit these - balance druid step 17 (Moonfire w/o rules) should never be worked past?
 
 Example rotation for a Balance Druid:
 ```
-0: Spell: Sunfire
+1: Spell: Sunfire
     if talent 'Sunfire' is taken
     if player has resources to cast spell 'Sunfire'
     if spell 'Sunfire' is off cooldown
     if target does not have buff/debuff 'Sunfire'
-1: Spell: Moonfire
+2: Spell: Moonfire
     if talent 'Moonfire' is taken
     if player has resources to cast spell 'Moonfire'
     if spell 'Moonfire' is off cooldown
     if target does not have buff/debuff 'Moonfire'
     if player does not have buff/debuff 'Harmony of the Grove'
-2: Spell: Stellar Flare
-    if talent 'Stellar Flare' is taken
-    if player has resources to cast spell 'Stellar Flare'
-    if spell 'Stellar Flare' is off cooldown
-    if target does not have buff/debuff 'Stellar Flare'
-    if there are less than 2 targets within 10 yards of target
 3: Spell: Starfall
     if talent 'Starfall' is taken
     if player has resources to cast spell 'Starfall'
@@ -72,6 +65,7 @@ Example rotation for a Balance Druid:
     if talent 'Force of Nature' is taken
     if player has resources to cast spell 'Force of Nature'
     if spell 'Force of Nature' is off cooldown
+    if player has buff/debuff 'Dream Surge'
 5: Spell: Starsurge
     if talent 'Starsurge' is taken
     if player has resources to cast spell 'Starsurge'
@@ -81,144 +75,141 @@ Example rotation for a Balance Druid:
     if talent 'Fury of Elune' is taken
     if player has resources to cast spell 'Fury of Elune'
     if spell 'Fury of Elune' is off cooldown
-7: Spell: Starfire
-    if talent 'Starfire' is taken
-    if player has resources to cast spell 'Starfire'
-    if spell 'Starfire' is off cooldown
+    if spell 'Fury of Elune' is within allowed range
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
-    if player has buff/debuff 'Eclipse'
-8: Spell: Wrath
-    if talent 'Wrath' is taken
-    if player has resources to cast spell 'Wrath'
-    if spell 'Wrath' is off cooldown
-    if player does not have buff/debuff 'Eclipse (Solar)'
-    if player does not have buff/debuff 'Eclipse (Lunar)'
-    if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff 'Eclipse'
-9: Spell: New Moon
+    if player has more than 550 lunar power
+7: Spell: New Moon
     if talent 'New Moon' is taken
     if player has resources to cast spell 'New Moon'
     if spell 'New Moon' is off cooldown
-10: Spell: Wild Mushroom
+8: Spell: Wild Mushroom
     if talent 'Wild Mushroom' is taken
     if player has resources to cast spell 'Wild Mushroom'
     if spell 'Wild Mushroom' is off cooldown
     if target does not have buff/debuff 'Fungal Growth'
-11: Spell: Wrath
+9: Spell: Wrath
     if talent 'Wrath' is taken
     if player has resources to cast spell 'Wrath'
     if spell 'Wrath' is off cooldown
     if spell 'Wrath' can be successfully cast
-12: Spell: Wrath
-    if talent 'Wrath' is taken
-    if player has resources to cast spell 'Wrath'
-    if spell 'Wrath' is off cooldown
-    if player does not have buff/debuff 'Eclipse (Solar)'
-    if player does not have buff/debuff 'Eclipse (Lunar)'
-    if player has buff/debuff 'Lunar Calling'
-    if spell 'Wrath' can be successfully cast
-    if player has more than 2 stacks of buff/debuff 'Eclipse (Lunar)'
-    if player has buff/debuff 'Eclipse'
-13: Spell: Starfire
+    if spell 'Wrath' is within allowed range
+10: Spell: Starfire
     if there are more than 3 targets within 10 yards of target
     if talent 'Starfire' is taken
     if player has resources to cast spell 'Starfire'
     if spell 'Starfire' is off cooldown
     if spell 'Starfire' can be successfully cast
-14: Spell: Starfire
+    if spell 'Starfire' is within allowed range
+11: Spell: Starfire
     if talent 'Starfire' is taken
     if player has resources to cast spell 'Starfire'
     if spell 'Starfire' is off cooldown
     if player has buff/debuff 'Lunar Calling'
     if spell 'Starfire' can be successfully cast
-15: Spell: Starfall
+    if spell 'Starfire' is within allowed range
+12: Spell: Starfall
     if talent 'Starfall' is taken
     if player has resources to cast spell 'Starfall'
     if spell 'Starfall' is off cooldown
     if there are more than 3 targets within 45 yards of player
     if player has more than 900 lunar power
-16: Spell: Starsurge
+13: Spell: Starsurge
     if talent 'Starsurge' is taken
     if player has resources to cast spell 'Starsurge'
     if spell 'Starsurge' is off cooldown
     if player has more than 900 lunar power
     if there are less than 2 targets within 45 yards of player
-17: Spell: Moonkin Form
+14: Spell: Moonkin Form
     if talent 'Moonkin Form' is taken
     if player has resources to cast spell 'Moonkin Form'
     if spell 'Moonkin Form' is off cooldown
     if player does not have buff/debuff 'Moonkin Form'
-18: Spell: Starfall
+15: Spell: Starfall
     if talent 'Starfall' is taken
     if player has resources to cast spell 'Starfall'
     if spell 'Starfall' is off cooldown
     if player has buff/debuff 'Starweaver's Warp'
-19: Spell: Convoke the Spirits
-    if talent 'Convoke the Spirits' is taken
-    if player has resources to cast spell 'Convoke the Spirits'
-    if spell 'Convoke the Spirits' is off cooldown
-20: Spell: Starsurge
+16: Spell: Starsurge
     if talent 'Starsurge' is taken
     if player has resources to cast spell 'Starsurge'
     if spell 'Starsurge' is off cooldown
     if player has buff/debuff 'Starweaver's Weft'
-21: Spell: Warrior of Elune
-    if talent 'Warrior of Elune' is taken
-    if player has resources to cast spell 'Warrior of Elune'
-    if spell 'Warrior of Elune' is off cooldown
-    if player has buff/debuff 'Lunar Calling'
-    if spell 'Warrior of Elune' is off cooldown
-    if target is less than 45 yards away
-22: Spell: Warrior of Elune
-    if there are more than 3 targets within 10 yards of target
-    if talent 'Warrior of Elune' is taken
-    if player has resources to cast spell 'Warrior of Elune'
-    if spell 'Warrior of Elune' is off cooldown
-    if spell 'Warrior of Elune' is off cooldown
-    if target is less than 45 yards away
-23: Spell: Warrior of Elune
-    if talent 'Warrior of Elune' is taken
-    if player has resources to cast spell 'Warrior of Elune'
-    if spell 'Warrior of Elune' is off cooldown
-    if player does not have buff/debuff 'Eclipse (Solar)'
-    if player does not have buff/debuff 'Eclipse (Lunar)'
-    if spell 'Warrior of Elune' is off cooldown
-    if target is less than 45 yards away
-    if player has buff/debuff 'Eclipse'
-24: Spell: Moonfire
-25: Spell: Wrath
-    if talent 'Wrath' is taken
-    if player has resources to cast spell 'Wrath'
-    if spell 'Wrath' is off cooldown
-    if player does not have buff/debuff 'Eclipse (Solar)'
-    if player does not have buff/debuff 'Eclipse (Lunar)'
-    if there are more than 3 targets within 10 yards of target
-    if spell 'Wrath' can be successfully cast
-    if player has more than 2 stacks of buff/debuff 'Eclipse (Lunar)'
-    if player has buff/debuff 'Eclipse'
-26: Spell: Wrath
-    if talent 'Wrath' is taken
-    if player has resources to cast spell 'Wrath'
-    if spell 'Wrath' is off cooldown
-    if player does not have buff/debuff 'Eclipse (Solar)'
-    if player does not have buff/debuff 'Eclipse (Lunar)'
-    if player has buff/debuff 'Lunar Calling'
-    if player has buff/debuff 'Eclipse'
-27: Spell: Starfire
+17: Spell: Moonfire
+18: Spell: Starsurge
+    if talent 'Starsurge' is taken
+    if player has resources to cast spell 'Starsurge'
+    if spell 'Starsurge' is off cooldown
+    if player has more than 500 lunar power
+19: Spell: Starfire
     if talent 'Starfire' is taken
     if player has resources to cast spell 'Starfire'
     if spell 'Starfire' is off cooldown
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
-    if player has more than 2 stacks of buff/debuff 'Eclipse (Solar)'
-    if spell 'Starfire' can be successfully cast
     if player has buff/debuff 'Eclipse'
-28: Spell: Starsurge
-    if talent 'Starsurge' is taken
-    if player has resources to cast spell 'Starsurge'
-    if spell 'Starsurge' is off cooldown
-    if player has more than 500 lunar power
+    if there are more than 3 targets within 10 yards of target
+    if player does not have buff/debuff 'Lunar Eclipse Override'
+20: Spell: Wrath
+    if talent 'Wrath' is taken
+    if player has resources to cast spell 'Wrath'
+    if spell 'Wrath' is off cooldown
+    if player does not have buff/debuff 'Eclipse (Solar)'
+    if player does not have buff/debuff 'Eclipse (Lunar)'
+    if player has buff/debuff 'Lunar Eclipse Override'
+    if player has buff/debuff 'Eclipse'
+    if player does not have buff/debuff 'Lunar Calling'
+    if there are less than 2 targets within 10 yards of target
+21: Spell: Starfire
+    if talent 'Starfire' is taken
+    if player has resources to cast spell 'Starfire'
+    if spell 'Starfire' is off cooldown
+    if player does not have buff/debuff 'Eclipse (Solar)'
+    if player does not have buff/debuff 'Eclipse (Lunar)'
+    if player has buff/debuff 'Lunar Eclipse Override'
+    if player has less than 599 lunar power
+22: Spell: Wrath
+    if talent 'Wrath' is taken
+    if player has resources to cast spell 'Wrath'
+    if spell 'Wrath' is off cooldown
+    if player does not have buff/debuff 'Eclipse (Solar)'
+    if player does not have buff/debuff 'Eclipse (Lunar)'
+    if player does not have buff/debuff 'Lunar Eclipse Override'
+    if player has less than 599 lunar power
+23: Spell: Solar Eclipse
+    if player has buff/debuff 'Eclipse'
+    if player has resources to cast spell 'Solar Eclipse'
+    if spell 'Solar Eclipse' is off cooldown
+    if player does not have buff/debuff 'Eclipse (Solar)'
+    if player does not have buff/debuff 'Eclipse (Lunar)'
+    if player has more than 600 lunar power
+24: Spell: Celestial Alignment
+    if talent 'Celestial Alignment' is taken
+    if player has resources to cast spell 'Celestial Alignment'
+    if spell 'Celestial Alignment' is off cooldown
+    if player does not have buff/debuff 'Eclipse (Solar)'
+    if player does not have buff/debuff 'Eclipse (Lunar)'
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
+25: Spell: Convoke the Spirits
+    if talent 'Convoke the Spirits' is taken
+    if player has resources to cast spell 'Convoke the Spirits'
+    if spell 'Convoke the Spirits' is off cooldown
+    if player has buff/debuff 'Eclipse (Solar)'
+26: Spell: Convoke the Spirits
+    if talent 'Convoke the Spirits' is taken
+    if player has resources to cast spell 'Convoke the Spirits'
+    if spell 'Convoke the Spirits' is off cooldown
+    if player has buff/debuff 'Eclipse (Lunar)'
+27: Spell: Mark of the Wild
+    if talent 'Mark of the Wild' is taken
+    if player has resources to cast spell 'Mark of the Wild'
+    if spell 'Mark of the Wild' is off cooldown
+    if player has buff/debuff 'Mark of the Wild Highlight'
+28: Spell: Fury of Elune
+    if talent 'Fury of Elune' is taken
+    if player has resources to cast spell 'Fury of Elune'
+    if spell 'Fury of Elune' is off cooldown
+    if spell 'Fury of Elune' is within allowed range
 ```
 
 
