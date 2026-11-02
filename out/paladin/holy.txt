@@ -23,24 +23,24 @@ Holy
     if player has resources to cast spell 'Hammer of Wrath'
     if spell 'Hammer of Wrath' is off cooldown
     if player has buff/debuff 'Avenging Crusader'
-6: Spell: Avenging Crusader
-    if player has buff/debuff 'Avenging Crusader'
-    if player has resources to cast spell 'Avenging Crusader'
-    if spell 'Avenging Crusader' is off cooldown
-    if spell 'Avenging Crusader' is within allowed range
-7: Spell: Hammer of Wrath
+6: Spell: Hammer of Wrath
     if talent 'Hammer of Wrath' is taken
     if player has resources to cast spell 'Hammer of Wrath'
     if spell 'Hammer of Wrath' is off cooldown
     if target has less than 20% health
-8: Spell: Consecration
+7: Spell: Avenging Crusader
+    if player has buff/debuff 'Avenging Crusader'
+    if player has resources to cast spell 'Avenging Crusader'
+    if spell 'Avenging Crusader' is off cooldown
+    if spell 'Avenging Crusader' is within allowed range
+8: Spell: Holy Shock
+    if talent 'Holy Shock' is taken
+    if player has resources to cast spell 'Holy Shock'
+    if spell 'Holy Shock' is off cooldown
+9: Spell: Consecration
     if talent 'Consecration' is taken
     if player has resources to cast spell 'Consecration'
     if spell 'Consecration' is off cooldown
     if target is less than 8 yards away
     if player does not have buff/debuff 'Righteous Judgment'
-9: Spell: Judgment
-10: Spell: Holy Shock
-    if talent 'Holy Shock' is taken
-    if player has resources to cast spell 'Holy Shock'
-    if spell 'Holy Shock' is off cooldown
+10: Spell: Judgment

@@ -336,7 +336,7 @@ def get_plaintext_rotation(classes, class_name, spec_name, condition_map):
     for index, step in enumerate(rotation, start=1):
         spell_name = step['SpellName']
         lines.append(f"{index}: Spell: {spell_name}")
-        for rule_index, rule in step['rules'].items():
+        for rule_index, rule in sorted(step['rules'].items()):
             # Select conditionmap based on condition type
             cond_type = rule['raw'].get('ConditionType')
             rule_props = condition_map[condition_map['Type'] == cond_type]
@@ -376,7 +376,7 @@ def find_rotation(classes, class_name, spec_name):
         if spec:
             assist_plan = spec.get("assist_plan")
             if assist_plan:
-                for step in assist_plan.get("steps", {}).values():
+                for _, step in sorted(assist_plan.get("steps", {}).items()):
                     step_object = {}
                     step_object["SpellName"] = step["SpellName"]
                     step_object["rules"] = step["rules"]

@@ -1,93 +1,66 @@
 Elemental
-1: Spell: Earthquake
-    if talent 'Earthquake' is taken
-    if player has resources to cast spell 'Earthquake'
-    if spell 'Earthquake' is off cooldown
+1: Spell: Skyfury
+    if talent 'Skyfury' is taken
+    if player has resources to cast spell 'Skyfury'
+    if spell 'Skyfury' is off cooldown
+    if player has buff/debuff 'Skyfury Highlight'
+2: Spell: Lightning Shield
+    if talent 'Lightning Shield' is taken
+    if player has resources to cast spell 'Lightning Shield'
+    if spell 'Lightning Shield' is off cooldown
+    if player does not have buff/debuff 'Lightning Shield'
+3: Spell: Flametongue Weapon
+    if talent 'Flametongue Weapon' is taken
+    if player has resources to cast spell 'Flametongue Weapon'
+    if spell 'Flametongue Weapon' is off cooldown
+    if player does not have buff/debuff 'Flametongue Weapon'
+4: Spell: Thunderstrike Ward
+    if talent 'Thunderstrike Ward' is taken
+    if player has resources to cast spell 'Thunderstrike Ward'
+    if spell 'Thunderstrike Ward' is off cooldown
+    if player does not have buff/debuff 'Thunderstrike Ward'
+5: Spell: Ascendance
+    if talent 'Ascendance' is taken
+    if player has resources to cast spell 'Ascendance'
+    if spell 'Ascendance' is off cooldown
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
+6: Spell: Chain Lightning
+    if talent 'Chain Lightning' is taken
+    if player has resources to cast spell 'Chain Lightning'
+    if spell 'Chain Lightning' is off cooldown
     if there are more than 3 targets within 10 yards of target
-    if player does not have buff/debuff 'Echoes of Great Sundering'
-2: Spell: Earthquake
-    if talent 'Earthquake' is taken
-    if player has resources to cast spell 'Earthquake'
-    if spell 'Earthquake' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if player does not have buff/debuff 'Echoes of Great Sundering'
-3: Spell: Elemental Blast
-    if talent 'Elemental Blast' is taken
-    if player has resources to cast spell 'Elemental Blast'
-    if spell 'Elemental Blast' is off cooldown
-4: Spell: Earth Shock
-    if talent 'Earth Shock' is taken
-    if player has resources to cast spell 'Earth Shock'
-    if spell 'Earth Shock' is off cooldown
-5: Spell: Stormkeeper
+    if player has buff/debuff 'Stormkeeper' with at least 3000 ms left
+7: Spell: Lightning Bolt
+    if talent 'Lightning Bolt' is taken
+    if player has resources to cast spell 'Lightning Bolt'
+    if spell 'Lightning Bolt' is off cooldown
+    if player has buff/debuff 'Stormkeeper' with at least 3000 ms left
+8: Spell: Flame Shock
+    if talent 'Flame Shock' is taken
+    if player has resources to cast spell 'Flame Shock'
+    if spell 'Flame Shock' is off cooldown
+    if there are more than 2 targets within 10 yards of target
+    if player does not have buff/debuff 'Purging Flames'
+    if target does not have buff/debuff 'Flame Shock'
+9: Spell: Flame Shock
+    if talent 'Flame Shock' is taken
+    if player has resources to cast spell 'Flame Shock'
+    if spell 'Flame Shock' is off cooldown
+    if there are more than 2 targets within 10 yards of target
+    if player has buff/debuff 'Purging Flames'
+    if player does not have buff/debuff 'Purging Flames'
+10: Spell: Stormkeeper
     if talent 'Stormkeeper' is taken
     if player has resources to cast spell 'Stormkeeper'
     if spell 'Stormkeeper' is off cooldown
     if player does not have buff/debuff 'Stormkeeper'
-6: Spell: Lightning Bolt
-    if talent 'Lightning Bolt' is taken
-    if player has resources to cast spell 'Lightning Bolt'
-    if spell 'Lightning Bolt' is off cooldown
-    if player has buff/debuff 'Tempest'
-7: Spell: Chain Lightning
-    if talent 'Chain Lightning' is taken
-    if player has resources to cast spell 'Chain Lightning'
-    if spell 'Chain Lightning' is off cooldown
-    if player has buff/debuff 'Stormkeeper'
-    if there are more than 3 targets within 10 yards of target
-8: Spell: Lightning Bolt
-    if talent 'Lightning Bolt' is taken
-    if player has resources to cast spell 'Lightning Bolt'
-    if spell 'Lightning Bolt' is off cooldown
-    if player has buff/debuff 'Stormkeeper'
-9: Spell: Flame Shock
+11: Spell: Flame Shock
     if talent 'Flame Shock' is taken
     if player has resources to cast spell 'Flame Shock'
     if spell 'Flame Shock' is off cooldown
     if target does not have buff/debuff 'Flame Shock'
     if there are less than 2 targets within 10 yards of target
-10: Spell: Lava Burst
-    if talent 'Lava Burst' is taken
-    if player has resources to cast spell 'Lava Burst'
-    if spell 'Lava Burst' is off cooldown
-    if player does not have buff/debuff 'Master of the Elements'
-    if player has buff/debuff 'Master of the Elements'
-11: Spell: Chain Lightning
-    if talent 'Chain Lightning' is taken
-    if player has resources to cast spell 'Chain Lightning'
-    if spell 'Chain Lightning' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if spell 'Chain Lightning' can be successfully cast
-12: Spell: Lightning Bolt
-    if talent 'Lightning Bolt' is taken
-    if player has resources to cast spell 'Lightning Bolt'
-    if spell 'Lightning Bolt' is off cooldown
-    if spell 'Lightning Bolt' can be successfully cast
-13: Spell: Ancestral Swiftness
-    if talent 'Ancestral Swiftness' is taken
-    if player has resources to cast spell 'Ancestral Swiftness'
-    if spell 'Ancestral Swiftness' is off cooldown
-    if player has resources to cast spell 'Ancestral Swiftness'
-    if spell 'Ancestral Swiftness' is off cooldown
-14: Spell: Ancestral Swiftness
-    if talent 'Ancestral Swiftness' is taken
-    if player has resources to cast spell 'Ancestral Swiftness'
-    if spell 'Ancestral Swiftness' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if spell 'Ancestral Swiftness' is off cooldown
-15: Spell: Ancestral Swiftness
-    if talent 'Ancestral Swiftness' is taken
-    if player has resources to cast spell 'Ancestral Swiftness'
-    if spell 'Ancestral Swiftness' is off cooldown
-    if spell 'Ancestral Swiftness' is off cooldown
-16: Spell: Lava Burst
-17: Spell: Lava Burst
-    if talent 'Lava Burst' is taken
-    if player has resources to cast spell 'Lava Burst'
-    if spell 'Lava Burst' is off cooldown
-    if player has more than 2 charges of spell 'Lava Burst'
-    if spell 'Lava Burst' can be successfully cast
-18: Spell: Lava Burst
+12: Spell: Lava Burst
     if talent 'Lava Burst' is taken
     if player has resources to cast spell 'Lava Burst'
     if spell 'Lava Burst' is off cooldown
@@ -95,64 +68,91 @@ Elemental
     if player does not have buff/debuff 'Master of the Elements'
     if target has buff/debuff 'Flame Shock'
     if there are less than 2 targets within 10 yards of target
-19: Spell: Lava Burst
+13: Spell: Earthquake
+    if talent 'Earthquake' is taken
+    if player has resources to cast spell 'Earthquake'
+    if spell 'Earthquake' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if player does not have buff/debuff 'Echoes of Great Sundering'
+14: Spell: Earthquake
+    if talent 'Earthquake' is taken
+    if player has resources to cast spell 'Earthquake'
+    if spell 'Earthquake' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if player does not have buff/debuff 'Echoes of Great Sundering'
+15: Spell: Ancestral Swiftness
+    if talent 'Ancestral Swiftness' is taken
+    if player has resources to cast spell 'Ancestral Swiftness'
+    if spell 'Ancestral Swiftness' is off cooldown
+    if player has resources to cast spell 'Ancestral Swiftness'
+    if spell 'Ancestral Swiftness' is off cooldown
+16: Spell: Elemental Blast
+    if talent 'Elemental Blast' is taken
+    if player has resources to cast spell 'Elemental Blast'
+    if spell 'Elemental Blast' is off cooldown
+17: Spell: Earth Shock
+    if talent 'Earth Shock' is taken
+    if player has resources to cast spell 'Earth Shock'
+    if spell 'Earth Shock' is off cooldown
+18: Spell: Lava Burst
     if talent 'Lava Burst' is taken
     if player has resources to cast spell 'Lava Burst'
     if spell 'Lava Burst' is off cooldown
-    if player does not have buff/debuff 'Master of the Elements'
+    if there are more than 2 targets within 10 yards of target
+    if player has buff/debuff 'Purging Flames'
+19: Spell: Lightning Bolt
+    if talent 'Lightning Bolt' is taken
+    if player has resources to cast spell 'Lightning Bolt'
+    if spell 'Lightning Bolt' is off cooldown
+    if player has buff/debuff 'Tempest'
 20: Spell: Chain Lightning
     if talent 'Chain Lightning' is taken
     if player has resources to cast spell 'Chain Lightning'
     if spell 'Chain Lightning' is off cooldown
+    if player has buff/debuff 'Stormkeeper'
     if there are more than 3 targets within 10 yards of target
-    if player has buff/debuff 'Stormkeeper' with at least 3000 ms left
 21: Spell: Lightning Bolt
     if talent 'Lightning Bolt' is taken
     if player has resources to cast spell 'Lightning Bolt'
     if spell 'Lightning Bolt' is off cooldown
-    if player has buff/debuff 'Stormkeeper' with at least 3000 ms left
-22: Spell: Flametongue Weapon
-    if talent 'Flametongue Weapon' is taken
-    if player has resources to cast spell 'Flametongue Weapon'
-    if spell 'Flametongue Weapon' is off cooldown
-    if player does not have buff/debuff 'Flametongue Weapon'
-23: Spell: Thunderstrike Ward
-    if talent 'Thunderstrike Ward' is taken
-    if player has resources to cast spell 'Thunderstrike Ward'
-    if spell 'Thunderstrike Ward' is off cooldown
-    if player does not have buff/debuff 'Thunderstrike Ward'
-24: Spell: Flame Shock
-    if talent 'Flame Shock' is taken
-    if player has resources to cast spell 'Flame Shock'
-    if spell 'Flame Shock' is off cooldown
-    if there are more than 2 targets within 10 yards of target
-    if player does not have buff/debuff 'Purging Flames'
-    if target does not have buff/debuff 'Flame Shock'
+    if player has buff/debuff 'Stormkeeper'
+22: Spell: Ancestral Swiftness
+    if talent 'Ancestral Swiftness' is taken
+    if player has resources to cast spell 'Ancestral Swiftness'
+    if spell 'Ancestral Swiftness' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if spell 'Ancestral Swiftness' is off cooldown
+23: Spell: Chain Lightning
+    if talent 'Chain Lightning' is taken
+    if player has resources to cast spell 'Chain Lightning'
+    if spell 'Chain Lightning' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if spell 'Chain Lightning' can be successfully cast
+24: Spell: Ancestral Swiftness
+    if talent 'Ancestral Swiftness' is taken
+    if player has resources to cast spell 'Ancestral Swiftness'
+    if spell 'Ancestral Swiftness' is off cooldown
+    if spell 'Ancestral Swiftness' is off cooldown
 25: Spell: Lava Burst
     if talent 'Lava Burst' is taken
     if player has resources to cast spell 'Lava Burst'
     if spell 'Lava Burst' is off cooldown
-    if there are more than 2 targets within 10 yards of target
-    if player has buff/debuff 'Purging Flames'
-26: Spell: Flame Shock
-    if talent 'Flame Shock' is taken
-    if player has resources to cast spell 'Flame Shock'
-    if spell 'Flame Shock' is off cooldown
-    if there are more than 2 targets within 10 yards of target
-    if player has buff/debuff 'Purging Flames'
-    if player does not have buff/debuff 'Purging Flames'
-27: Spell: Ascendance
-    if talent 'Ascendance' is taken
-    if player has resources to cast spell 'Ascendance'
-    if spell 'Ascendance' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
-28: Spell: Lightning Shield
-    if talent 'Lightning Shield' is taken
-    if player has resources to cast spell 'Lightning Shield'
-    if spell 'Lightning Shield' is off cooldown
-    if player does not have buff/debuff 'Lightning Shield'
-29: Spell: Skyfury
-    if talent 'Skyfury' is taken
-    if player has resources to cast spell 'Skyfury'
-    if spell 'Skyfury' is off cooldown
-    if player has buff/debuff 'Skyfury Highlight'
+    if player has more than 2 charges of spell 'Lava Burst'
+    if spell 'Lava Burst' can be successfully cast
+26: Spell: Lava Burst
+    if talent 'Lava Burst' is taken
+    if player has resources to cast spell 'Lava Burst'
+    if spell 'Lava Burst' is off cooldown
+    if player does not have buff/debuff 'Master of the Elements'
+    if player has buff/debuff 'Master of the Elements'
+27: Spell: Lava Burst
+    if talent 'Lava Burst' is taken
+    if player has resources to cast spell 'Lava Burst'
+    if spell 'Lava Burst' is off cooldown
+    if player does not have buff/debuff 'Master of the Elements'
+28: Spell: Lightning Bolt
+    if talent 'Lightning Bolt' is taken
+    if player has resources to cast spell 'Lightning Bolt'
+    if spell 'Lightning Bolt' is off cooldown
+    if spell 'Lightning Bolt' can be successfully cast
+29: Spell: Lava Burst

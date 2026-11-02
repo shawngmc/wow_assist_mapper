@@ -1,83 +1,5 @@
 Affliction
-1: Spell: Seed of Corruption
-    if talent 'Seed of Corruption' is taken
-    if player has resources to cast spell 'Seed of Corruption'
-    if spell 'Seed of Corruption' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if target does not have buff/debuff 'Corruption'
-    if player does not have buff/debuff 'Wither'
-    if target does not have buff/debuff 'Seed of Corruption'
-    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
-2: Spell: Seed of Corruption
-    if talent 'Seed of Corruption' is taken
-    if player has resources to cast spell 'Seed of Corruption'
-    if spell 'Seed of Corruption' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if target does not have buff/debuff 'Wither'
-    if player has buff/debuff 'Wither'
-    if target does not have buff/debuff 'Seed of Corruption'
-    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
-3: Spell: Corruption
-    if talent 'Corruption' is taken
-    if player has resources to cast spell 'Corruption'
-    if spell 'Corruption' is off cooldown
-    if target does not have buff/debuff 'Corruption'
-    if player does not have buff/debuff 'Wither'
-    if target does not have buff/debuff 'Seed of Corruption'
-    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
-4: Spell: Corruption
-    if talent 'Corruption' is taken
-    if player has resources to cast spell 'Corruption'
-    if spell 'Corruption' is off cooldown
-    if target does not have buff/debuff 'Wither'
-    if player has buff/debuff 'Wither'
-    if target does not have buff/debuff 'Seed of Corruption'
-    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
-5: Spell: Unstable Affliction
-    if talent 'Unstable Affliction' is taken
-    if player has resources to cast spell 'Unstable Affliction'
-    if spell 'Unstable Affliction' is off cooldown
-    if player has more than 50 soul shards
-6: Spell: Agony
-    if talent 'Agony' is taken
-    if player has resources to cast spell 'Agony'
-    if spell 'Agony' is off cooldown
-    if target does not have buff/debuff 'Agony'
-7: Spell: Haunt
-    if talent 'Haunt' is taken
-    if player has resources to cast spell 'Haunt'
-    if spell 'Haunt' is off cooldown
-8: Spell: Unstable Affliction
-    if talent 'Unstable Affliction' is taken
-    if player has resources to cast spell 'Unstable Affliction'
-    if spell 'Unstable Affliction' is off cooldown
-    if player has buff/debuff 'Shard Instability'
-9: Spell: Unstable Affliction
-    if talent 'Unstable Affliction' is taken
-    if player has resources to cast spell 'Unstable Affliction'
-    if spell 'Unstable Affliction' is off cooldown
-10: Spell: Shadow Bolt
-    if talent 'Shadow Bolt' is taken
-    if player has resources to cast spell 'Shadow Bolt'
-    if spell 'Shadow Bolt' is off cooldown
-    if spell 'Shadow Bolt' can be successfully cast
-11: Spell: Agony
-    if talent 'Agony' is taken
-    if player has resources to cast spell 'Agony'
-    if spell 'Agony' is off cooldown
-    if target has buff/debuff 'Agony' with at least 4000 ms left
-12: Spell: Shadow Bolt
-13: Spell: Malevolence
-    if talent 'Malevolence' is taken
-    if player has resources to cast spell 'Malevolence'
-    if spell 'Malevolence' is off cooldown
-14: Spell: Unstable Affliction
-    if talent 'Unstable Affliction' is taken
-    if player has resources to cast spell 'Unstable Affliction'
-    if spell 'Unstable Affliction' is off cooldown
-    if spell 'Unstable Affliction' can be successfully cast
-    if player has more than 20 soul shards
-15: Spell: Summon Felhunter
+1: Spell: Summon Felhunter
     if talent 'Summon Felhunter' is taken
     if player has resources to cast spell 'Summon Felhunter'
     if spell 'Summon Felhunter' is off cooldown
@@ -85,35 +7,113 @@ Affliction
     if player does not have buff/debuff 'Grimoire of Sacrifice'
     if spell 'Summon Felhunter' can be successfully cast
     if player does not have buff/debuff 'Recently Demon Has Been Summoned [DNT]'
-16: Spell: Grimoire of Sacrifice
-    if talent 'Grimoire of Sacrifice' is taken
-    if player has resources to cast spell 'Grimoire of Sacrifice'
-    if spell 'Grimoire of Sacrifice' is off cooldown
-    if player has pet
-    if player does not have buff/debuff 'Grimoire of Sacrifice'
-17: Spell: Summon Imp
+2: Spell: Summon Imp
     if talent 'Summon Imp' is taken
     if player has resources to cast spell 'Summon Imp'
     if spell 'Summon Imp' is off cooldown
     if player has no pet
     if player does not have buff/debuff 'Grimoire of Sacrifice'
     if player does not have buff/debuff 'Recently Demon Has Been Summoned [DNT]'
-18: Spell: Summon Darkglare
-    if talent 'Summon Darkglare' is taken
-    if player has resources to cast spell 'Summon Darkglare'
-    if spell 'Summon Darkglare' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
-19: Spell: Dark Harvest
-    if talent 'Dark Harvest' is taken
-    if player has resources to cast spell 'Dark Harvest'
-    if spell 'Dark Harvest' is off cooldown
-20: Spell: Shadow Bolt
+3: Spell: Grimoire of Sacrifice
+    if talent 'Grimoire of Sacrifice' is taken
+    if player has resources to cast spell 'Grimoire of Sacrifice'
+    if spell 'Grimoire of Sacrifice' is off cooldown
+    if player has pet
+    if player does not have buff/debuff 'Grimoire of Sacrifice'
+4: Spell: Agony
+    if talent 'Agony' is taken
+    if player has resources to cast spell 'Agony'
+    if spell 'Agony' is off cooldown
+    if target has buff/debuff 'Agony' with at least 4000 ms left
+5: Spell: Seed of Corruption
+    if talent 'Seed of Corruption' is taken
+    if player has resources to cast spell 'Seed of Corruption'
+    if spell 'Seed of Corruption' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if target does not have buff/debuff 'Corruption'
+    if player does not have buff/debuff 'Wither'
+    if target does not have buff/debuff 'Seed of Corruption'
+    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
+6: Spell: Seed of Corruption
+    if talent 'Seed of Corruption' is taken
+    if player has resources to cast spell 'Seed of Corruption'
+    if spell 'Seed of Corruption' is off cooldown
+    if there are more than 3 targets within 10 yards of target
+    if target does not have buff/debuff 'Wither'
+    if player has buff/debuff 'Wither'
+    if target does not have buff/debuff 'Seed of Corruption'
+    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
+7: Spell: Corruption
+    if talent 'Corruption' is taken
+    if player has resources to cast spell 'Corruption'
+    if spell 'Corruption' is off cooldown
+    if target does not have buff/debuff 'Corruption'
+    if player does not have buff/debuff 'Wither'
+    if target does not have buff/debuff 'Seed of Corruption'
+    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
+8: Spell: Corruption
+    if talent 'Corruption' is taken
+    if player has resources to cast spell 'Corruption'
+    if spell 'Corruption' is off cooldown
+    if target does not have buff/debuff 'Wither'
+    if player has buff/debuff 'Wither'
+    if target does not have buff/debuff 'Seed of Corruption'
+    if player does not have buff/debuff 'Seed of Corruption Is Out [DNT]'
+9: Spell: Agony
+    if talent 'Agony' is taken
+    if player has resources to cast spell 'Agony'
+    if spell 'Agony' is off cooldown
+    if target does not have buff/debuff 'Agony'
+10: Spell: Unstable Affliction
+    if talent 'Unstable Affliction' is taken
+    if player has resources to cast spell 'Unstable Affliction'
+    if spell 'Unstable Affliction' is off cooldown
+    if player has more than 50 soul shards
+11: Spell: Shadow Bolt
     if talent 'Shadow Bolt' is taken
     if player has resources to cast spell 'Shadow Bolt'
     if spell 'Shadow Bolt' is off cooldown
     if player has more than 2 stacks of buff/debuff 'Nightfall'
-21: Spell: Shadow Bolt
+12: Spell: Shadow Bolt
     if talent 'Shadow Bolt' is taken
     if player has resources to cast spell 'Shadow Bolt'
     if spell 'Shadow Bolt' is off cooldown
     if player has buff/debuff 'Nightfall' with at least 3000 ms left
+13: Spell: Haunt
+    if talent 'Haunt' is taken
+    if player has resources to cast spell 'Haunt'
+    if spell 'Haunt' is off cooldown
+14: Spell: Malevolence
+    if talent 'Malevolence' is taken
+    if player has resources to cast spell 'Malevolence'
+    if spell 'Malevolence' is off cooldown
+15: Spell: Dark Harvest
+    if talent 'Dark Harvest' is taken
+    if player has resources to cast spell 'Dark Harvest'
+    if spell 'Dark Harvest' is off cooldown
+16: Spell: Unstable Affliction
+    if talent 'Unstable Affliction' is taken
+    if player has resources to cast spell 'Unstable Affliction'
+    if spell 'Unstable Affliction' is off cooldown
+    if player has buff/debuff 'Shard Instability'
+17: Spell: Unstable Affliction
+    if talent 'Unstable Affliction' is taken
+    if player has resources to cast spell 'Unstable Affliction'
+    if spell 'Unstable Affliction' is off cooldown
+    if spell 'Unstable Affliction' can be successfully cast
+    if player has more than 20 soul shards
+18: Spell: Unstable Affliction
+    if talent 'Unstable Affliction' is taken
+    if player has resources to cast spell 'Unstable Affliction'
+    if spell 'Unstable Affliction' is off cooldown
+19: Spell: Summon Darkglare
+    if talent 'Summon Darkglare' is taken
+    if player has resources to cast spell 'Summon Darkglare'
+    if spell 'Summon Darkglare' is off cooldown
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
+20: Spell: Shadow Bolt
+    if talent 'Shadow Bolt' is taken
+    if player has resources to cast spell 'Shadow Bolt'
+    if spell 'Shadow Bolt' is off cooldown
+    if spell 'Shadow Bolt' can be successfully cast
+21: Spell: Shadow Bolt

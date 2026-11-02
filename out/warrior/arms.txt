@@ -1,94 +1,94 @@
 Arms
-1: Spell: Cleave
+1: Spell: Battle Shout
+    if talent 'Battle Shout' is taken
+    if player has resources to cast spell 'Battle Shout'
+    if spell 'Battle Shout' is off cooldown
+    if player has buff/debuff 'Battle Shout Highlight'
+2: Spell: Cleave
     if target does not have buff/debuff 'Rend'
     if talent 'Cleave' is taken
     if player has resources to cast spell 'Cleave'
     if spell 'Cleave' is off cooldown
     if talent 'Cleave' is taken
     if there are more than 3 targets within 10 yards of player
-2: Spell: Rend
+3: Spell: Rend
+    if target does not have buff/debuff 'Rend'
     if talent 'Rend' is taken
     if player has resources to cast spell 'Rend'
     if spell 'Rend' is off cooldown
-    if target does not have buff/debuff 'Rend'
-3: Spell: Sweeping Strikes
+4: Spell: Sweeping Strikes
     if there are more than 2 targets within 10 yards of player
     if talent 'Sweeping Strikes' is taken
     if player has resources to cast spell 'Sweeping Strikes'
     if spell 'Sweeping Strikes' is off cooldown
-4: Spell: Ravager
+5: Spell: Ravager
     if talent 'Ravager' is taken
     if player has resources to cast spell 'Ravager'
     if spell 'Ravager' is off cooldown
     if spell 'Ravager' is within allowed range
-5: Spell: Colossus Smash
+6: Spell: Colossus Smash
     if target is less than 5 yards away
     if talent 'Colossus Smash' is taken
     if player has resources to cast spell 'Colossus Smash'
     if spell 'Colossus Smash' is off cooldown
-6: Spell: Demolish
+7: Spell: Avatar
+    if talent 'Avatar' is taken
+    if player has resources to cast spell 'Avatar'
+    if spell 'Avatar' is off cooldown
+    if spell 'Avatar' is off cooldown
+8: Spell: Whirlwind
+    if target is less than 5 yards away
+    if talent 'Whirlwind' is taken
+    if player has resources to cast spell 'Whirlwind'
+    if spell 'Whirlwind' is off cooldown
+    if there are more than 3 targets within 10 yards of player
+9: Spell: Demolish
     if talent 'Demolish' is taken
     if player has resources to cast spell 'Demolish'
     if spell 'Demolish' is off cooldown
     if spell 'Demolish' is within allowed range
-7: Spell: Bladestorm
+10: Spell: Bladestorm
     if target is less than 10 yards away
     if talent 'Bladestorm' is taken
     if player has resources to cast spell 'Bladestorm'
     if spell 'Bladestorm' is off cooldown
-8: Spell: Mortal Strike
+11: Spell: Slam
+    if player has buff/debuff 'Master of Warfare'
+    if player has resources to cast spell 'Slam'
+    if spell 'Slam' is off cooldown
+    if spell 'Slam' is within allowed range
+12: Spell: Mortal Strike
     if talent 'Mortal Strike' is taken
     if player has resources to cast spell 'Mortal Strike'
     if spell 'Mortal Strike' is off cooldown
     if spell 'Mortal Strike' is within allowed range
-9: Spell: Overpower
-    if talent 'Overpower' is taken
-    if player has resources to cast spell 'Overpower'
-    if spell 'Overpower' is off cooldown
-    if spell 'Overpower' is within allowed range
-10: Spell: Execute
+13: Spell: Execute
     if talent 'Execute' is taken
     if player has resources to cast spell 'Execute'
     if spell 'Execute' is off cooldown
     if spell 'Execute' is within allowed range
-11: Spell: Slam
+14: Spell: Overpower
+    if talent 'Overpower' is taken
+    if player has resources to cast spell 'Overpower'
+    if spell 'Overpower' is off cooldown
+    if spell 'Overpower' is within allowed range
+15: Spell: Whirlwind
+    if there are more than 3 targets within 10 yards of player
+    if talent 'Whirlwind' is taken
+    if spell 'Whirlwind' is off cooldown
+    if player has resources to cast spell 'Whirlwind'
+16: Spell: Slam
     if player has more than 500 rage
     if talent 'Slam' is taken
     if player has resources to cast spell 'Slam'
     if spell 'Slam' is off cooldown
     if spell 'Slam' is within allowed range
-12: Spell: Heroic Throw
+17: Spell: Heroic Throw
     if talent 'Heroic Throw' is taken
     if player has resources to cast spell 'Heroic Throw'
     if spell 'Heroic Throw' is off cooldown
     if spell 'Heroic Throw' is within allowed range
     if target is more than 15 yards away
-13: Spell: Whirlwind
-    if target is less than 5 yards away
-    if talent 'Whirlwind' is taken
-    if player has resources to cast spell 'Whirlwind'
-    if spell 'Whirlwind' is off cooldown
-    if there are more than 3 targets within 10 yards of player
-14: Spell: Mortal Strike
+18: Spell: Mortal Strike
     if talent 'Mortal Strike' is taken
-15: Spell: Slam
-16: Spell: Whirlwind
-    if there are more than 3 targets within 10 yards of player
-    if talent 'Whirlwind' is taken
-    if spell 'Whirlwind' is off cooldown
-    if player has resources to cast spell 'Whirlwind'
-17: Spell: Avatar
-    if talent 'Avatar' is taken
-    if player has resources to cast spell 'Avatar'
-    if spell 'Avatar' is off cooldown
-    if spell 'Avatar' is off cooldown
-18: Spell: Slam
-    if player has buff/debuff 'Master of Warfare'
-    if player has resources to cast spell 'Slam'
-    if spell 'Slam' is off cooldown
-    if spell 'Slam' is within allowed range
-19: Spell: Battle Shout
-    if talent 'Battle Shout' is taken
-    if player has resources to cast spell 'Battle Shout'
-    if spell 'Battle Shout' is off cooldown
-    if player has buff/debuff 'Battle Shout Highlight'
+19: Spell: Slam

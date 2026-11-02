@@ -5,59 +5,59 @@ Demonology
     if spell 'Summon Felguard' is off cooldown
     if player has no pet
     if spell 'Summon Felguard' can be successfully cast
-2: Spell: Summon Vilefiend
-    if talent 'Summon Vilefiend' is taken
-    if player has resources to cast spell 'Summon Vilefiend'
-    if spell 'Summon Vilefiend' is off cooldown
-3: Spell: Call Dreadstalkers
-    if talent 'Call Dreadstalkers' is taken
-    if player has resources to cast spell 'Call Dreadstalkers'
-    if spell 'Call Dreadstalkers' is off cooldown
-4: Spell: Hand of Gul'dan
-    if talent 'Hand of Gul'dan' is taken
-    if player has resources to cast spell 'Hand of Gul'dan'
-    if spell 'Hand of Gul'dan' is off cooldown
-5: Spell: Demonbolt
-    if talent 'Demonbolt' is taken
-    if player has resources to cast spell 'Demonbolt'
-    if spell 'Demonbolt' is off cooldown
-    if player has buff/debuff 'Demonic Core'
-6: Spell: Power Siphon
-    if talent 'Power Siphon' is taken
-    if player has resources to cast spell 'Power Siphon'
-    if spell 'Power Siphon' is off cooldown
-7: Spell: Shadow Bolt
-    if talent 'Shadow Bolt' is taken
-    if player has resources to cast spell 'Shadow Bolt'
-    if spell 'Shadow Bolt' is off cooldown
-    if spell 'Shadow Bolt' can be successfully cast
-8: Spell: Shadow Bolt
-    if talent 'Shadow Bolt' is taken
-    if player has resources to cast spell 'Shadow Bolt'
-    if spell 'Shadow Bolt' is off cooldown
-    if player has buff/debuff 'Infernal Bolt'
-9: Spell: Call Dreadstalkers
-10: Spell: Summon Felguard
+2: Spell: Summon Felguard
     if talent 'Summon Felguard' is taken
     if player has resources to cast spell 'Summon Felguard'
     if spell 'Summon Felguard' is off cooldown
     if player has buff/debuff 'Track Pets'
     if spell 'Summon Felguard' can be successfully cast
-11: Spell: Summon Demonic Tyrant
-    if talent 'Summon Demonic Tyrant' is taken
-    if player has resources to cast spell 'Summon Demonic Tyrant'
-    if spell 'Summon Demonic Tyrant' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
-12: Spell: Summon Imp
-    if talent 'Summon Imp' is taken
-    if player has resources to cast spell 'Summon Imp'
-    if spell 'Summon Imp' is off cooldown
-    if player has no pet
-    if player does not have buff/debuff 'Grimoire of Sacrifice'
-13: Spell: Summon Felhunter
+3: Spell: Summon Felhunter
     if spell 'Summon Felhunter' can be successfully cast
     if player does not have buff/debuff 'Grimoire of Sacrifice'
     if player has no pet
     if spell 'Summon Felhunter' is off cooldown
     if player has resources to cast spell 'Summon Felhunter'
     if talent 'Summon Felhunter' is taken
+4: Spell: Summon Imp
+    if talent 'Summon Imp' is taken
+    if player has resources to cast spell 'Summon Imp'
+    if spell 'Summon Imp' is off cooldown
+    if player has no pet
+    if player does not have buff/debuff 'Grimoire of Sacrifice'
+5: Spell: Summon Vilefiend
+    if talent 'Summon Vilefiend' is taken
+    if player has resources to cast spell 'Summon Vilefiend'
+    if spell 'Summon Vilefiend' is off cooldown
+6: Spell: Call Dreadstalkers
+    if talent 'Call Dreadstalkers' is taken
+    if player has resources to cast spell 'Call Dreadstalkers'
+    if spell 'Call Dreadstalkers' is off cooldown
+7: Spell: Hand of Gul'dan
+    if talent 'Hand of Gul'dan' is taken
+    if player has resources to cast spell 'Hand of Gul'dan'
+    if spell 'Hand of Gul'dan' is off cooldown
+8: Spell: Shadow Bolt
+    if talent 'Shadow Bolt' is taken
+    if player has resources to cast spell 'Shadow Bolt'
+    if spell 'Shadow Bolt' is off cooldown
+    if player has buff/debuff 'Infernal Bolt'
+9: Spell: Summon Demonic Tyrant
+    if talent 'Summon Demonic Tyrant' is taken
+    if player has resources to cast spell 'Summon Demonic Tyrant'
+    if spell 'Summon Demonic Tyrant' is off cooldown
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
+10: Spell: Demonbolt
+    if talent 'Demonbolt' is taken
+    if player has resources to cast spell 'Demonbolt'
+    if spell 'Demonbolt' is off cooldown
+    if player has buff/debuff 'Demonic Core'
+11: Spell: Power Siphon
+    if talent 'Power Siphon' is taken
+    if player has resources to cast spell 'Power Siphon'
+    if spell 'Power Siphon' is off cooldown
+12: Spell: Shadow Bolt
+    if talent 'Shadow Bolt' is taken
+    if player has resources to cast spell 'Shadow Bolt'
+    if spell 'Shadow Bolt' is off cooldown
+    if spell 'Shadow Bolt' can be successfully cast
+13: Spell: Call Dreadstalkers

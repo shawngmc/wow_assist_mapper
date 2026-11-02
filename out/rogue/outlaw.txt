@@ -1,5 +1,34 @@
 Outlaw
-1: Spell: Roll the Bones
+1: Spell: Wound Poison
+    if talent 'Wound Poison' is taken
+    if player has resources to cast spell 'Wound Poison'
+    if spell 'Wound Poison' is off cooldown
+    if player does not have buff/debuff 'Wound Poison'
+    if player has buff/debuff 'PvP Rules Enabled (HARDCODED)'
+2: Spell: Instant Poison
+    if talent 'Instant Poison' is taken
+    if player has resources to cast spell 'Instant Poison'
+    if spell 'Instant Poison' is off cooldown
+    if player does not have buff/debuff 'Instant Poison'
+    if player does not have buff/debuff 'PvP Rules Enabled (HARDCODED)'
+3: Spell: Atrophic Poison
+    if talent 'Atrophic Poison' is taken
+    if player has resources to cast spell 'Atrophic Poison'
+    if spell 'Atrophic Poison' is off cooldown
+    if player does not have buff/debuff 'Atrophic Poison'
+4: Spell: Numbing Poison
+    if talent 'Numbing Poison' is taken
+    if player has resources to cast spell 'Numbing Poison'
+    if spell 'Numbing Poison' is off cooldown
+    if player does not have buff/debuff 'Numbing Poison'
+5: Spell: Crippling Poison
+    if talent 'Crippling Poison' is taken
+    if player has resources to cast spell 'Crippling Poison'
+    if spell 'Crippling Poison' is off cooldown
+    if player does not have buff/debuff 'Numbing Poison'
+    if player does not have buff/debuff 'Atrophic Poison'
+    if player does not have buff/debuff 'Crippling Poison'
+6: Spell: Roll the Bones
     if talent 'Roll the Bones' is taken
     if player has resources to cast spell 'Roll the Bones'
     if spell 'Roll the Bones' is off cooldown
@@ -7,148 +36,119 @@ Outlaw
     if player does not have buff/debuff 'Double Trouble'
     if player does not have buff/debuff 'Triple Threat'
     if player does not have buff/debuff 'Jackpot'
-2: Spell: Blade Flurry
-    if talent 'Blade Flurry' is taken
-    if player has resources to cast spell 'Blade Flurry'
-    if spell 'Blade Flurry' is off cooldown
-    if there are more than 2 targets within 10 yards of player
-    if player does not have buff/debuff 'Blade Flurry'
-3: Spell: Killing Spree
-    if talent 'Killing Spree' is taken
-    if player has resources to cast spell 'Killing Spree'
-    if spell 'Killing Spree' is off cooldown
-    if player has more than 5 combo points
-    if there are more than 1 targets within 8 yards of player
-4: Spell: Between the Eyes
-    if talent 'Between the Eyes' is taken
-    if player has resources to cast spell 'Between the Eyes'
-    if spell 'Between the Eyes' is off cooldown
-    if spell 'Between the Eyes' is within allowed range
-    if player has more than 5 combo points
-5: Spell: Eviscerate
-    if talent 'Eviscerate' is taken
-    if player has resources to cast spell 'Eviscerate'
-    if spell 'Eviscerate' is off cooldown
-    if spell 'Eviscerate' is within allowed range
-    if player has more than 5 combo points
-6: Spell: Ambush
-    if talent 'Ambush' is taken
-    if player has resources to cast spell 'Ambush'
-    if spell 'Ambush' is off cooldown
-    if spell 'Ambush' is within allowed range
-    if player has buff/debuff 'Hidden Opportunity'
-7: Spell: Pistol Shot
-    if talent 'Pistol Shot' is taken
-    if player has resources to cast spell 'Pistol Shot'
-    if spell 'Pistol Shot' is off cooldown
-    if spell 'Pistol Shot' is within allowed range
-    if player has buff/debuff 'Opportunity'
-8: Spell: Sinister Strike
-    if talent 'Sinister Strike' is taken
-    if player has resources to cast spell 'Sinister Strike'
-    if spell 'Sinister Strike' is off cooldown
-    if spell 'Sinister Strike' is within allowed range
-9: Spell: Pistol Shot
-    if talent 'Pistol Shot' is taken
-    if player has resources to cast spell 'Pistol Shot'
-    if spell 'Pistol Shot' is off cooldown
-    if player has more than 99 energy
-    if target is more than 15 yards away
-10: Spell: Blade Rush
-    if talent 'Blade Rush' is taken
-    if player has resources to cast spell 'Blade Rush'
-    if spell 'Blade Rush' is off cooldown
-    if spell 'Blade Rush' is within allowed range
-    if player has buff/debuff 'Vigor'
-    if player has less than 174 energy
-11: Spell: Sinister Strike
-12: Spell: Ambush
+7: Spell: Ambush
     if talent 'Ambush' is taken
     if player has resources to cast spell 'Ambush'
     if spell 'Ambush' is off cooldown
     if player has buff/debuff 'Stealth'
     if target is less than 40 yards away
     if player has less than 4 combo points
-13: Spell: Ambush
+8: Spell: Ambush
+    if talent 'Ambush' is taken
+    if player has resources to cast spell 'Ambush'
+    if spell 'Ambush' is off cooldown
+    if player has buff/debuff 'Stealth'
+    if target is less than 40 yards away
+    if player has less than 4 combo points
+9: Spell: Ambush
     if talent 'Ambush' is taken
     if player has resources to cast spell 'Ambush'
     if spell 'Ambush' is off cooldown
     if player has buff/debuff 'Vanish'
     if target is less than 40 yards away
     if player has less than 4 combo points
-14: Spell: Ambush
-    if talent 'Ambush' is taken
-    if player has resources to cast spell 'Ambush'
-    if spell 'Ambush' is off cooldown
-    if player has buff/debuff 'Stealth'
-    if target is less than 40 yards away
-    if player has less than 4 combo points
-15: Spell: Wound Poison
-    if talent 'Wound Poison' is taken
-    if player has resources to cast spell 'Wound Poison'
-    if spell 'Wound Poison' is off cooldown
-    if player does not have buff/debuff 'Wound Poison'
-    if player has buff/debuff 'PvP Rules Enabled (HARDCODED)'
-16: Spell: Instant Poison
-    if talent 'Instant Poison' is taken
-    if player has resources to cast spell 'Instant Poison'
-    if spell 'Instant Poison' is off cooldown
-    if player does not have buff/debuff 'Instant Poison'
-    if player does not have buff/debuff 'PvP Rules Enabled (HARDCODED)'
-17: Spell: Crippling Poison
-    if talent 'Crippling Poison' is taken
-    if player has resources to cast spell 'Crippling Poison'
-    if spell 'Crippling Poison' is off cooldown
-    if player does not have buff/debuff 'Numbing Poison'
-    if player does not have buff/debuff 'Atrophic Poison'
-    if player does not have buff/debuff 'Crippling Poison'
-18: Spell: Atrophic Poison
-    if talent 'Atrophic Poison' is taken
-    if player has resources to cast spell 'Atrophic Poison'
-    if spell 'Atrophic Poison' is off cooldown
-    if player does not have buff/debuff 'Atrophic Poison'
-19: Spell: Numbing Poison
-    if talent 'Numbing Poison' is taken
-    if player has resources to cast spell 'Numbing Poison'
-    if spell 'Numbing Poison' is off cooldown
-    if player does not have buff/debuff 'Numbing Poison'
-20: Spell: Adrenaline Rush
-    if talent 'Adrenaline Rush' is taken
-    if player has resources to cast spell 'Adrenaline Rush'
-    if spell 'Adrenaline Rush' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
-    if player has buff/debuff 'Improved Adrenaline Rush'
-    if player has less than 2 combo points
-21: Spell: Blade Flurry
+10: Spell: Blade Flurry
     if talent 'Blade Flurry' is taken
     if player has resources to cast spell 'Blade Flurry'
     if spell 'Blade Flurry' is off cooldown
-    if there are more than 4 targets within 10 yards of player
-    if player has less than 4 combo points
-    if player has buff/debuff 'Deft Maneuvers'
-22: Spell: Blade Rush
-    if talent 'Blade Rush' is taken
-    if player has resources to cast spell 'Blade Rush'
-    if spell 'Blade Rush' is off cooldown
-    if spell 'Blade Rush' is within allowed range
-    if player does not have buff/debuff 'Vigor'
-    if player has less than 74 energy
-23: Spell: Preparation
+    if there are more than 2 targets within 10 yards of player
+    if player does not have buff/debuff 'Blade Flurry'
+11: Spell: Preparation
     if talent 'Preparation' is taken
     if player has resources to cast spell 'Preparation'
     if spell 'Preparation' is off cooldown
     if spell 'Adrenaline Rush' is on cooldown
     if spell 'Between the Eyes' is on cooldown
     if spell 'Blade Rush' is on cooldown
-24: Spell: Adrenaline Rush
+12: Spell: Adrenaline Rush
     if talent 'Adrenaline Rush' is taken
     if player has resources to cast spell 'Adrenaline Rush'
     if spell 'Adrenaline Rush' is off cooldown
     if unknown condition 70 is met (seen gating cooldown and movement steps)
     if player does not have buff/debuff 'Improved Adrenaline Rush'
-25: Spell: Eviscerate
+13: Spell: Adrenaline Rush
+    if talent 'Adrenaline Rush' is taken
+    if player has resources to cast spell 'Adrenaline Rush'
+    if spell 'Adrenaline Rush' is off cooldown
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if player has buff/debuff 'Improved Adrenaline Rush'
+    if player has less than 2 combo points
+14: Spell: Blade Rush
+    if talent 'Blade Rush' is taken
+    if player has resources to cast spell 'Blade Rush'
+    if spell 'Blade Rush' is off cooldown
+    if spell 'Blade Rush' is within allowed range
+    if player has buff/debuff 'Vigor'
+    if player has less than 174 energy
+15: Spell: Blade Rush
+    if talent 'Blade Rush' is taken
+    if player has resources to cast spell 'Blade Rush'
+    if spell 'Blade Rush' is off cooldown
+    if spell 'Blade Rush' is within allowed range
+    if player does not have buff/debuff 'Vigor'
+    if player has less than 74 energy
+16: Spell: Between the Eyes
+    if talent 'Between the Eyes' is taken
+    if player has resources to cast spell 'Between the Eyes'
+    if spell 'Between the Eyes' is off cooldown
+    if spell 'Between the Eyes' is within allowed range
+    if player has more than 5 combo points
+17: Spell: Eviscerate
     if talent 'Eviscerate' is taken
     if player has resources to cast spell 'Eviscerate'
     if spell 'Eviscerate' is off cooldown
     if spell 'Eviscerate' is within allowed range
     if player has buff/debuff 'Fang Strike'
+18: Spell: Killing Spree
+    if talent 'Killing Spree' is taken
+    if player has resources to cast spell 'Killing Spree'
+    if spell 'Killing Spree' is off cooldown
+    if player has more than 5 combo points
+    if there are more than 1 targets within 8 yards of player
+19: Spell: Eviscerate
+    if talent 'Eviscerate' is taken
+    if player has resources to cast spell 'Eviscerate'
+    if spell 'Eviscerate' is off cooldown
+    if spell 'Eviscerate' is within allowed range
+    if player has more than 5 combo points
+20: Spell: Blade Flurry
+    if talent 'Blade Flurry' is taken
+    if player has resources to cast spell 'Blade Flurry'
+    if spell 'Blade Flurry' is off cooldown
+    if there are more than 4 targets within 10 yards of player
+    if player has less than 4 combo points
+    if player has buff/debuff 'Deft Maneuvers'
+21: Spell: Ambush
+    if talent 'Ambush' is taken
+    if player has resources to cast spell 'Ambush'
+    if spell 'Ambush' is off cooldown
+    if spell 'Ambush' is within allowed range
+    if player has buff/debuff 'Hidden Opportunity'
+22: Spell: Pistol Shot
+    if talent 'Pistol Shot' is taken
+    if player has resources to cast spell 'Pistol Shot'
+    if spell 'Pistol Shot' is off cooldown
+    if spell 'Pistol Shot' is within allowed range
+    if player has buff/debuff 'Opportunity'
+23: Spell: Sinister Strike
+    if talent 'Sinister Strike' is taken
+    if player has resources to cast spell 'Sinister Strike'
+    if spell 'Sinister Strike' is off cooldown
+    if spell 'Sinister Strike' is within allowed range
+24: Spell: Pistol Shot
+    if talent 'Pistol Shot' is taken
+    if player has resources to cast spell 'Pistol Shot'
+    if spell 'Pistol Shot' is off cooldown
+    if player has more than 99 energy
+    if target is more than 15 yards away
+25: Spell: Sinister Strike

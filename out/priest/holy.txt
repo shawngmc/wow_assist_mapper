@@ -1,8 +1,9 @@
 Holy
-1: Spell: Holy Word: Chastise
-    if talent 'Holy Word: Chastise' is taken
-    if player has resources to cast spell 'Holy Word: Chastise'
-    if spell 'Holy Word: Chastise' is off cooldown
+1: Spell: Power Word: Fortitude
+    if talent 'Power Word: Fortitude' is taken
+    if player has resources to cast spell 'Power Word: Fortitude'
+    if spell 'Power Word: Fortitude' is off cooldown
+    if player has buff/debuff 'Power Word: Fortitude Highlight'
 2: Spell: Shadow Word: Pain
     if talent 'Shadow Word: Pain' is taken
     if player has resources to cast spell 'Shadow Word: Pain'
@@ -14,11 +15,10 @@ Holy
     if spell 'Holy Nova' is off cooldown
     if player does not have buff/debuff 'Burning Vehemence'
     if there are more than 5 targets within 10 yards of player
-4: Spell: Smite
-    if talent 'Smite' is taken
-    if player has resources to cast spell 'Smite'
-    if spell 'Smite' is off cooldown
-    if spell 'Smite' can be successfully cast
+4: Spell: Holy Word: Chastise
+    if talent 'Holy Word: Chastise' is taken
+    if player has resources to cast spell 'Holy Word: Chastise'
+    if spell 'Holy Word: Chastise' is off cooldown
 5: Spell: Shadow Word: Pain
     if talent 'Shadow Word: Pain' is taken
     if player has resources to cast spell 'Shadow Word: Pain'
@@ -29,8 +29,8 @@ Holy
     if spell 'Holy Nova' is off cooldown
     if there are more than 5 targets within 10 yards of player
 7: Spell: Smite
-8: Spell: Power Word: Fortitude
-    if talent 'Power Word: Fortitude' is taken
-    if player has resources to cast spell 'Power Word: Fortitude'
-    if spell 'Power Word: Fortitude' is off cooldown
-    if player has buff/debuff 'Power Word: Fortitude Highlight'
+    if talent 'Smite' is taken
+    if player has resources to cast spell 'Smite'
+    if spell 'Smite' is off cooldown
+    if spell 'Smite' can be successfully cast
+8: Spell: Smite
