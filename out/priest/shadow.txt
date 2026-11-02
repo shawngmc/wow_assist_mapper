@@ -126,13 +126,13 @@ Shadow
     if talent 'Voidform' is taken
     if player has resources to cast spell 'Voidform'
     if spell 'Voidform' is off cooldown
-    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
     if player does not have buff/debuff 'Voidform'
 24: Spell: Power Infusion
     if talent 'Power Infusion' is taken
     if player has resources to cast spell 'Power Infusion'
     if spell 'Power Infusion' is off cooldown
-    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
     if player has buff/debuff 'Voidform'
 25: Spell: Power Word: Fortitude
     if talent 'Power Word: Fortitude' is taken

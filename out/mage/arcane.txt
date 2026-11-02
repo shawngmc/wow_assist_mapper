@@ -81,7 +81,7 @@ Arcane
     if talent 'Arcane Surge' is taken
     if player has resources to cast spell 'Arcane Surge'
     if spell 'Arcane Surge' is off cooldown
-    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
 14: Spell: Evocation
     if talent 'Evocation' is taken
     if player has resources to cast spell 'Evocation'

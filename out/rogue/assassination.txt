@@ -211,7 +211,7 @@ Assassination
     if spell 'Deathmark' is off cooldown
     if target has buff/debuff 'Garrote'
     if target has buff/debuff 'Rupture'
-    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
     if spell 'Deathmark' is within allowed range
 31: Spell: Kingsbane
     if target has buff/debuff 'Rupture'

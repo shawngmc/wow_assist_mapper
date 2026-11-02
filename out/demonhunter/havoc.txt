@@ -73,32 +73,32 @@ Havoc
     if talent 'Metamorphosis' is taken
     if player has resources to cast spell 'Metamorphosis'
     if spell 'Metamorphosis' is off cooldown
-    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
 14: Spell: Fel Rush
     if talent 'Fel Rush' is taken
     if player has resources to cast spell 'Fel Rush'
     if spell 'Fel Rush' is off cooldown
     if player has buff/debuff 'Inertia'
-    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
 15: Spell: Felblade
     if talent 'Felblade' is taken
     if player has resources to cast spell 'Felblade'
     if spell 'Felblade' is off cooldown
-    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
 16: Spell: Vengeful Retreat
     if talent 'Vengeful Retreat' is taken
     if player has resources to cast spell 'Vengeful Retreat'
     if spell 'Vengeful Retreat' is off cooldown
     if player has buff/debuff 'Inertia'
-    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
 17: Spell: The Hunt
     if talent 'The Hunt' is taken
     if player has resources to cast spell 'The Hunt'
     if spell 'The Hunt' is off cooldown
-    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
 18: Spell: Vengeful Retreat
     if talent 'Vengeful Retreat' is taken
     if player has resources to cast spell 'Vengeful Retreat'
     if spell 'Vengeful Retreat' is off cooldown
     if player has buff/debuff 'Exergy'
-    if major cooldowns are enabled (inferred: no args; only seen on major cooldowns)
+    if unknown condition 70 is met (seen gating cooldown and movement steps)
