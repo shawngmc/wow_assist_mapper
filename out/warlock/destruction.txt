@@ -54,64 +54,64 @@ Destruction
     if talent 'Channel Demonfire' is taken
     if player has resources to cast spell 'Channel Demonfire'
     if spell 'Channel Demonfire' is off cooldown
-    if target is less than 40 yards away
+    if target is at most 40 yards away
 11: Spell: Rain of Fire
     if talent 'Rain of Fire' is taken
     if player has resources to cast spell 'Rain of Fire'
     if spell 'Rain of Fire' is off cooldown
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
 12: Spell: Rain of Fire
     if talent 'Rain of Fire' is taken
     if player has resources to cast spell 'Rain of Fire'
     if spell 'Rain of Fire' is off cooldown
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
 13: Spell: Soul Fire
     if talent 'Soul Fire' is taken
     if player has resources to cast spell 'Soul Fire'
     if spell 'Soul Fire' is off cooldown
-    if player has less than 40 soul shards
+    if player has at most 40 soul shards
 14: Spell: Shadowburn
     if talent 'Shadowburn' is taken
     if player has resources to cast spell 'Shadowburn'
     if spell 'Shadowburn' is off cooldown
-    if there are less than 2 targets within 10 yards of target
+    if there are at most 2 targets within 10 yards of target
 15: Spell: Conflagrate
     if talent 'Conflagrate' is taken
     if player has resources to cast spell 'Conflagrate'
     if spell 'Conflagrate' is off cooldown
     if player does not have buff/debuff 'Backdraft'
-    if player has more than 15 soul shards
-    if there are less than 2 targets within 10 yards of target
+    if player has at least 15 soul shards
+    if there are at most 2 targets within 10 yards of target
 16: Spell: Chaos Bolt
     if talent 'Chaos Bolt' is taken
     if player has resources to cast spell 'Chaos Bolt'
     if spell 'Chaos Bolt' is off cooldown
-    if there are less than 2 targets within 10 yards of target
-    if player has more than 40 soul shards
+    if there are at most 2 targets within 10 yards of target
+    if player has at least 40 soul shards
     if spell 'Chaos Bolt' can be successfully cast
 17: Spell: Chaos Bolt
     if talent 'Chaos Bolt' is taken
     if player has resources to cast spell 'Chaos Bolt'
     if spell 'Chaos Bolt' is off cooldown
-    if there are less than 2 targets within 10 yards of target
-    if player has more than 20 soul shards
+    if there are at most 2 targets within 10 yards of target
+    if player has at least 20 soul shards
     if spell 'Chaos Bolt' can be successfully cast
     if player has buff/debuff 'Ritual of Ruin'
 18: Spell: Chaos Bolt
     if talent 'Chaos Bolt' is taken
     if player has resources to cast spell 'Chaos Bolt'
     if spell 'Chaos Bolt' is off cooldown
-    if there are less than 2 targets within 10 yards of target
+    if there are at most 2 targets within 10 yards of target
 19: Spell: Shadow Bolt
     if talent 'Shadow Bolt' is taken
     if player has resources to cast spell 'Shadow Bolt'
     if spell 'Shadow Bolt' is off cooldown
-    if player has more than 2 stacks of buff/debuff 'Backdraft'
+    if player has at least 2 stacks of buff/debuff 'Backdraft'
 20: Spell: Conflagrate
     if talent 'Conflagrate' is taken
     if player has resources to cast spell 'Conflagrate'
     if spell 'Conflagrate' is off cooldown
-    if player has more than 2 charges of spell 'Conflagrate'
+    if player has at least 2 charges of spell 'Conflagrate'
 21: Spell: Shadow Bolt
     if talent 'Shadow Bolt' is taken
     if player has resources to cast spell 'Shadow Bolt'

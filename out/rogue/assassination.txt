@@ -83,7 +83,7 @@ Assassination
     if target has buff/debuff 'Garrote'
     if target has buff/debuff 'Rupture'
     if player has buff/debuff 'Implacable'
-    if player has less than 1 combo points
+    if player has at most 1 combo points
 13: Spell: Kingsbane
     if talent 'Kingsbane' is taken
     if player has resources to cast spell 'Kingsbane'
@@ -96,7 +96,7 @@ Assassination
     if player has resources to cast spell 'Eviscerate'
     if spell 'Eviscerate' is off cooldown
     if talent 'Eviscerate' is taken
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if spell 'Eviscerate' is within allowed range
     if player has buff/debuff 'Darkest Night'
     if player does not have buff/debuff 'Deeper Stratagem'
@@ -105,7 +105,7 @@ Assassination
     if player has resources to cast spell 'Eviscerate'
     if spell 'Eviscerate' is off cooldown
     if talent 'Eviscerate' is taken
-    if player has more than 6 combo points
+    if player has at least 6 combo points
     if spell 'Eviscerate' is within allowed range
     if player has buff/debuff 'Darkest Night'
     if player does not have buff/debuff 'Sanguine Stratagem'
@@ -114,7 +114,7 @@ Assassination
     if player has resources to cast spell 'Eviscerate'
     if spell 'Eviscerate' is off cooldown
     if talent 'Eviscerate' is taken
-    if player has more than 6 combo points
+    if player has at least 6 combo points
     if spell 'Eviscerate' is within allowed range
     if player has buff/debuff 'Darkest Night'
     if player does not have buff/debuff 'Deeper Stratagem'
@@ -123,28 +123,28 @@ Assassination
     if player has resources to cast spell 'Eviscerate'
     if spell 'Eviscerate' is off cooldown
     if talent 'Eviscerate' is taken
-    if player has more than 7 combo points
+    if player has at least 7 combo points
     if spell 'Eviscerate' is within allowed range
     if player has buff/debuff 'Darkest Night'
     if player has buff/debuff 'Deeper Stratagem'
     if player has buff/debuff 'Sanguine Stratagem'
 18: Spell: Slice and Dice
     if player does not have buff/debuff 'Slice and Dice'
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if talent 'Slice and Dice' is taken
     if player has resources to cast spell 'Slice and Dice'
     if spell 'Slice and Dice' is off cooldown
     if player does not have buff/debuff 'Cut to the Chase'
 19: Spell: Rupture
     if target does not have buff/debuff 'Rupture'
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if talent 'Rupture' is taken
     if player has resources to cast spell 'Rupture'
     if spell 'Rupture' is off cooldown
     if spell 'Rupture' is within allowed range
     if player does not have buff/debuff 'Darkest Night'
 20: Spell: Eviscerate
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if talent 'Eviscerate' is taken
     if player has resources to cast spell 'Eviscerate'
     if spell 'Eviscerate' is off cooldown
@@ -154,40 +154,40 @@ Assassination
     if talent 'Ambush' is taken
     if player has resources to cast spell 'Ambush'
     if spell 'Ambush' is off cooldown
-    if target is less than 40 yards away
+    if target is at most 40 yards away
     if player has buff/debuff 'Stealth'
     if player does not have buff/debuff 'Improved Garrote'
 22: Spell: Ambush
     if talent 'Ambush' is taken
     if player has resources to cast spell 'Ambush'
     if spell 'Ambush' is off cooldown
-    if target is less than 40 yards away
+    if target is at most 40 yards away
     if player has buff/debuff 'Stealth'
     if player does not have buff/debuff 'Improved Garrote'
 23: Spell: Ambush
     if talent 'Ambush' is taken
     if player has resources to cast spell 'Ambush'
     if spell 'Ambush' is off cooldown
-    if target is less than 40 yards away
+    if target is at most 40 yards away
     if player has buff/debuff 'Vanish'
     if player does not have buff/debuff 'Improved Garrote'
 24: Spell: Garrote
     if talent 'Garrote' is taken
     if player has resources to cast spell 'Garrote'
     if spell 'Garrote' is off cooldown
-    if target is less than 40 yards away
+    if target is at most 40 yards away
     if player has buff/debuff 'Stealth'
 25: Spell: Garrote
     if talent 'Garrote' is taken
     if player has resources to cast spell 'Garrote'
     if spell 'Garrote' is off cooldown
-    if target is less than 40 yards away
+    if target is at most 40 yards away
     if player has buff/debuff 'Stealth'
 26: Spell: Garrote
     if talent 'Garrote' is taken
     if player has resources to cast spell 'Garrote'
     if spell 'Garrote' is off cooldown
-    if target is less than 40 yards away
+    if target is at most 40 yards away
     if player has buff/debuff 'Vanish'
 27: Spell: Garrote
     if target does not have buff/debuff 'Garrote'
@@ -205,28 +205,28 @@ Assassination
     if spell 'Crimson Tempest' is off cooldown
     if player has resources to cast spell 'Crimson Tempest'
     if talent 'Crimson Tempest' is taken
-    if there are more than 3 targets within 10 yards of player
-    if there are less than 1 targets within 10 yards of player with buff/debuff 'Garrote'
-    if there are more than 1 targets within 10 yards of player with buff/debuff 'Rupture'
-    if there are more than 1 targets within 10 yards of player with buff/debuff 'Garrote'
+    if there are at least 3 targets within 10 yards of player
+    if there are at most 1 targets within 10 yards of player with buff/debuff 'Garrote'
+    if there are at least 1 targets within 10 yards of player with buff/debuff 'Rupture'
+    if there are at least 1 targets within 10 yards of player with buff/debuff 'Garrote'
 30: Spell: Crimson Tempest
     if spell 'Crimson Tempest' is off cooldown
     if player has resources to cast spell 'Crimson Tempest'
     if talent 'Crimson Tempest' is taken
-    if there are more than 5 targets within 10 yards of player
-    if there are less than 3 targets within 10 yards of player with buff/debuff 'Garrote'
-    if there are more than 1 targets within 10 yards of player with buff/debuff 'Rupture'
-    if there are more than 1 targets within 10 yards of player with buff/debuff 'Garrote'
+    if there are at least 5 targets within 10 yards of player
+    if there are at most 3 targets within 10 yards of player with buff/debuff 'Garrote'
+    if there are at least 1 targets within 10 yards of player with buff/debuff 'Rupture'
+    if there are at least 1 targets within 10 yards of player with buff/debuff 'Garrote'
 31: Spell: Crimson Tempest
     if spell 'Crimson Tempest' is off cooldown
     if player has resources to cast spell 'Crimson Tempest'
     if talent 'Crimson Tempest' is taken
-    if there are more than 7 targets within 10 yards of player
-    if there are less than 5 targets within 10 yards of player with buff/debuff 'Garrote'
-    if there are more than 1 targets within 10 yards of player with buff/debuff 'Rupture'
-    if there are more than 1 targets within 10 yards of player with buff/debuff 'Garrote'
+    if there are at least 7 targets within 10 yards of player
+    if there are at most 5 targets within 10 yards of player with buff/debuff 'Garrote'
+    if there are at least 1 targets within 10 yards of player with buff/debuff 'Rupture'
+    if there are at least 1 targets within 10 yards of player with buff/debuff 'Garrote'
 32: Spell: Fan of Knives
-    if there are more than 3 targets within 10 yards of player
+    if there are at least 3 targets within 10 yards of player
     if talent 'Fan of Knives' is taken
     if player has resources to cast spell 'Fan of Knives'
     if spell 'Fan of Knives' is off cooldown
@@ -242,6 +242,6 @@ Assassination
     if spell 'Poisoned Knife' is within allowed range
     if player does not have buff/debuff 'Stealth'
     if player does not have buff/debuff 'Vanish'
-    if player has more than 70 energy
-    if target is more than 15 yards away
+    if player has at least 70 energy
+    if target is at least 15 yards away
 35: Spell: Sinister Strike

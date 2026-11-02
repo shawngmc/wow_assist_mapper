@@ -41,27 +41,27 @@ Outlaw
     if player has resources to cast spell 'Ambush'
     if spell 'Ambush' is off cooldown
     if player has buff/debuff 'Stealth'
-    if target is less than 40 yards away
-    if player has less than 4 combo points
+    if target is at most 40 yards away
+    if player has at most 4 combo points
 8: Spell: Ambush
     if talent 'Ambush' is taken
     if player has resources to cast spell 'Ambush'
     if spell 'Ambush' is off cooldown
     if player has buff/debuff 'Stealth'
-    if target is less than 40 yards away
-    if player has less than 4 combo points
+    if target is at most 40 yards away
+    if player has at most 4 combo points
 9: Spell: Ambush
     if talent 'Ambush' is taken
     if player has resources to cast spell 'Ambush'
     if spell 'Ambush' is off cooldown
     if player has buff/debuff 'Vanish'
-    if target is less than 40 yards away
-    if player has less than 4 combo points
+    if target is at most 40 yards away
+    if player has at most 4 combo points
 10: Spell: Blade Flurry
     if talent 'Blade Flurry' is taken
     if player has resources to cast spell 'Blade Flurry'
     if spell 'Blade Flurry' is off cooldown
-    if there are more than 2 targets within 10 yards of player
+    if there are at least 2 targets within 10 yards of player
     if player does not have buff/debuff 'Blade Flurry'
 11: Spell: Preparation
     if talent 'Preparation' is taken
@@ -82,27 +82,27 @@ Outlaw
     if spell 'Adrenaline Rush' is off cooldown
     if unknown condition 70 is met (seen gating cooldown and movement steps)
     if player has buff/debuff 'Improved Adrenaline Rush'
-    if player has less than 2 combo points
+    if player has at most 2 combo points
 14: Spell: Blade Rush
     if talent 'Blade Rush' is taken
     if player has resources to cast spell 'Blade Rush'
     if spell 'Blade Rush' is off cooldown
     if spell 'Blade Rush' is within allowed range
     if player has buff/debuff 'Vigor'
-    if player has less than 174 energy
+    if player has at most 174 energy
 15: Spell: Blade Rush
     if talent 'Blade Rush' is taken
     if player has resources to cast spell 'Blade Rush'
     if spell 'Blade Rush' is off cooldown
     if spell 'Blade Rush' is within allowed range
     if player does not have buff/debuff 'Vigor'
-    if player has less than 74 energy
+    if player has at most 74 energy
 16: Spell: Between the Eyes
     if talent 'Between the Eyes' is taken
     if player has resources to cast spell 'Between the Eyes'
     if spell 'Between the Eyes' is off cooldown
     if spell 'Between the Eyes' is within allowed range
-    if player has more than 5 combo points
+    if player has at least 5 combo points
 17: Spell: Eviscerate
     if talent 'Eviscerate' is taken
     if player has resources to cast spell 'Eviscerate'
@@ -113,20 +113,20 @@ Outlaw
     if talent 'Killing Spree' is taken
     if player has resources to cast spell 'Killing Spree'
     if spell 'Killing Spree' is off cooldown
-    if player has more than 5 combo points
-    if there are more than 1 targets within 8 yards of player
+    if player has at least 5 combo points
+    if there are at least 1 targets within 8 yards of player
 19: Spell: Eviscerate
     if talent 'Eviscerate' is taken
     if player has resources to cast spell 'Eviscerate'
     if spell 'Eviscerate' is off cooldown
     if spell 'Eviscerate' is within allowed range
-    if player has more than 5 combo points
+    if player has at least 5 combo points
 20: Spell: Blade Flurry
     if talent 'Blade Flurry' is taken
     if player has resources to cast spell 'Blade Flurry'
     if spell 'Blade Flurry' is off cooldown
-    if there are more than 4 targets within 10 yards of player
-    if player has less than 4 combo points
+    if there are at least 4 targets within 10 yards of player
+    if player has at most 4 combo points
     if player has buff/debuff 'Deft Maneuvers'
 21: Spell: Ambush
     if talent 'Ambush' is taken
@@ -149,6 +149,6 @@ Outlaw
     if talent 'Pistol Shot' is taken
     if player has resources to cast spell 'Pistol Shot'
     if spell 'Pistol Shot' is off cooldown
-    if player has more than 99 energy
-    if target is more than 15 yards away
+    if player has at least 99 energy
+    if target is at least 15 yards away
 25: Spell: Sinister Strike

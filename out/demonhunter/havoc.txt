@@ -10,7 +10,7 @@ Havoc
     if spell 'Blade Dance' is off cooldown
     if player has buff/debuff 'Metamorphosis'
     if target has buff/debuff 'Essence Break'
-    if target is less than 5 yards away
+    if target is at most 5 yards away
 3: Spell: Chaos Strike
     if talent 'Chaos Strike' is taken
     if player has resources to cast spell 'Chaos Strike'
@@ -28,12 +28,12 @@ Havoc
     if talent 'Immolation Aura' is taken
     if player has resources to cast spell 'Immolation Aura'
     if spell 'Immolation Aura' is off cooldown
-    if there are more than 3 targets within 8 yards of player
+    if there are at least 3 targets within 8 yards of player
 6: Spell: Essence Break
     if talent 'Essence Break' is taken
     if player has resources to cast spell 'Essence Break'
     if spell 'Essence Break' is off cooldown
-    if target is less than 8 yards away
+    if target is at most 8 yards away
     if player has buff/debuff 'Metamorphosis'
     if spell 'Essence Break' is off cooldown
 7: Spell: Blade Dance
@@ -41,7 +41,7 @@ Havoc
     if player has resources to cast spell 'Blade Dance'
     if spell 'Blade Dance' is off cooldown
     if player has buff/debuff 'Metamorphosis'
-    if target is less than 5 yards away
+    if target is at most 5 yards away
 8: Spell: The Hunt
     if talent 'The Hunt' is taken
     if player has resources to cast spell 'The Hunt'
@@ -51,12 +51,12 @@ Havoc
     if talent 'Eye Beam' is taken
     if player has resources to cast spell 'Eye Beam'
     if spell 'Eye Beam' is off cooldown
-    if target is less than 8 yards away
+    if target is at most 8 yards away
 10: Spell: Blade Dance
     if talent 'Blade Dance' is taken
     if player has resources to cast spell 'Blade Dance'
     if spell 'Blade Dance' is off cooldown
-    if target is less than 5 yards away
+    if target is at most 5 yards away
 11: Spell: Chaos Strike
     if talent 'Chaos Strike' is taken
     if player has resources to cast spell 'Chaos Strike'
@@ -95,7 +95,7 @@ Havoc
     if talent 'Immolation Aura' is taken
     if player has resources to cast spell 'Immolation Aura'
     if spell 'Immolation Aura' is off cooldown
-    if there are more than 1 targets within 8 yards of player
+    if there are at least 1 targets within 8 yards of player
 18: Spell: Throw Glaive
     if talent 'Throw Glaive' is taken
     if player has resources to cast spell 'Throw Glaive'

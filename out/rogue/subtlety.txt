@@ -37,82 +37,82 @@ Subtlety
     if talent 'Goremaw's Bite' is taken
     if player has resources to cast spell 'Goremaw's Bite'
     if spell 'Goremaw's Bite' is off cooldown
-    if player has less than 2 combo points
+    if player has at most 2 combo points
     if spell 'Goremaw's Bite' is within allowed range
 8: Spell: Shadow Dance
     if player has resources to cast spell 'Shadow Dance'
     if spell 'Shadow Dance' is off cooldown
     if talent 'Shadow Dance' is taken
-    if there are more than 1 targets within 10 yards of player
+    if there are at least 1 targets within 10 yards of player
     if spell 'Shadow Dance' is off cooldown
 9: Spell: Eviscerate
     if player has resources to cast spell 'Eviscerate'
     if spell 'Eviscerate' is off cooldown
     if talent 'Eviscerate' is taken
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if spell 'Eviscerate' is within allowed range
     if player has buff/debuff 'Darkest Night'
 10: Spell: Shuriken Storm
     if player has resources to cast spell 'Shuriken Storm'
     if spell 'Shuriken Storm' is off cooldown
     if talent 'Shuriken Storm' is taken
-    if there are more than 3 targets within 10 yards of player
+    if there are at least 3 targets within 10 yards of player
     if player has buff/debuff 'Deeper Stratagem'
     if player has buff/debuff 'Secret Stratagem'
-    if player has less than 5 combo points
+    if player has at most 5 combo points
 11: Spell: Shadowstrike
     if player has resources to cast spell 'Shadowstrike'
     if spell 'Shadowstrike' is off cooldown
     if talent 'Shadowstrike' is taken
     if spell 'Shadowstrike' is within allowed range
-    if there are less than 3 targets within 10 yards of player
+    if there are at most 3 targets within 10 yards of player
     if player has buff/debuff 'Deeper Stratagem'
     if player has buff/debuff 'Secret Stratagem'
-    if player has less than 5 combo points
+    if player has at most 5 combo points
 12: Spell: Sinister Strike
     if player has resources to cast spell 'Sinister Strike'
     if spell 'Sinister Strike' is off cooldown
     if talent 'Sinister Strike' is taken
     if player does not have buff/debuff 'Shadow Dance'
     if spell 'Sinister Strike' is within allowed range
-    if there are less than 2 targets within 10 yards of player
+    if there are at most 2 targets within 10 yards of player
     if player has buff/debuff 'Deeper Stratagem'
     if player has buff/debuff 'Secret Stratagem'
-    if player has less than 5 combo points
+    if player has at most 5 combo points
 13: Spell: Secret Technique
     if player has resources to cast spell 'Secret Technique'
     if spell 'Secret Technique' is off cooldown
     if talent 'Secret Technique' is taken
     if player has buff/debuff 'Shadow Dance'
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if spell 'Secret Technique' is within allowed range
     if player does not have buff/debuff 'Darkest Night'
 14: Spell: Eviscerate
     if player has resources to cast spell 'Eviscerate'
     if spell 'Eviscerate' is off cooldown
     if talent 'Eviscerate' is taken
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if player has buff/debuff 'Coup de Grace'
     if spell 'Eviscerate' is within allowed range
 15: Spell: Black Powder
     if player has resources to cast spell 'Black Powder'
     if spell 'Black Powder' is off cooldown
     if talent 'Black Powder' is taken
-    if there are more than 3 targets within 10 yards of player
-    if player has more than 5 combo points
+    if there are at least 3 targets within 10 yards of player
+    if player has at least 5 combo points
     if player does not have buff/debuff 'Darkest Night'
 16: Spell: Eviscerate
     if player has resources to cast spell 'Eviscerate'
     if spell 'Eviscerate' is off cooldown
     if talent 'Eviscerate' is taken
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if spell 'Eviscerate' is within allowed range
     if player does not have buff/debuff 'Darkest Night'
 17: Spell: Shuriken Storm
     if player has resources to cast spell 'Shuriken Storm'
     if spell 'Shuriken Storm' is off cooldown
     if talent 'Shuriken Storm' is taken
-    if there are more than 3 targets within 10 yards of player
+    if there are at least 3 targets within 10 yards of player
 18: Spell: Shadowstrike
     if player has resources to cast spell 'Shadowstrike'
     if spell 'Shadowstrike' is off cooldown
@@ -131,6 +131,6 @@ Subtlety
     if spell 'Shuriken Toss' is within allowed range
     if player does not have buff/debuff 'Stealth'
     if player does not have buff/debuff 'Vanish'
-    if target is more than 15 yards away
+    if target is at least 15 yards away
     if player does not have buff/debuff 'Stealth'
 21: Spell: Sinister Strike

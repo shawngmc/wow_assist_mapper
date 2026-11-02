@@ -31,23 +31,23 @@ Vengeance
     if talent 'Sigil of Spite' is taken
     if player has resources to cast spell 'Sigil of Spite'
     if spell 'Sigil of Spite' is off cooldown
-    if target is less than 30 yards away
+    if target is at most 30 yards away
 7: Spell: Sigil of Flame
     if talent 'Sigil of Flame' is taken
     if player has resources to cast spell 'Sigil of Flame'
     if spell 'Sigil of Flame' is off cooldown
-    if target is less than 30 yards away
+    if target is at most 30 yards away
     if target does not have buff/debuff 'Sigil of Flame'
 8: Spell: Immolation Aura
     if talent 'Immolation Aura' is taken
     if player has resources to cast spell 'Immolation Aura'
     if spell 'Immolation Aura' is off cooldown
-    if there are more than 1 targets within 8 yards of player
+    if there are at least 1 targets within 8 yards of player
 9: Spell: Spirit Bomb
     if talent 'Spirit Bomb' is taken
     if player has resources to cast spell 'Spirit Bomb'
     if spell 'Spirit Bomb' is off cooldown
-    if player has more than 4 stacks of buff/debuff 'Soul Fragments'
+    if player has at least 4 stacks of buff/debuff 'Soul Fragments'
 10: Spell: Fracture
     if talent 'Fracture' is taken
     if player has resources to cast spell 'Fracture'

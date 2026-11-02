@@ -13,8 +13,8 @@ Feral
     if talent 'Tiger's Fury' is taken
     if player has resources to cast spell 'Tiger's Fury'
     if spell 'Tiger's Fury' is off cooldown
-    if player has more than 5 combo points
-    if target is less than 8 yards away
+    if player has at least 5 combo points
+    if target is at most 8 yards away
 4: Spell: Rake
     if talent 'Rake' is taken
     if player has resources to cast spell 'Rake'
@@ -35,38 +35,38 @@ Feral
     if talent 'Primal Wrath' is taken
     if player has resources to cast spell 'Primal Wrath'
     if spell 'Primal Wrath' is off cooldown
-    if there are more than 3 targets within 10 yards of player
+    if there are at least 3 targets within 10 yards of player
     if target does not have buff/debuff 'Rip'
-    if player has more than 5 combo points
-    if target is less than 10 yards away
+    if player has at least 5 combo points
+    if target is at most 10 yards away
 8: Spell: Rip
     if talent 'Rip' is taken
     if player has resources to cast spell 'Rip'
     if spell 'Rip' is off cooldown
     if target does not have buff/debuff 'Rip'
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if spell 'Rip' is within allowed range
 9: Spell: Waiting for Energy
     if talent 'Waiting for Energy' is taken
     if player has resources to cast spell 'Waiting for Energy'
     if spell 'Waiting for Energy' is off cooldown
-    if player has more than 5 combo points
-    if player has less than 49 energy
+    if player has at least 5 combo points
+    if player has at most 49 energy
     if player does not have buff/debuff 'Apex Predator's Craving'
     if player does not have buff/debuff 'Incarnation: Avatar of Ashamane'
 10: Spell: Waiting for Energy
     if talent 'Waiting for Energy' is taken
     if player has resources to cast spell 'Waiting for Energy'
     if spell 'Waiting for Energy' is off cooldown
-    if player has more than 5 combo points
-    if player has less than 37 energy
+    if player has at least 5 combo points
+    if player has at most 37 energy
     if player does not have buff/debuff 'Apex Predator's Craving'
     if player has buff/debuff 'Incarnation: Avatar of Ashamane'
 11: Spell: Ferocious Bite
     if talent 'Ferocious Bite' is taken
     if player has resources to cast spell 'Ferocious Bite'
     if spell 'Ferocious Bite' is off cooldown
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if spell 'Ferocious Bite' is within allowed range
 12: Spell: Ferocious Bite
     if talent 'Ferocious Bite' is taken
@@ -77,36 +77,36 @@ Feral
     if talent 'Feral Frenzy' is taken
     if player has resources to cast spell 'Feral Frenzy'
     if spell 'Feral Frenzy' is off cooldown
-    if player has less than 1 combo points
+    if player has at most 1 combo points
     if spell 'Feral Frenzy' is within allowed range
     if player has buff/debuff 'Tiger's Fury'
 14: Spell: Feral Frenzy
     if talent 'Feral Frenzy' is taken
     if player has resources to cast spell 'Feral Frenzy'
     if spell 'Feral Frenzy' is off cooldown
-    if player has less than 1 combo points
+    if player has at most 1 combo points
     if spell 'Feral Frenzy' is within allowed range
     if spell 'Tiger's Fury' is on cooldown
 15: Spell: Frantic Frenzy
     if talent 'Frantic Frenzy' is taken
     if player has resources to cast spell 'Frantic Frenzy'
     if spell 'Frantic Frenzy' is off cooldown
-    if player has less than 1 combo points
-    if target is less than 8 yards away
+    if player has at most 1 combo points
+    if target is at most 8 yards away
     if player has buff/debuff 'Tiger's Fury'
 16: Spell: Frantic Frenzy
     if talent 'Frantic Frenzy' is taken
     if player has resources to cast spell 'Frantic Frenzy'
     if spell 'Frantic Frenzy' is off cooldown
-    if player has less than 1 combo points
-    if target is less than 8 yards away
+    if player has at most 1 combo points
+    if target is at most 8 yards away
     if spell 'Tiger's Fury' is on cooldown
 17: Spell: Convoke the Spirits
     if talent 'Convoke the Spirits' is taken
     if player has resources to cast spell 'Convoke the Spirits'
     if spell 'Convoke the Spirits' is off cooldown
-    if target is less than 5 yards away
-    if player has less than 3 combo points
+    if target is at most 5 yards away
+    if player has at most 3 combo points
     if player has buff/debuff 'Tiger's Fury'
 18: Spell: Rake
     if talent 'Rake' is taken
@@ -124,8 +124,8 @@ Feral
     if talent 'Swipe' is taken
     if player has resources to cast spell 'Swipe'
     if spell 'Swipe' is off cooldown
-    if target is less than 8 yards away
-    if there are more than 3 targets within 10 yards of player
+    if target is at most 8 yards away
+    if there are at least 3 targets within 10 yards of player
 21: Spell: Shred
     if talent 'Shred' is taken
     if player has resources to cast spell 'Shred'
@@ -136,5 +136,5 @@ Feral
     if player has resources to cast spell 'Moonfire'
     if spell 'Moonfire' is off cooldown
     if player has buff/debuff 'Lunar Inspiration'
-    if target is more than 15 yards away
+    if target is at least 15 yards away
 23: Spell: Rake

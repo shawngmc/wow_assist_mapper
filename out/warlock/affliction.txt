@@ -29,7 +29,7 @@ Affliction
     if talent 'Seed of Corruption' is taken
     if player has resources to cast spell 'Seed of Corruption'
     if spell 'Seed of Corruption' is off cooldown
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
     if target does not have buff/debuff 'Corruption'
     if player does not have buff/debuff 'Wither'
     if target does not have buff/debuff 'Seed of Corruption'
@@ -38,7 +38,7 @@ Affliction
     if talent 'Seed of Corruption' is taken
     if player has resources to cast spell 'Seed of Corruption'
     if spell 'Seed of Corruption' is off cooldown
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
     if target does not have buff/debuff 'Wither'
     if player has buff/debuff 'Wither'
     if target does not have buff/debuff 'Seed of Corruption'
@@ -68,12 +68,12 @@ Affliction
     if talent 'Unstable Affliction' is taken
     if player has resources to cast spell 'Unstable Affliction'
     if spell 'Unstable Affliction' is off cooldown
-    if player has more than 50 soul shards
+    if player has at least 50 soul shards
 11: Spell: Shadow Bolt
     if talent 'Shadow Bolt' is taken
     if player has resources to cast spell 'Shadow Bolt'
     if spell 'Shadow Bolt' is off cooldown
-    if player has more than 2 stacks of buff/debuff 'Nightfall'
+    if player has at least 2 stacks of buff/debuff 'Nightfall'
 12: Spell: Shadow Bolt
     if talent 'Shadow Bolt' is taken
     if player has resources to cast spell 'Shadow Bolt'
@@ -101,7 +101,7 @@ Affliction
     if player has resources to cast spell 'Unstable Affliction'
     if spell 'Unstable Affliction' is off cooldown
     if spell 'Unstable Affliction' can be successfully cast
-    if player has more than 20 soul shards
+    if player has at least 20 soul shards
 18: Spell: Unstable Affliction
     if talent 'Unstable Affliction' is taken
     if player has resources to cast spell 'Unstable Affliction'

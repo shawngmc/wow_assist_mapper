@@ -23,19 +23,19 @@ Protection
     if talent 'Shield of the Righteous' is taken
     if player has resources to cast spell 'Shield of the Righteous'
     if spell 'Shield of the Righteous' is off cooldown
-    if player has more than 40% health
+    if player has at least 40% health
 6: Spell: Divine Toll
     if talent 'Divine Toll' is taken
     if player has resources to cast spell 'Divine Toll'
     if spell 'Divine Toll' is off cooldown
-    if there are more than 3 targets within 30 yards of player
-    if player has less than 2 holy power
+    if there are at least 3 targets within 30 yards of player
+    if player has at most 2 holy power
 7: Spell: Divine Toll
     if talent 'Divine Toll' is taken
     if player has resources to cast spell 'Divine Toll'
     if spell 'Divine Toll' is off cooldown
-    if there are less than 2 targets within 30 yards of player
-    if player has less than 3 holy power
+    if there are at most 2 targets within 30 yards of player
+    if player has at most 3 holy power
 8: Spell: Avenger's Shield
     if talent 'Avenger's Shield' is taken
     if player has resources to cast spell 'Avenger's Shield'
@@ -60,5 +60,5 @@ Protection
     if talent 'Crusader Strike' is taken
     if player has resources to cast spell 'Crusader Strike'
     if spell 'Crusader Strike' is off cooldown
-    if target is less than 5 yards away
+    if target is at most 5 yards away
 13: Spell: Judgment

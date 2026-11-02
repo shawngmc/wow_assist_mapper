@@ -3,7 +3,7 @@ Devourer
     if talent 'Void Metamorphosis' is taken
     if player has resources to cast spell 'Void Metamorphosis'
     if spell 'Void Metamorphosis' is off cooldown
-    if target is less than 25 yards away
+    if target is at most 25 yards away
     if player does not have buff/debuff 'Void Metamorphosis'
     if unknown condition 70 is met (seen gating cooldown and movement steps)
 2: Spell: Void Metamorphosis
@@ -11,12 +11,12 @@ Devourer
     if player has resources to cast spell 'Void Metamorphosis'
     if spell 'Void Metamorphosis' is off cooldown
     if player has buff/debuff 'Collapsing Star'
-    if target is less than 30 yards away
+    if target is at most 30 yards away
 3: Spell: Void Ray
     if talent 'Void Ray' is taken
     if player has resources to cast spell 'Void Ray'
     if spell 'Void Ray' is off cooldown
-    if target is less than 25 yards away
+    if target is at most 25 yards away
     if player has buff/debuff 'Void Metamorphosis'
 4: Spell: Reap
     if talent 'Reap' is taken
@@ -28,7 +28,7 @@ Devourer
     if talent 'Void Ray' is taken
     if player has resources to cast spell 'Void Ray'
     if spell 'Void Ray' is off cooldown
-    if target is less than 30 yards away
+    if target is at most 30 yards away
 6: Spell: The Hunt
     if talent 'The Hunt' is taken
     if player has resources to cast spell 'The Hunt'
@@ -52,7 +52,7 @@ Devourer
     if player has resources to cast spell 'Reap'
     if spell 'Reap' is off cooldown
     if spell 'Reap' is within allowed range
-    if player has more than 4 stacks of buff/debuff 'Soul Fragments'
+    if player has at least 4 stacks of buff/debuff 'Soul Fragments'
 10: Spell: Consume
     if talent 'Consume' is taken
     if player has resources to cast spell 'Consume'

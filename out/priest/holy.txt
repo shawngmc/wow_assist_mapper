@@ -14,7 +14,7 @@ Holy
     if player has resources to cast spell 'Holy Nova'
     if spell 'Holy Nova' is off cooldown
     if player does not have buff/debuff 'Burning Vehemence'
-    if there are more than 5 targets within 10 yards of player
+    if there are at least 5 targets within 10 yards of player
 4: Spell: Holy Word: Chastise
     if talent 'Holy Word: Chastise' is taken
     if player has resources to cast spell 'Holy Word: Chastise'
@@ -27,7 +27,7 @@ Holy
     if talent 'Holy Nova' is taken
     if player has resources to cast spell 'Holy Nova'
     if spell 'Holy Nova' is off cooldown
-    if there are more than 5 targets within 10 yards of player
+    if there are at least 5 targets within 10 yards of player
 7: Spell: Smite
     if talent 'Smite' is taken
     if player has resources to cast spell 'Smite'

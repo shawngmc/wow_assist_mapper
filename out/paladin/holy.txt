@@ -3,7 +3,7 @@ Holy
     if talent 'Consecration' is taken
     if player has resources to cast spell 'Consecration'
     if spell 'Consecration' is off cooldown
-    if there are more than 8 targets within 10 yards of player
+    if there are at least 8 targets within 10 yards of player
 2: Spell: Judgment
     if talent 'Judgment' is taken
     if player has resources to cast spell 'Judgment'
@@ -27,7 +27,7 @@ Holy
     if talent 'Hammer of Wrath' is taken
     if player has resources to cast spell 'Hammer of Wrath'
     if spell 'Hammer of Wrath' is off cooldown
-    if target has less than 20% health
+    if target has at most 20% health
 7: Spell: Avenging Crusader
     if player has buff/debuff 'Avenging Crusader'
     if player has resources to cast spell 'Avenging Crusader'
@@ -41,6 +41,6 @@ Holy
     if talent 'Consecration' is taken
     if player has resources to cast spell 'Consecration'
     if spell 'Consecration' is off cooldown
-    if target is less than 8 yards away
+    if target is at most 8 yards away
     if player does not have buff/debuff 'Righteous Judgment'
 10: Spell: Judgment

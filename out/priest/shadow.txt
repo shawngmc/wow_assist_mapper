@@ -14,19 +14,19 @@ Shadow
     if player has resources to cast spell 'Tentacle Slam'
     if talent 'Tentacle Slam' is taken
     if spell 'Tentacle Slam' is off cooldown
-    if player has more than 2 charges of spell 'Tentacle Slam'
+    if player has at least 2 charges of spell 'Tentacle Slam'
 4: Spell: Tentacle Slam
     if talent 'Tentacle Slam' is taken
     if player has resources to cast spell 'Tentacle Slam'
     if spell 'Tentacle Slam' is off cooldown
-    if there are less than 2 targets within 8 yards of target
+    if there are at most 2 targets within 8 yards of target
     if target does not have buff/debuff 'Vampiric Touch'
     if player does not have buff/debuff 'Tentacle Slam'
 5: Spell: Tentacle Slam
     if talent 'Tentacle Slam' is taken
     if player has resources to cast spell 'Tentacle Slam'
     if spell 'Tentacle Slam' is off cooldown
-    if there are more than 3 targets within 8 yards of target
+    if there are at least 3 targets within 8 yards of target
 6: Spell: Vampiric Touch
     if talent 'Vampiric Touch' is taken
     if player has resources to cast spell 'Vampiric Touch'
@@ -65,13 +65,13 @@ Shadow
     if talent 'Shadow Word: Madness' is taken
     if player has resources to cast spell 'Shadow Word: Madness'
     if spell 'Shadow Word: Madness' is off cooldown
-    if player has more than 9000 insanity
+    if player has at least 9000 insanity
     if player does not have buff/debuff 'Voidtouched'
 13: Spell: Shadow Word: Madness
     if talent 'Shadow Word: Madness' is taken
     if player has resources to cast spell 'Shadow Word: Madness'
     if spell 'Shadow Word: Madness' is off cooldown
-    if player has more than 14000 insanity
+    if player has at least 14000 insanity
     if player has buff/debuff 'Voidtouched'
 14: Spell: Halo
     if talent 'Halo' is taken
@@ -82,7 +82,7 @@ Shadow
     if player has resources to cast spell 'Mind Blast'
     if spell 'Mind Blast' is off cooldown
     if player has buff/debuff 'Void Blast'
-    if player has more than 2 charges of spell 'Mind Blast'
+    if player has at least 2 charges of spell 'Mind Blast'
     if spell 'Mind Blast' can be successfully cast
 16: Spell: Mind Blast
     if talent 'Mind Blast' is taken
@@ -104,7 +104,7 @@ Shadow
     if player has resources to cast spell 'Mind Blast'
     if spell 'Mind Blast' is off cooldown
     if player does not have buff/debuff 'Void Blast'
-    if player has more than 2 charges of spell 'Mind Blast'
+    if player has at least 2 charges of spell 'Mind Blast'
     if spell 'Mind Blast' can be successfully cast
 20: Spell: Mind Blast
     if talent 'Mind Blast' is taken
@@ -116,14 +116,14 @@ Shadow
     if player has resources to cast spell 'Mind Blast'
     if spell 'Mind Blast' is off cooldown
     if player has buff/debuff 'Void Blast'
-    if player has more than 2 charges of spell 'Mind Blast'
-    if cooldown on spell 'Void Torrent' is less than 5000 ms
+    if player has at least 2 charges of spell 'Mind Blast'
+    if cooldown on spell 'Void Torrent' is at most 5000 ms
 22: Spell: Mind Blast
     if talent 'Mind Blast' is taken
     if player has resources to cast spell 'Mind Blast'
     if spell 'Mind Blast' is off cooldown
     if player has buff/debuff 'Void Blast'
-    if cooldown on spell 'Void Torrent' is more than 5000 ms
+    if cooldown on spell 'Void Torrent' is at least 5000 ms
 23: Spell: Void Torrent
     if talent 'Void Torrent' is taken
     if player has resources to cast spell 'Void Torrent'
@@ -133,12 +133,12 @@ Shadow
     if player has resources to cast spell 'Shadow Word: Death'
     if spell 'Shadow Word: Death' is off cooldown
     if player has buff/debuff 'Deathspeaker'
-    if target has less than 35% health
+    if target has at most 35% health
 25: Spell: Shadow Word: Death
     if talent 'Shadow Word: Death' is taken
     if player has resources to cast spell 'Shadow Word: Death'
     if spell 'Shadow Word: Death' is off cooldown
-    if target has less than 20% health
+    if target has at most 20% health
 26: Spell: Shadow Word: Madness
     if talent 'Shadow Word: Madness' is taken
     if player has resources to cast spell 'Shadow Word: Madness'

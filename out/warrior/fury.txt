@@ -30,7 +30,7 @@ Fury
     if spell 'Avatar' is off cooldown
     if unknown condition 70 is met (seen gating cooldown and movement steps)
 6: Spell: Odyn's Fury
-    if target is less than 12 yards away
+    if target is at most 12 yards away
     if talent 'Odyn's Fury' is taken
     if player has resources to cast spell 'Odyn's Fury'
     if spell 'Odyn's Fury' is off cooldown
@@ -42,13 +42,13 @@ Fury
     if spell 'Rampage' is within allowed range
 8: Spell: Thunder Clap
     if player has buff/debuff 'Thunder Blast'
-    if target is less than 5 yards away
+    if target is at most 5 yards away
     if player has buff/debuff 'Enrage'
     if talent 'Thunder Clap' is taken
     if player has resources to cast spell 'Thunder Clap'
     if spell 'Thunder Clap' is off cooldown
 9: Spell: Thunder Clap
-    if target is less than 5 yards away
+    if target is at most 5 yards away
     if player has buff/debuff 'Crashing Thunder'
     if talent 'Thunder Clap' is taken
     if player does not have buff/debuff 'Whirlwind'
@@ -56,16 +56,16 @@ Fury
     if player has resources to cast spell 'Thunder Clap'
     if spell 'Thunder Clap' is off cooldown
 10: Spell: Whirlwind
-    if target is less than 10 yards away
+    if target is at most 10 yards away
     if player does not have buff/debuff 'Crashing Thunder'
     if talent 'Whirlwind' is taken
     if player does not have buff/debuff 'Whirlwind'
-    if there are more than 3 targets within 0 yards of player
+    if there are at least 3 targets within 0 yards of player
     if talent 'Whirlwind' is taken
     if player has resources to cast spell 'Whirlwind'
     if spell 'Whirlwind' is off cooldown
 11: Spell: Bladestorm
-    if target is less than 10 yards away
+    if target is at most 10 yards away
     if player has buff/debuff 'Enrage'
     if talent 'Bladestorm' is taken
     if player has resources to cast spell 'Bladestorm'
@@ -81,9 +81,9 @@ Fury
     if spell 'Execute' is off cooldown
     if spell 'Execute' is within allowed range
 14: Spell: Thunder Clap
-    if target is less than 5 yards away
+    if target is at most 5 yards away
     if player has buff/debuff 'Crashing Thunder'
-    if there are more than 3 targets within 0 yards of player
+    if there are at least 3 targets within 0 yards of player
     if talent 'Thunder Clap' is taken
     if player has resources to cast spell 'Thunder Clap'
     if spell 'Thunder Clap' is off cooldown
@@ -98,7 +98,7 @@ Fury
     if spell 'Raging Blow' is off cooldown
     if spell 'Raging Blow' is within allowed range
 17: Spell: Thunder Clap
-    if target is less than 5 yards away
+    if target is at most 5 yards away
     if player has buff/debuff 'Crashing Thunder'
     if talent 'Thunder Clap' is taken
     if player has resources to cast spell 'Thunder Clap'
@@ -108,7 +108,7 @@ Fury
     if player has resources to cast spell 'Heroic Throw'
     if spell 'Heroic Throw' is off cooldown
     if spell 'Heroic Throw' is within allowed range
-    if target is more than 15 yards away
+    if target is at least 15 yards away
 19: Spell: Slam
     if player does not have buff/debuff 'Rampage!'
 20: Spell: Whirlwind

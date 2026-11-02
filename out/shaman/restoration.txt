@@ -20,7 +20,7 @@ Restoration
     if spell 'Tidecaller's Guard' is off cooldown
     if player does not have buff/debuff 'Tidecaller's Guard'
 5: Spell: Chain Lightning
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
     if talent 'Chain Lightning' is taken
     if player has resources to cast spell 'Chain Lightning'
     if spell 'Chain Lightning' is off cooldown
@@ -34,7 +34,7 @@ Restoration
     if talent 'Lava Burst' is taken
     if player has resources to cast spell 'Lava Burst'
     if spell 'Lava Burst' is off cooldown
-    if player has more than 2 charges of spell 'Lava Burst'
+    if player has at least 2 charges of spell 'Lava Burst'
     if spell 'Lava Burst' can be successfully cast
 8: Spell: Lava Burst
     if talent 'Lava Burst' is taken

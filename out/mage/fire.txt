@@ -9,13 +9,13 @@ Fire
     if player has resources to cast spell 'Flamestrike'
     if spell 'Flamestrike' is off cooldown
     if player has buff/debuff 'Hyperthermia'
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
 3: Spell: Flamestrike
     if talent 'Flamestrike' is taken
     if player has resources to cast spell 'Flamestrike'
     if spell 'Flamestrike' is off cooldown
     if player has buff/debuff 'Hyperthermia'
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
 4: Spell: Pyroblast
     if talent 'Pyroblast' is taken
     if player has resources to cast spell 'Pyroblast'
@@ -41,13 +41,13 @@ Fire
     if player has resources to cast spell 'Flamestrike'
     if spell 'Flamestrike' is off cooldown
     if player has buff/debuff 'Hot Streak!'
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
 9: Spell: Flamestrike
     if talent 'Flamestrike' is taken
     if player has resources to cast spell 'Flamestrike'
     if spell 'Flamestrike' is off cooldown
     if player has buff/debuff 'Hot Streak!'
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
 10: Spell: Pyroblast
     if talent 'Pyroblast' is taken
     if player has resources to cast spell 'Pyroblast'
@@ -57,12 +57,12 @@ Fire
     if talent 'Flamestrike' is taken
     if player has resources to cast spell 'Flamestrike'
     if spell 'Flamestrike' is off cooldown
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
     if player has buff/debuff 'Pyroclasm'
     if spell 'Flamestrike' can be successfully cast
 12: Spell: Flamestrike
     if player has buff/debuff 'Pyroclasm'
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
     if spell 'Flamestrike' is off cooldown
     if player has resources to cast spell 'Flamestrike'
     if talent 'Flamestrike' is taken
@@ -84,7 +84,7 @@ Fire
     if spell 'Scorch' is off cooldown
     if player has resources to cast spell 'Scorch'
     if talent 'Scorch' is taken
-    if target has less than 30% health
+    if target has at most 30% health
 16: Spell: Frostfire Bolt
     if talent 'Frostfire Bolt' is taken
     if player has resources to cast spell 'Frostfire Bolt'

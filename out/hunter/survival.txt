@@ -24,14 +24,14 @@ Survival
     if talent 'Boomstick' is taken
     if player has resources to cast spell 'Boomstick'
     if spell 'Boomstick' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if target is less than 15 yards away
+    if there are at least 3 targets within 10 yards of target
+    if target is at most 15 yards away
 6: Spell: Flamefang Pitch
     if talent 'Flamefang Pitch' is taken
     if player has resources to cast spell 'Flamefang Pitch'
     if spell 'Flamefang Pitch' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if target is less than 40 yards away
+    if there are at least 3 targets within 10 yards of target
+    if target is at most 40 yards away
 7: Spell: Wildfire Bomb
     if talent 'Wildfire Bomb' is taken
     if player has resources to cast spell 'Wildfire Bomb'
@@ -41,23 +41,23 @@ Survival
     if talent 'Boomstick' is taken
     if player has resources to cast spell 'Boomstick'
     if spell 'Boomstick' is off cooldown
-    if target is less than 15 yards away
+    if target is at most 15 yards away
 9: Spell: Flamefang Pitch
     if talent 'Flamefang Pitch' is taken
     if player has resources to cast spell 'Flamefang Pitch'
     if spell 'Flamefang Pitch' is off cooldown
-    if target is less than 40 yards away
+    if target is at most 40 yards away
 10: Spell: Raptor Strike
     if talent 'Raptor Strike' is taken
     if player has resources to cast spell 'Raptor Strike'
     if spell 'Raptor Strike' is off cooldown
-    if target is less than 5 yards away
+    if target is at most 5 yards away
 11: Spell: Kill Command
     if talent 'Kill Command' is taken
     if player has resources to cast spell 'Kill Command'
     if spell 'Kill Command' is off cooldown
     if spell 'Kill Command' is within allowed range
-    if player has less than 40 focus
+    if player has at most 40 focus
 12: Spell: Arcane Shot
     if talent 'Arcane Shot' is taken
     if player has resources to cast spell 'Arcane Shot'

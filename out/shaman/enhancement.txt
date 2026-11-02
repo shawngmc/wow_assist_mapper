@@ -28,7 +28,7 @@ Enhancement
     if talent 'Doom Winds' is taken
     if player has resources to cast spell 'Doom Winds'
     if spell 'Doom Winds' is off cooldown
-    if target is less than 8 yards away
+    if target is at most 8 yards away
     if unknown condition 70 is met (seen gating cooldown and movement steps)
 7: Spell: Crash Lightning
     if talent 'Crash Lightning' is taken
@@ -36,7 +36,7 @@ Enhancement
     if spell 'Crash Lightning' is off cooldown
     if player has buff/debuff 'Ascendance'
     if player has buff/debuff 'Thorim's Invocation'
-    if target is less than 10 yards away
+    if target is at most 10 yards away
 8: Spell: Stormstrike
     if talent 'Stormstrike' is taken
     if player has resources to cast spell 'Stormstrike'
@@ -49,14 +49,14 @@ Enhancement
     if talent 'Lightning Bolt' is taken
     if player has resources to cast spell 'Lightning Bolt'
     if spell 'Lightning Bolt' is off cooldown
-    if player has more than 5 stacks of buff/debuff 'Maelstrom Weapon'
+    if player has at least 5 stacks of buff/debuff 'Maelstrom Weapon'
     if player does not have buff/debuff 'Raging Maelstrom'
 10: Spell: Lightning Bolt
     if player has buff/debuff 'Tempest'
     if talent 'Lightning Bolt' is taken
     if player has resources to cast spell 'Lightning Bolt'
     if spell 'Lightning Bolt' is off cooldown
-    if player has more than 10 stacks of buff/debuff 'Maelstrom Weapon'
+    if player has at least 10 stacks of buff/debuff 'Maelstrom Weapon'
     if player has buff/debuff 'Raging Maelstrom'
 11: Spell: Flame Shock
     if talent 'Flame Shock' is taken
@@ -67,18 +67,18 @@ Enhancement
     if talent 'Lava Lash' is taken
     if player has resources to cast spell 'Lava Lash'
     if spell 'Lava Lash' is off cooldown
-    if there are more than 3 targets within 10 yards of target
-    if there are less than 2 targets within 30 yards of player with buff/debuff 'Flame Shock'
+    if there are at least 3 targets within 10 yards of target
+    if there are at most 2 targets within 30 yards of player with buff/debuff 'Flame Shock'
     if spell 'Lava Lash' is within allowed range
 13: Spell: Sundering
     if player does not have buff/debuff 'Raging Maelstrom'
-    if player has more than 5 stacks of buff/debuff 'Maelstrom Weapon'
+    if player has at least 5 stacks of buff/debuff 'Maelstrom Weapon'
     if player has resources to cast spell 'Sundering'
     if player has buff/debuff 'Primordial Storm'
 14: Spell: Sundering
     if player has resources to cast spell 'Sundering'
     if player has buff/debuff 'Primordial Storm'
-    if player has more than 10 stacks of buff/debuff 'Maelstrom Weapon'
+    if player has at least 10 stacks of buff/debuff 'Maelstrom Weapon'
     if player has buff/debuff 'Raging Maelstrom'
 15: Spell: Sundering
     if talent 'Sundering' is taken
@@ -89,33 +89,33 @@ Enhancement
     if talent 'Chain Lightning' is taken
     if player has resources to cast spell 'Chain Lightning'
     if spell 'Chain Lightning' is off cooldown
-    if player has more than 5 stacks of buff/debuff 'Maelstrom Weapon'
-    if there are more than 3 targets within 10 yards of target
+    if player has at least 5 stacks of buff/debuff 'Maelstrom Weapon'
+    if there are at least 3 targets within 10 yards of target
     if player does not have buff/debuff 'Raging Maelstrom'
 17: Spell: Chain Lightning
     if talent 'Chain Lightning' is taken
     if player has resources to cast spell 'Chain Lightning'
     if spell 'Chain Lightning' is off cooldown
-    if player has more than 10 stacks of buff/debuff 'Maelstrom Weapon'
-    if there are more than 3 targets within 10 yards of target
+    if player has at least 10 stacks of buff/debuff 'Maelstrom Weapon'
+    if there are at least 3 targets within 10 yards of target
     if player has buff/debuff 'Raging Maelstrom'
 18: Spell: Lightning Bolt
     if talent 'Lightning Bolt' is taken
     if player has resources to cast spell 'Lightning Bolt'
     if spell 'Lightning Bolt' is off cooldown
-    if player has more than 5 stacks of buff/debuff 'Maelstrom Weapon'
+    if player has at least 5 stacks of buff/debuff 'Maelstrom Weapon'
     if player does not have buff/debuff 'Raging Maelstrom'
 19: Spell: Lightning Bolt
     if talent 'Lightning Bolt' is taken
     if player has resources to cast spell 'Lightning Bolt'
     if spell 'Lightning Bolt' is off cooldown
-    if player has more than 10 stacks of buff/debuff 'Maelstrom Weapon'
+    if player has at least 10 stacks of buff/debuff 'Maelstrom Weapon'
     if player has buff/debuff 'Raging Maelstrom'
 20: Spell: Crash Lightning
     if talent 'Crash Lightning' is taken
     if player has resources to cast spell 'Crash Lightning'
     if spell 'Crash Lightning' is off cooldown
-    if target is less than 10 yards away
+    if target is at most 10 yards away
 21: Spell: Lava Lash
     if player has buff/debuff 'Lively Totems'
     if talent 'Lava Lash' is taken

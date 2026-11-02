@@ -22,7 +22,7 @@ Protection
     if spell 'Demolish' is within allowed range
 5: Spell: Thunder Blast
     if player has buff/debuff 'Thunder Blast'
-    if target is less than 8 yards away
+    if target is at most 8 yards away
     if talent 'Thunder Blast' is taken
     if player has resources to cast spell 'Thunder Blast'
     if spell 'Thunder Blast' is off cooldown
@@ -32,13 +32,13 @@ Protection
     if spell 'Shield Slam' is off cooldown
     if spell 'Shield Slam' is within allowed range
 7: Spell: Thunder Clap
-    if target is less than 8 yards away
+    if target is at most 8 yards away
     if talent 'Thunder Clap' is taken
     if player has resources to cast spell 'Thunder Clap'
     if spell 'Thunder Clap' is off cooldown
 8: Spell: Revenge
-    if target is less than 5 yards away
-    if there are more than 3 targets within 10 yards of player
+    if target is at most 5 yards away
+    if there are at least 3 targets within 10 yards of player
     if talent 'Revenge' is taken
     if player has resources to cast spell 'Revenge'
     if spell 'Revenge' is off cooldown
@@ -54,7 +54,7 @@ Protection
     if spell 'Execute' is off cooldown
     if spell 'Execute' is within allowed range
 11: Spell: Revenge
-    if target is less than 5 yards away
+    if target is at most 5 yards away
     if talent 'Revenge' is taken
     if player has resources to cast spell 'Revenge'
     if spell 'Revenge' is off cooldown
@@ -69,5 +69,5 @@ Protection
     if player has resources to cast spell 'Heroic Throw'
     if spell 'Heroic Throw' is off cooldown
     if spell 'Heroic Throw' is within allowed range
-    if target is more than 15 yards away
+    if target is at least 15 yards away
 14: Spell: Shield Slam

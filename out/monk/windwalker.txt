@@ -30,7 +30,7 @@ Windwalker
     if talent 'Flying Serpent Kick' is taken
     if unknown condition 70 is met (seen gating cooldown and movement steps)
 6: Spell: Spinning Crane Kick
-    if player has more than 2 stacks of buff/debuff 'Dance of Chi-Ji'
+    if player has at least 2 stacks of buff/debuff 'Dance of Chi-Ji'
     if spell 'Spinning Crane Kick' is off cooldown
     if player has resources to cast spell 'Spinning Crane Kick'
     if talent 'Spinning Crane Kick' is taken
@@ -43,8 +43,8 @@ Windwalker
     if player has resources to cast spell 'Tiger Palm'
     if talent 'Tiger Palm' is taken
     if spell 'Tiger Palm' is within allowed range
-    if player has less than 4 chi
-    if player has more than 101 energy
+    if player has at most 4 chi
+    if player has at least 101 energy
     if player does not have buff/debuff 'Heart of the Jade Serpent'
     if player does not have buff/debuff 'Combo Strikes: Tiger Palm'
 9: Spell: Crackling Jade Lightning
@@ -52,10 +52,10 @@ Windwalker
     if spell 'Crackling Jade Lightning' is off cooldown
     if player has resources to cast spell 'Crackling Jade Lightning'
     if talent 'Crackling Jade Lightning' is taken
-    if player has more than 20 stacks of buff/debuff 'The Emperor's Capacitor'
+    if player has at least 20 stacks of buff/debuff 'The Emperor's Capacitor'
     if player does not have buff/debuff 'Combo Strikes: Crackling Jade Lightning'
 10: Spell: Whirling Dragon Punch
-    if target is less than 5 yards away
+    if target is at most 5 yards away
     if spell 'Whirling Dragon Punch' is off cooldown
     if player has resources to cast spell 'Whirling Dragon Punch'
     if player does not have buff/debuff 'Heart of the Jade Serpent'
@@ -65,7 +65,7 @@ Windwalker
     if spell 'Fists of Fury' is off cooldown
     if player has resources to cast spell 'Fists of Fury'
     if talent 'Fists of Fury' is taken
-    if target is less than 8 yards away
+    if target is at most 8 yards away
     if player does not have buff/debuff 'Combo Strikes: Fists of Fury'
 12: Spell: Rising Sun Kick
     if spell 'Rising Sun Kick' is within allowed range
@@ -87,12 +87,12 @@ Windwalker
 15: Spell: Spinning Crane Kick
     if spell 'Spinning Crane Kick' is off cooldown
     if player has resources to cast spell 'Spinning Crane Kick'
-    if there are more than 3 targets within 9 yards of player
+    if there are at least 3 targets within 9 yards of player
     if talent 'Spinning Crane Kick' is taken
     if spell 'Spinning Crane Kick' can be successfully cast
     if player does not have buff/debuff 'Combo Strikes: Spinning Crane Kick'
 16: Spell: Jadefire Stomp
-    if target is less than 20 yards away
+    if target is at most 20 yards away
     if spell 'Jadefire Stomp' is off cooldown
     if player has resources to cast spell 'Jadefire Stomp'
     if talent 'Jadefire Stomp' is taken
@@ -101,7 +101,7 @@ Windwalker
     if spell 'Blackout Kick' is off cooldown
     if player has resources to cast spell 'Blackout Kick'
     if talent 'Blackout Kick' is taken
-    if there are less than 2 targets within 9 yards of player
+    if there are at most 2 targets within 9 yards of player
     if player does not have buff/debuff 'Combo Strikes: Blackout Kick'
 18: Spell: Tiger Palm
     if spell 'Tiger Palm' is off cooldown
@@ -119,8 +119,8 @@ Windwalker
     if spell 'Crackling Jade Lightning' is off cooldown
     if player has resources to cast spell 'Crackling Jade Lightning'
     if talent 'Crackling Jade Lightning' is taken
-    if player has more than 75 energy
+    if player has at least 75 energy
     if spell 'Crackling Jade Lightning' can be successfully cast
-    if target is more than 15 yards away
+    if target is at least 15 yards away
     if player does not have buff/debuff 'Combo Strikes: Crackling Jade Lightning'
 21: Spell: Rising Sun Kick

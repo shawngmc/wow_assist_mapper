@@ -9,7 +9,7 @@ Restoration
     if player has resources to cast spell 'Rip'
     if spell 'Rip' is off cooldown
     if player has buff/debuff 'Cat Form'
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if target does not have buff/debuff 'Rip'
     if spell 'Rip' is within allowed range
 3: Spell: Ferocious Bite
@@ -17,23 +17,23 @@ Restoration
     if player has resources to cast spell 'Ferocious Bite'
     if spell 'Ferocious Bite' is off cooldown
     if player has buff/debuff 'Cat Form'
-    if player has more than 5 combo points
+    if player has at least 5 combo points
     if spell 'Ferocious Bite' is within allowed range
 4: Spell: Thrash
     if talent 'Thrash' is taken
     if player has resources to cast spell 'Thrash'
     if spell 'Thrash' is off cooldown
-    if target is less than 5 yards away
+    if target is at most 5 yards away
     if player has buff/debuff 'Cat Form'
     if target does not have buff/debuff 'Thrash'
-    if there are more than 3 targets within 10 yards of player
+    if there are at least 3 targets within 10 yards of player
 5: Spell: Swipe
     if talent 'Swipe' is taken
     if player has resources to cast spell 'Swipe'
     if spell 'Swipe' is off cooldown
-    if target is less than 5 yards away
+    if target is at most 5 yards away
     if player has buff/debuff 'Cat Form'
-    if there are more than 3 targets within 10 yards of player
+    if there are at least 3 targets within 10 yards of player
 6: Spell: Rake
     if talent 'Rake' is taken
     if player has resources to cast spell 'Rake'
@@ -68,7 +68,7 @@ Restoration
     if talent 'Starfire' is taken
     if player has resources to cast spell 'Starfire'
     if spell 'Starfire' is off cooldown
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
     if player does not have buff/debuff 'Cat Form'
     if spell 'Starfire' can be successfully cast
 12: Spell: Wrath

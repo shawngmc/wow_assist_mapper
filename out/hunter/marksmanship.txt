@@ -8,7 +8,7 @@ Marksmanship
     if talent 'Volley' is taken
     if player has resources to cast spell 'Volley'
     if spell 'Volley' is off cooldown
-    if target is less than 50 yards away
+    if target is at most 50 yards away
 3: Spell: Explosive Shot
     if talent 'Explosive Shot' is taken
     if player has resources to cast spell 'Explosive Shot'
@@ -20,21 +20,21 @@ Marksmanship
     if spell 'Multi-Shot' is off cooldown
     if spell 'Multi-Shot' is within allowed range
     if player does not have buff/debuff 'Trick Shots'
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
 5: Spell: Multi-Shot
     if talent 'Multi-Shot' is taken
     if player has resources to cast spell 'Multi-Shot'
     if spell 'Multi-Shot' is off cooldown
     if spell 'Multi-Shot' is within allowed range
     if player has buff/debuff 'Trick Shots' with at least 2000 ms left
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
 6: Spell: Multi-Shot
     if talent 'Multi-Shot' is taken
     if player has resources to cast spell 'Multi-Shot'
     if spell 'Multi-Shot' is off cooldown
     if spell 'Multi-Shot' is within allowed range
     if player has buff/debuff 'Precise Shots'
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
 7: Spell: Kill Shot
     if talent 'Kill Shot' is taken
     if player has resources to cast spell 'Kill Shot'
@@ -52,7 +52,7 @@ Marksmanship
     if spell 'Aimed Shot' is off cooldown
     if spell 'Aimed Shot' is within allowed range
     if spell 'Aimed Shot' can be successfully cast
-    if player has more than 2 charges of spell 'Aimed Shot'
+    if player has at least 2 charges of spell 'Aimed Shot'
 10: Spell: Aimed Shot
     if talent 'Aimed Shot' is taken
     if player has resources to cast spell 'Aimed Shot'
@@ -68,8 +68,8 @@ Marksmanship
     if player has resources to cast spell 'Multi-Shot'
     if spell 'Multi-Shot' is off cooldown
     if spell 'Multi-Shot' is within allowed range
-    if there are more than 3 targets within 10 yards of target
-    if player has more than 90 focus
+    if there are at least 3 targets within 10 yards of target
+    if player has at least 90 focus
 13: Spell: Arcane Shot
     if talent 'Arcane Shot' is taken
     if player has resources to cast spell 'Arcane Shot'

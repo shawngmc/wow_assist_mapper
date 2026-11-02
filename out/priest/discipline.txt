@@ -27,12 +27,12 @@ Discipline
     if talent 'Shadow Word: Death' is taken
     if player has resources to cast spell 'Shadow Word: Death'
     if spell 'Shadow Word: Death' is off cooldown
-    if target has less than 20% health
+    if target has at most 20% health
 7: Spell: Holy Nova
     if talent 'Holy Nova' is taken
     if player has resources to cast spell 'Holy Nova'
     if spell 'Holy Nova' is off cooldown
-    if there are more than 12 targets within 0 yards of player
+    if there are at least 12 targets within 0 yards of player
 8: Spell: Smite
     if talent 'Smite' is taken
     if player has resources to cast spell 'Smite'

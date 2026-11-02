@@ -13,14 +13,14 @@ Mistweaver
     if talent 'Jadefire Stomp' is taken
     if player has resources to cast spell 'Jadefire Stomp'
     if spell 'Jadefire Stomp' is off cooldown
-    if target is less than 10 yards away
+    if target is at most 10 yards away
     if player does not have buff/debuff 'Jadefire Teachings'
     if player has buff/debuff 'Jadefire Teachings'
 4: Spell: Jadefire Stomp
     if talent 'Jadefire Stomp' is taken
     if player has resources to cast spell 'Jadefire Stomp'
     if spell 'Jadefire Stomp' is off cooldown
-    if target is less than 10 yards away
+    if target is at most 10 yards away
     if player does not have buff/debuff 'Spell #389387'
     if player has buff/debuff 'Way of the Crane'
 5: Spell: Rising Sun Kick
@@ -32,27 +32,27 @@ Mistweaver
     if talent 'Rising Sun Kick' is taken
     if player has resources to cast spell 'Rising Sun Kick'
     if spell 'Rising Sun Kick' is off cooldown
-    if target is less than 20 yards away
+    if target is at most 20 yards away
     if talent 'Rising Sun Kick' is taken
 7: Spell: Blackout Kick
     if talent 'Blackout Kick' is taken
     if player has resources to cast spell 'Blackout Kick'
     if spell 'Blackout Kick' is off cooldown
-    if player has more than 4 stacks of buff/debuff 'Teachings of the Monastery'
+    if player has at least 4 stacks of buff/debuff 'Teachings of the Monastery'
     if spell 'Blackout Kick' is within allowed range
 8: Spell: Spinning Crane Kick
     if talent 'Spinning Crane Kick' is taken
     if player has resources to cast spell 'Spinning Crane Kick'
     if spell 'Spinning Crane Kick' is off cooldown
-    if target is less than 10 yards away
+    if target is at most 10 yards away
     if player has buff/debuff 'Dance of Chi-Ji'
     if spell 'Spinning Crane Kick' can be successfully cast
 9: Spell: Spinning Crane Kick
     if talent 'Spinning Crane Kick' is taken
     if player has resources to cast spell 'Spinning Crane Kick'
     if spell 'Spinning Crane Kick' is off cooldown
-    if there are more than 4 targets within 10 yards of player
-    if target is less than 10 yards away
+    if there are at least 4 targets within 10 yards of player
+    if target is at most 10 yards away
     if spell 'Spinning Crane Kick' can be successfully cast
 10: Spell: Tiger Palm
     if talent 'Tiger Palm' is taken
@@ -63,6 +63,6 @@ Mistweaver
     if talent 'Crackling Jade Lightning' is taken
     if player has resources to cast spell 'Crackling Jade Lightning'
     if spell 'Crackling Jade Lightning' is off cooldown
-    if target is more than 15 yards away
+    if target is at least 15 yards away
     if spell 'Crackling Jade Lightning' can be successfully cast
 12: Spell: Rising Sun Kick

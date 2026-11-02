@@ -40,7 +40,6 @@ Why?
 
 TODOs
 - Make an HTML visual representation of the rotations
-- Figure out why some rules are contradictory (implied ORs?)
 
 Example rotation for a Balance Druid:
 ```
@@ -83,7 +82,7 @@ Example rotation for a Balance Druid:
     if spell 'Starfire' is off cooldown
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
     if player does not have buff/debuff 'Lunar Eclipse Override'
     if player has buff/debuff 'Eclipse'
 8: Spell: Wrath
@@ -93,7 +92,7 @@ Example rotation for a Balance Druid:
     if player does not have buff/debuff 'Lunar Calling'
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
-    if there are less than 2 targets within 10 yards of target
+    if there are at most 2 targets within 10 yards of target
     if player has buff/debuff 'Lunar Eclipse Override'
     if player has buff/debuff 'Eclipse'
 9: Spell: Fury of Elune
@@ -103,26 +102,26 @@ Example rotation for a Balance Druid:
     if spell 'Fury of Elune' is within allowed range
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
-    if player has more than 550 lunar power
+    if player has at least 550 lunar power
 10: Spell: Solar Eclipse
     if player has buff/debuff 'Eclipse'
     if player has resources to cast spell 'Solar Eclipse'
     if spell 'Solar Eclipse' is off cooldown
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
-    if player has more than 600 lunar power
+    if player has at least 600 lunar power
 11: Spell: Starfall
     if talent 'Starfall' is taken
     if player has resources to cast spell 'Starfall'
     if spell 'Starfall' is off cooldown
-    if there are more than 3 targets within 45 yards of player
-    if player has more than 900 lunar power
+    if there are at least 3 targets within 45 yards of player
+    if player has at least 900 lunar power
 12: Spell: Starsurge
     if talent 'Starsurge' is taken
     if player has resources to cast spell 'Starsurge'
     if spell 'Starsurge' is off cooldown
-    if there are less than 2 targets within 45 yards of player
-    if player has more than 900 lunar power
+    if there are at most 2 targets within 45 yards of player
+    if player has at least 900 lunar power
 13: Spell: Wrath
     if talent 'Wrath' is taken
     if player has resources to cast spell 'Wrath'
@@ -130,7 +129,7 @@ Example rotation for a Balance Druid:
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
     if player does not have buff/debuff 'Lunar Eclipse Override'
-    if player has less than 599 lunar power
+    if player has at most 599 lunar power
 14: Spell: Starfire
     if talent 'Starfire' is taken
     if player has resources to cast spell 'Starfire'
@@ -138,7 +137,7 @@ Example rotation for a Balance Druid:
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
     if player has buff/debuff 'Lunar Eclipse Override'
-    if player has less than 599 lunar power
+    if player has at most 599 lunar power
 15: Spell: Starfall
     if talent 'Starfall' is taken
     if player has resources to cast spell 'Starfall'
@@ -153,17 +152,17 @@ Example rotation for a Balance Druid:
     if talent 'Starfall' is taken
     if player has resources to cast spell 'Starfall'
     if spell 'Starfall' is off cooldown
-    if there are more than 3 targets within 45 yards of player
+    if there are at least 3 targets within 45 yards of player
 18: Spell: Starsurge
     if talent 'Starsurge' is taken
     if player has resources to cast spell 'Starsurge'
     if spell 'Starsurge' is off cooldown
-    if there are less than 2 targets within 45 yards of player
+    if there are at most 2 targets within 45 yards of player
 19: Spell: Starsurge
     if talent 'Starsurge' is taken
     if player has resources to cast spell 'Starsurge'
     if spell 'Starsurge' is off cooldown
-    if player has more than 500 lunar power
+    if player has at least 500 lunar power
 20: Spell: Convoke the Spirits
     if talent 'Convoke the Spirits' is taken
     if player has resources to cast spell 'Convoke the Spirits'
@@ -189,7 +188,7 @@ Example rotation for a Balance Druid:
     if player has resources to cast spell 'New Moon'
     if spell 'New Moon' is off cooldown
 25: Spell: Starfire
-    if there are more than 3 targets within 10 yards of target
+    if there are at least 3 targets within 10 yards of target
     if talent 'Starfire' is taken
     if player has resources to cast spell 'Starfire'
     if spell 'Starfire' is off cooldown

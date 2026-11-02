@@ -24,17 +24,17 @@ Unholy
     if spell 'Dark Transformation' is off cooldown
     if player has pet
 6: Spell: Death Coil
-    if player has more than 500 runic power
-    if there are less than 3 targets within 10 yards of target
+    if player has at least 500 runic power
+    if there are at most 3 targets within 10 yards of target
     if spell 'Death Coil' is off cooldown
     if player has buff/debuff 'Forbidden Knowledge'
 7: Spell: Epidemic
-    if player has more than 500 runic power
-    if there are more than 4 targets within 10 yards of target
+    if player has at least 500 runic power
+    if there are at least 4 targets within 10 yards of target
     if target has buff/debuff 'Virulent Plague'
     if player has buff/debuff 'Forbidden Knowledge'
 8: Spell: Scourge Strike
-    if player has more than 3 stacks of buff/debuff 'Lesser Ghoul'
+    if player has at least 3 stacks of buff/debuff 'Lesser Ghoul'
     if spell 'Scourge Strike' is within allowed range
     if spell 'Scourge Strike' is off cooldown
     if player has resources to cast spell 'Scourge Strike'
@@ -49,7 +49,7 @@ Unholy
     if talent 'Soul Reaper' is taken
     if player has resources to cast spell 'Soul Reaper'
     if spell 'Soul Reaper' is off cooldown
-    if target has less than 35% health
+    if target has at most 35% health
     if spell 'Soul Reaper' is within allowed range
 11: Spell: Festering Strike
     if player has buff/debuff 'Festering Scythe'
@@ -66,23 +66,23 @@ Unholy
     if player has resources to cast spell 'Death Coil'
     if spell 'Death Coil' is off cooldown
     if player has buff/debuff 'Sudden Doom'
-    if there are less than 3 targets within 10 yards of target
+    if there are at most 3 targets within 10 yards of target
 14: Spell: Epidemic
     if talent 'Epidemic' is taken
     if player has resources to cast spell 'Epidemic'
     if spell 'Epidemic' is off cooldown
     if target has buff/debuff 'Virulent Plague'
-    if there are more than 4 targets within 10 yards of target
+    if there are at least 4 targets within 10 yards of target
     if player has buff/debuff 'Sudden Doom'
 15: Spell: Scourge Strike
     if talent 'Scourge Strike' is taken
     if player has resources to cast spell 'Scourge Strike'
     if spell 'Scourge Strike' is off cooldown
     if spell 'Scourge Strike' is within allowed range
-    if player has less than 1 stacks of buff/debuff 'Lesser Ghoul'
+    if player has at most 1 stacks of buff/debuff 'Lesser Ghoul'
 16: Spell: Rune Strike
     if spell 'Rune Strike' is within allowed range
-    if player has less than 2 stacks of buff/debuff 'Lesser Ghoul'
+    if player has at most 2 stacks of buff/debuff 'Lesser Ghoul'
     if spell 'Rune Strike' is off cooldown
     if player has resources to cast spell 'Rune Strike'
     if talent 'Rune Strike' is taken
