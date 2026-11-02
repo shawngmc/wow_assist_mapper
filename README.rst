@@ -44,6 +44,10 @@ Usage
 - assist_html: write every spec's rotation to out/rotations.html, with the data in out/rotations.json beside it (serve the folder to view it, e.g. python -m http.server in out/)
 - assist_condition_report -t 70: list every step gated by a condition type
 
+Published site
+The committed out/ folder is deployed to GitHub Pages on every push to main that changes it:
+https://shawngmc.github.io/wow_assist_mapper/
+
 Suspected useless rules
 Some resources (rage, runic power, soul shards, lunar power, pain, insanity) are stored at 10x or 100x their displayed value,
 and the output converts them. A few rules come out far below the spell's own cost, so they can never block the step;
