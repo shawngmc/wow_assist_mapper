@@ -38,8 +38,11 @@ Why?
 - You can learn the rotation better by seeing why it decides what it does
 - You can mix between single button and one/two spells to improve GCD loss
 
-TODOs
-- Make an HTML visual representation of the rotations
+Usage
+- assist_fetch: download the game data tables from wago.tools (latest retail build by default)
+- assist_mapper -c Druid -s Balance -f text: print one spec's rotation as text
+- assist_html: write every spec's rotation to out/rotations.html
+- assist_condition_report -t 70: list every step gated by a condition type
 
 Suspected useless rules
 Some resources (rage, runic power, soul shards, lunar power, pain, insanity) are stored at 10x or 100x their displayed value,

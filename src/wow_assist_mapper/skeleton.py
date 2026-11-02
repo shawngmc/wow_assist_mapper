@@ -199,6 +199,17 @@ def find_available_builds(csv_dir=CSV_TABLE_DIR):
     return sorted(builds, key=lambda build: tuple(int(part) for part in build.split(".")))
 
 
+def resolve_build(build):
+    """Return the requested build, or the newest one downloaded if none was given."""
+    if build:
+        return build
+    available_builds = find_available_builds()
+    if not available_builds:
+        _logger.error(f"No AssistedCombat CSVs found in {CSV_TABLE_DIR}; run assist_fetch first")
+        sys.exit(1)
+    return available_builds[-1]
+
+
 def main(args):
     """Wrapper allowing CLI usage
 
@@ -214,13 +225,7 @@ def main(args):
     _logger.debug("Starting...")
 
     condition_map = pd.read_csv('data/ConditionTypeMap.csv', quoting=0, engine='python', quotechar='"')
-    build = args.build
-    if not build:
-        available_builds = find_available_builds()
-        if not available_builds:
-            _logger.error(f"No AssistedCombat CSVs found in {CSV_TABLE_DIR}; run assist_fetch first")
-            sys.exit(1)
-        build = available_builds[-1]
+    build = resolve_build(args.build)
     _logger.info(f"Using data from build {build}")
     classes, condition_types = parse_and_build_db_dumps(build)
 
@@ -267,6 +272,7 @@ def parse_and_build_db_dumps(build):
         classes[class_key]["raw_data"] = row.to_dict()
         classes[class_key]["ID"] = int(row['ID'])
         classes[class_key]["Name"] = row['Name_lang']
+        classes[class_key]["Color"] = f"#{int(row['ClassColorR']):02x}{int(row['ClassColorG']):02x}{int(row['ClassColorB']):02x}"
         classes[class_key]["specs"] = {}
 
     # TODO: Fix this - specs on diff classes with same name collide
@@ -329,6 +335,33 @@ def parse_and_build_db_dumps(build):
             condition_types[int(row['ConditionType'])] = f"{row['ConditionValue1']},{row['ConditionValue2']},{row['ConditionValue3']}"
     return classes, condition_types
 
+def describe_rule(rule, spell_name, condition_map):
+    """Turn a single AssistedCombatRule into readable text, e.g. "if player has at least 3 combo points"."""
+    raw = rule['raw']
+    cond_type = raw.get('ConditionType')
+    rule_props = condition_map[condition_map['Type'] == cond_type]
+    if rule_props.empty:
+        _logger.warning(f"Condition type {cond_type} is not in ConditionTypeMap.csv")
+        return f"if unknown condition type {cond_type} ({raw.get('ConditionValue1')},{raw.get('ConditionValue2')},{raw.get('ConditionValue3')})"
+
+    # Prep vars, including resolving spells
+    spell = f"'{spell_name}'"
+    arg1 = raw.get('ConditionValue1')
+    if rule_props.iloc[0]['Value1'].lower().startswith("spell"):
+        arg1 = f"'{get_spell_name(arg1)}'"
+    # Some resources are stored at 10x/100x their displayed value (PowerType.DisplayModifier)
+    value1_scale = rule_props.iloc[0]['Value1Scale']
+    if value1_scale != 1:
+        arg1 = f"{arg1 / value1_scale:g}"
+    arg2 = raw.get('ConditionValue2')
+    if rule_props.iloc[0]['Value2'].lower().startswith("spell"):
+        arg2 = f"'{get_spell_name(arg2)}'"
+    arg3 = raw.get('ConditionValue3')
+    if rule_props.iloc[0]['Value3'].lower().startswith("spell"):
+        arg3 = f"'{get_spell_name(arg3)}'"
+    template = rule_props.iloc[0]['Description']
+    return eval('f"' + template + '"')
+
 def get_plaintext_rotation(classes, class_name, spec_name, condition_map):
     """Get the rotation for a given class and spec in plaintext format."""
     lines = []
@@ -337,32 +370,7 @@ def get_plaintext_rotation(classes, class_name, spec_name, condition_map):
         spell_name = step['SpellName']
         lines.append(f"{index}: Spell: {spell_name}")
         for rule_index, rule in sorted(step['rules'].items()):
-            # Select conditionmap based on condition type
-            cond_type = rule['raw'].get('ConditionType')
-            rule_props = condition_map[condition_map['Type'] == cond_type]
-            if rule_props.empty:
-                raw = rule['raw']
-                _logger.warning(f"Condition type {cond_type} is not in ConditionTypeMap.csv")
-                lines.append(f"    if unknown condition type {cond_type} ({raw.get('ConditionValue1')},{raw.get('ConditionValue2')},{raw.get('ConditionValue3')})")
-                continue
-
-            # Prep vars, including resolving spells
-            spell = f"'{spell_name}'"
-            arg1 = rule['raw'].get('ConditionValue1')
-            if rule_props.iloc[0]['Value1'].lower().startswith("spell"):
-                arg1 = f"'{get_spell_name(arg1)}'"
-            # Some resources are stored at 10x/100x their displayed value (PowerType.DisplayModifier)
-            value1_scale = rule_props.iloc[0]['Value1Scale']
-            if value1_scale != 1:
-                arg1 = f"{arg1 / value1_scale:g}"
-            arg2 = rule['raw'].get('ConditionValue2')
-            if rule_props.iloc[0]['Value2'].lower().startswith("spell"):
-                arg2 = f"'{get_spell_name(arg2)}'"
-            arg3 = rule['raw'].get('ConditionValue3')
-            if rule_props.iloc[0]['Value3'].lower().startswith("spell"):
-                arg3 = f"'{get_spell_name(arg3)}'"
-            template = rule_props.iloc[0]['Description']
-            lines.append("    " + eval('f"' + template + '"'))
+            lines.append("    " + describe_rule(rule, spell_name, condition_map))
     return "\n".join(lines)
 
 def find_rotation(classes, class_name, spec_name):
@@ -378,17 +386,23 @@ def find_rotation(classes, class_name, spec_name):
             if spec_data["Name"] == clean_spec_name:
                 spec = spec_data
         if spec:
-            assist_plan = spec.get("assist_plan")
-            if assist_plan:
-                for _, step in sorted(assist_plan.get("steps", {}).items()):
-                    step_object = {}
-                    step_object["SpellName"] = step["SpellName"]
-                    step_object["rules"] = step["rules"]
-                    rotation.append(step_object)
+            rotation = get_plan_rotation(spec.get("assist_plan"))
         else:
             _logger.error(f"Spec not found: {clean_spec_name}")   
     else:
         _logger.error(f"Class not found: {clean_class_name}")
+    return rotation
+
+def get_plan_rotation(assist_plan):
+    """Get a spec's assist plan as a list of steps in priority order."""
+    rotation = []
+    if assist_plan:
+        for _, step in sorted(assist_plan.get("steps", {}).items()):
+            step_object = {}
+            step_object["SpellID"] = step["SpellID"]
+            step_object["SpellName"] = step["SpellName"]
+            step_object["rules"] = step["rules"]
+            rotation.append(step_object)
     return rotation
 
 def scrape_spell_from_wowhead(spellID):

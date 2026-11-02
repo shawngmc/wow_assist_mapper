@@ -12,7 +12,7 @@ import sys
 
 import pandas as pd
 
-from wow_assist_mapper.skeleton import CSV_TABLE_DIR, find_available_builds
+from wow_assist_mapper.skeleton import CSV_TABLE_DIR, resolve_build
 
 _logger = logging.getLogger(__name__)
 
@@ -151,14 +151,7 @@ def parse_args(args):
 def main(args):
     args = parse_args(args)
     logging.basicConfig(level=logging.WARNING, stream=sys.stderr)
-    build = args.build
-    if not build:
-        available_builds = find_available_builds()
-        if not available_builds:
-            _logger.error(f"No AssistedCombat CSVs found in {CSV_TABLE_DIR}; run assist_fetch first")
-            sys.exit(1)
-        build = available_builds[-1]
-    print(build_report(args.condition_type, build), end="")
+    print(build_report(args.condition_type, resolve_build(args.build)), end="")
 
 
 def run():

@@ -66,3 +66,5 @@ New-Item -ItemType Directory -Path out/warrior -Force
 assist_mapper.exe -c Warrior -s Protection -f text > ./out/warrior/protection.txt
 assist_mapper.exe -c Warrior -s Fury -f text > ./out/warrior/fury.txt
 assist_mapper.exe -c Warrior -s Arms -f text > ./out/warrior/arms.txt
+
+assist_html.exe -o ./out/rotations.html
