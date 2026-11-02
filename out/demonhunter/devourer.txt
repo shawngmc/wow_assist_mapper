@@ -5,7 +5,7 @@ Devourer
     if spell 'Void Metamorphosis' is off cooldown
     if target is at most 25 yards away
     if player does not have buff/debuff 'Void Metamorphosis'
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 2: Spell: Void Metamorphosis
     if talent 'Void Metamorphosis' is taken
     if player has resources to cast spell 'Void Metamorphosis'
@@ -33,13 +33,13 @@ Devourer
     if talent 'The Hunt' is taken
     if player has resources to cast spell 'The Hunt'
     if spell 'The Hunt' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
     if spell 'The Hunt' is within allowed range
 7: Spell: Voidblade
     if talent 'Voidblade' is taken
     if player has resources to cast spell 'Voidblade'
     if spell 'Voidblade' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
     if spell 'Voidblade' is within allowed range
 8: Spell: Immolation Aura
     if talent 'Immolation Aura' is taken

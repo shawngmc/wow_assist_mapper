@@ -88,6 +88,8 @@ ol.steps { list-style: none; margin: 0; padding: 0; }
   background: var(--badge-bg); color: var(--badge-text);
 }
 .badge.unknown { background: var(--unknown-bg); color: var(--unknown-text); }
+/* Steps gated by type 70, which appears to always fail */
+.step.disabled { opacity: 0.55; }
 .badge.filler { background: var(--filler-bg); color: var(--filler-text); }
 ul.conditions { margin: 6px 0 0; padding-left: 18px; }
 ul.conditions li { margin: 2px 0; }
@@ -105,7 +107,8 @@ ul.conditions li { margin: 2px 0; }
   </div>
   <div class="notes">
     <p>Steps are checked top to bottom; the first step whose rules all pass is the one suggested.</p>
-    <p>"At least" and "at most" include the value itself. Type 70 rules have an unknown meaning; they gate major cooldowns and movement abilities.</p>
+    <p>"At least" and "at most" include the value itself.</p>
+    <p>Faded steps have a type 70 rule. Its meaning is unknown, but in testing it never passes, so these steps (mostly major cooldowns and movement abilities) appear to be disabled.</p>
   </div>
   <section id="rotation">
     <h2 class="spec-title" id="spec-title"></h2>
@@ -151,7 +154,8 @@ function render() {
   specTitle.textContent = `${rotation.spec} ${rotation.class}`;
   list.replaceChildren();
   rotation.steps.forEach((step, i) => {
-    const item = el("li", "step" + (showAll.checked ? "" : " compact"));
+    const disabled = step.rules.some((rule) => rule.kind === "unknown");
+    const item = el("li", "step" + (showAll.checked ? "" : " compact") + (disabled ? " disabled" : ""));
     item.append(el("div", "num", String(i + 1)));
     const body = el("div");
 
@@ -173,7 +177,7 @@ function render() {
         badges.append(badge);
         conditions.append(el("li", "routine-text", rule.text));
       } else if (rule.kind === "unknown") {
-        const badge = el("span", "badge unknown", `Type ${rule.type}: unknown`);
+        const badge = el("span", "badge unknown", `Likely disabled (type ${rule.type})`);
         badge.title = rule.text;
         badges.append(badge);
       } else {

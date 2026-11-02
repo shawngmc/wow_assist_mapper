@@ -74,7 +74,7 @@ Assassination
     if spell 'Deathmark' is within allowed range
     if target has buff/debuff 'Garrote'
     if target has buff/debuff 'Rupture'
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 12: Spell: Kingsbane
     if talent 'Kingsbane' is taken
     if player has resources to cast spell 'Kingsbane'

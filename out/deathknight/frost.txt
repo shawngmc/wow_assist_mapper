@@ -15,7 +15,7 @@ Frost
     if talent 'Breath of Sindragosa' is taken
     if player has resources to cast spell 'Breath of Sindragosa'
     if spell 'Breath of Sindragosa' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 4: Spell: Empower Rune Weapon
     if talent 'Empower Rune Weapon' is taken
     if player has resources to cast spell 'Empower Rune Weapon'

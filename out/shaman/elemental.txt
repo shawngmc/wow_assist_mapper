@@ -23,7 +23,7 @@ Elemental
     if talent 'Ascendance' is taken
     if player has resources to cast spell 'Ascendance'
     if spell 'Ascendance' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 6: Spell: Chain Lightning
     if talent 'Chain Lightning' is taken
     if player has resources to cast spell 'Chain Lightning'

@@ -16,19 +16,19 @@ Windwalker
     if spell 'Celestial Conduit' is off cooldown
     if player has resources to cast spell 'Celestial Conduit'
     if talent 'Celestial Conduit' is taken
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 4: Spell: Zenith
     if spell 'Zenith' is off cooldown
     if player has resources to cast spell 'Zenith'
     if player does not have buff/debuff 'Zenith'
     if talent 'Zenith' is taken
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 5: Spell: Flying Serpent Kick
     if talent 'Flying Serpent Kick' is taken
     if spell 'Flying Serpent Kick' is off cooldown
     if player has resources to cast spell 'Flying Serpent Kick'
     if talent 'Flying Serpent Kick' is taken
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 6: Spell: Spinning Crane Kick
     if player has at least 2 stacks of buff/debuff 'Dance of Chi-Ji'
     if spell 'Spinning Crane Kick' is off cooldown

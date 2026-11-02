@@ -69,4 +69,4 @@ Type,Enum,Active,Description,Value1,Value2,Value3,Value1Scale
 67,ASSISTED_COMBAT_RULE_TYPE_COOLDOWN_ALLOW_CASTING_SUCCESS,Y,if spell {spell} can be successfully cast,UNUSED,UNUSED,UNUSED,1
 68,ASSISTED_COMBAT_RULE_TYPE_PLAYER_HEALTH_PCT_GREATER,Y,if player has at least {arg1}% health,Player Health %,UNUSED,UNUSED,1
 69,ASSISTED_COMBAT_RULE_TYPE_PLAYER_HEALTH_PCT_LESS,Y,if player has at most {arg1}% health,Player Health %,UNUSED,UNUSED,1
-70,ASSISTED_COMBAT_RULE_TYPE_UNKNOWN_70,Y,if unknown condition 70 is met (seen gating cooldown and movement steps),UNUSED,UNUSED,UNUSED,1
+70,ASSISTED_COMBAT_RULE_TYPE_UNKNOWN_70,Y,if unknown condition 70 is met (likely always fails; the step appears disabled),UNUSED,UNUSED,UNUSED,1

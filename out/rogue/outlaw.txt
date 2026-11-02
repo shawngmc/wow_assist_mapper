@@ -74,13 +74,13 @@ Outlaw
     if talent 'Adrenaline Rush' is taken
     if player has resources to cast spell 'Adrenaline Rush'
     if spell 'Adrenaline Rush' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
     if player does not have buff/debuff 'Improved Adrenaline Rush'
 13: Spell: Adrenaline Rush
     if talent 'Adrenaline Rush' is taken
     if player has resources to cast spell 'Adrenaline Rush'
     if spell 'Adrenaline Rush' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
     if player has buff/debuff 'Improved Adrenaline Rush'
     if player has at most 2 combo points
 14: Spell: Blade Rush

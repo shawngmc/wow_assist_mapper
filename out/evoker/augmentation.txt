@@ -21,13 +21,13 @@ Augmentation
     if player does not have buff/debuff 'Recall'
     if target is at most 40 yards away
     if player does not have buff/debuff 'Recall'
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 5: Spell: Tip the Scales
     if talent 'Tip the Scales' is taken
     if player has resources to cast spell 'Tip the Scales'
     if spell 'Tip the Scales' is off cooldown
     if spell 'Tip the Scales' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 6: Spell: Fire Breath
     if talent 'Fire Breath' is taken
     if player has resources to cast spell 'Fire Breath'
@@ -61,7 +61,7 @@ Augmentation
     if talent 'Time Skip' is taken
     if player has resources to cast spell 'Time Skip'
     if spell 'Time Skip' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 12: Spell: Disintegrate
     if talent 'Disintegrate' is taken
     if player has resources to cast spell 'Disintegrate'

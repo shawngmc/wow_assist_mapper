@@ -3,12 +3,12 @@ Protection
     if talent 'Avenging Wrath' is taken
     if player has resources to cast spell 'Avenging Wrath'
     if spell 'Avenging Wrath' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 2: Spell: Sentinel
     if talent 'Sentinel' is taken
     if player has resources to cast spell 'Sentinel'
     if spell 'Sentinel' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 3: Spell: Divine Toll
     if talent 'Divine Toll' is taken
     if player has resources to cast spell 'Divine Toll'

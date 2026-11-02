@@ -24,7 +24,7 @@ Feral
     if talent 'Berserk' is taken
     if player has resources to cast spell 'Berserk'
     if spell 'Berserk' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 6: Spell: Chomp
     if talent 'Chomp' is taken
     if player has resources to cast spell 'Chomp'

@@ -3,7 +3,7 @@ Havoc
     if talent 'Metamorphosis' is taken
     if player has resources to cast spell 'Metamorphosis'
     if spell 'Metamorphosis' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 2: Spell: Blade Dance
     if talent 'Blade Dance' is taken
     if player has resources to cast spell 'Blade Dance'
@@ -46,7 +46,7 @@ Havoc
     if talent 'The Hunt' is taken
     if player has resources to cast spell 'The Hunt'
     if spell 'The Hunt' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 9: Spell: Eye Beam
     if talent 'Eye Beam' is taken
     if player has resources to cast spell 'Eye Beam'
@@ -68,24 +68,24 @@ Havoc
     if player has resources to cast spell 'Vengeful Retreat'
     if spell 'Vengeful Retreat' is off cooldown
     if player has buff/debuff 'Inertia'
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 13: Spell: Vengeful Retreat
     if talent 'Vengeful Retreat' is taken
     if player has resources to cast spell 'Vengeful Retreat'
     if spell 'Vengeful Retreat' is off cooldown
     if player has buff/debuff 'Exergy'
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 14: Spell: Felblade
     if talent 'Felblade' is taken
     if player has resources to cast spell 'Felblade'
     if spell 'Felblade' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 15: Spell: Fel Rush
     if talent 'Fel Rush' is taken
     if player has resources to cast spell 'Fel Rush'
     if spell 'Fel Rush' is off cooldown
     if player has buff/debuff 'Inertia'
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 16: Spell: Chaos Strike
     if talent 'Chaos Strike' is taken
     if player has resources to cast spell 'Chaos Strike'

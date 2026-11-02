@@ -22,13 +22,13 @@ Fury
     if player has resources to cast spell 'Recklessness'
     if spell 'Recklessness' is off cooldown
     if spell 'Recklessness' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 5: Spell: Avatar
     if talent 'Avatar' is taken
     if player has resources to cast spell 'Avatar'
     if spell 'Avatar' is off cooldown
     if spell 'Avatar' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 6: Spell: Odyn's Fury
     if target is at most 12 yards away
     if talent 'Odyn's Fury' is taken

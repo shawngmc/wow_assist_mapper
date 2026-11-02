@@ -3,7 +3,7 @@ Vengeance
     if talent 'Metamorphosis' is taken
     if player has resources to cast spell 'Metamorphosis'
     if spell 'Metamorphosis' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 2: Spell: Throw Glaive
     if talent 'Throw Glaive' is taken
     if player has resources to cast spell 'Throw Glaive'

@@ -29,7 +29,7 @@ Fire
     if talent 'Combustion' is taken
     if player has resources to cast spell 'Combustion'
     if spell 'Combustion' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 7: Spell: Fire Blast
     if talent 'Fire Blast' is taken
     if player has resources to cast spell 'Fire Blast'

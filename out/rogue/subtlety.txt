@@ -32,7 +32,7 @@ Subtlety
     if talent 'Shadow Blades' is taken
     if player has resources to cast spell 'Shadow Blades'
     if spell 'Shadow Blades' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 7: Spell: Goremaw's Bite
     if talent 'Goremaw's Bite' is taken
     if player has resources to cast spell 'Goremaw's Bite'

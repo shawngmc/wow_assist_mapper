@@ -3,7 +3,7 @@ Marksmanship
     if talent 'Trueshot' is taken
     if player has resources to cast spell 'Trueshot'
     if spell 'Trueshot' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 2: Spell: Volley
     if talent 'Volley' is taken
     if player has resources to cast spell 'Volley'

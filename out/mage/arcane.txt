@@ -33,7 +33,7 @@ Arcane
     if talent 'Arcane Surge' is taken
     if player has resources to cast spell 'Arcane Surge'
     if spell 'Arcane Surge' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
 7: Spell: Arcane Missiles
     if talent 'Arcane Missiles' is taken
     if player has resources to cast spell 'Arcane Missiles'

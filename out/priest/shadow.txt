@@ -43,13 +43,13 @@ Shadow
     if talent 'Voidform' is taken
     if player has resources to cast spell 'Voidform'
     if spell 'Voidform' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
     if player does not have buff/debuff 'Voidform'
 9: Spell: Power Infusion
     if talent 'Power Infusion' is taken
     if player has resources to cast spell 'Power Infusion'
     if spell 'Power Infusion' is off cooldown
-    if unknown condition 70 is met (seen gating cooldown and movement steps)
+    if unknown condition 70 is met (likely always fails; the step appears disabled)
     if player has buff/debuff 'Voidform'
 10: Spell: Shadow Word: Madness
     if talent 'Shadow Word: Madness' is taken

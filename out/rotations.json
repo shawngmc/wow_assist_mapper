@@ -620,7 +620,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -1904,7 +1904,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -2072,7 +2072,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       },
       {
        "type": 56,
@@ -2108,7 +2108,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       },
       {
        "type": 56,
@@ -2258,7 +2258,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -2516,7 +2516,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -2648,7 +2648,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -2684,7 +2684,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -2714,7 +2714,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -2750,7 +2750,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -2882,7 +2882,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -3452,7 +3452,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -4406,7 +4406,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -5180,7 +5180,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -5210,7 +5210,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -6158,7 +6158,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -6194,7 +6194,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -6398,7 +6398,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -6530,7 +6530,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -6608,7 +6608,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -6716,7 +6716,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -7460,7 +7460,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -8072,7 +8072,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -8594,7 +8594,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -9236,7 +9236,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -10904,7 +10904,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -10940,7 +10940,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -10976,7 +10976,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -11858,7 +11858,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -11888,7 +11888,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -12242,7 +12242,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -13586,7 +13586,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       },
       {
        "type": 16,
@@ -13622,7 +13622,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       },
       {
        "type": 9,
@@ -14678,7 +14678,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -16160,7 +16160,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       },
       {
        "type": 16,
@@ -16196,7 +16196,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       },
       {
        "type": 9,
@@ -16832,7 +16832,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -17594,7 +17594,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -18578,7 +18578,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -20264,7 +20264,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -20588,7 +20588,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -20966,7 +20966,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -22112,7 +22112,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -22148,7 +22148,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -22725,7 +22725,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },
@@ -22953,7 +22953,7 @@
        "type": 70,
        "kind": "unknown",
        "label": null,
-       "text": "if unknown condition 70 is met (seen gating cooldown and movement steps)"
+       "text": "if unknown condition 70 is met (likely always fails; the step appears disabled)"
       }
      ]
     },

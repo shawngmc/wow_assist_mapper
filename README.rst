@@ -53,6 +53,13 @@ they look like values entered in display units by mistake. Tested in game on Gua
 - Frost Death Knight, Glacial Advance: "at least 8 runic power" (stored 80); costs 35 runic power
 - Frost Death Knight, Empower Rune Weapon: "at most 8 runic power" (stored 80), while a second Empower Rune Weapon step uses "at most 80"
 
+Condition type 70 (likely disabled steps)
+Type 70 takes no values and gates 46 steps, almost all major cooldowns or movement abilities. In testing on
+Protection Paladin, Avenging Wrath (step 1, talented, off cooldown) was never highlighted or cast, in or out of combat,
+on a normal or boss dummy. It is usually the last and newest rule in its step, and no game setting appears to feed it,
+so it looks like a switch that disables these steps. Still untested: a group, instance or boss encounter.
+See out/reference/condition_70.md.
+
 Example rotation for a Balance Druid:
 ```
 1: Spell: Mark of the Wild
