@@ -26,6 +26,11 @@ TABLES = [
     "ChrClasses",
     "ChrSpecialization",
     "SpellName",
+    "SpellCooldowns",
+    "SpellMisc",
+    "SpellDuration",
+    "SpellCategories",
+    "SpellCategory",
 ]
 
 

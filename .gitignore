@@ -57,5 +57,5 @@ MANIFEST
 data/wowhead/spells/*.json
 data/wowhead/icons/*.jpg
 data/casc_filelist
-# Large (~11MB per build); re-download with assist_fetch
-data/csv_table/SpellName.*.csv
+# Large spell tables (up to ~45MB per build); re-download with assist_fetch
+data/csv_table/Spell*.csv

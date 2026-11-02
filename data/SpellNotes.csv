@@ -1,0 +1,41 @@
+SpellID,SpellName,Movement,MovementSource,Buff,BuffSource
+13750,Adrenaline Rush,None,game,"Self buff, 15s",data
+365350,Arcane Surge,None,game,Self buff,game
+114050,Ascendance,None,game,Self buff,game
+107574,Avatar,None,game,"Self buff, 20s",data
+31884,Avenging Wrath,None,game,"Self buff, 20s",data
+50334,Berserk,None,game,"Self buff, 15s",data
+106951,Berserk,None,game,"Self buff, 15s",data
+1249658,Breath of Sindragosa,None,game,"Self buff, 8s",data
+194223,Celestial Alignment,None,game,"Self buff, 15s",data
+443028,Celestial Conduit,None,game,"Short state, 4s (channel)",data
+190319,Combustion,None,game,"Self buff, 10s",data
+391528,Convoke the Spirits,None,game,"Short state, 4s (channel)",data
+360194,Deathmark,None,game,"Enemy debuff, 16s",data
+357210,Deep Breath,Flies across an area,game,"Short state, 6s (flight)",data
+384352,Doom Winds,None,game,"Self buff, 8s",data
+375087,Dragonrage,None,game,"Self buff, 18s",data
+344865,Fel Rush,Dashes forward,game,None,data
+232893,Felblade,Charges to target,game,None,data
+101545,Flying Serpent Kick,Flies forward,game,"Short state, 1.5s (flight)",data
+191427,Metamorphosis,Leaps to target location,game,"Self buff, 20s",data
+187827,Metamorphosis,None,game,"Self buff, 15s",data
+10060,Power Infusion,None,game,"Ally buff, 15s",data
+1719,Recklessness,None,game,"Self buff, 12s",data
+389539,Sentinel,None,game,"Self buff, 20s",data
+121471,Shadow Blades,None,game,"Self buff, 16s",data
+385952,Shield Charge,Charges to target,game,None,data
+205180,Summon Darkglare,None,game,"Self aura, 20s; may only track the summon",data
+265187,Summon Demonic Tyrant,None,game,"Self aura, 15s; may only track the summon",data
+1122,Summon Infernal,None,game,None; 2s stun where the Infernal lands,data
+1250646,Takedown,Unknown,unverified,"Self buff, 8s",data
+1246167,The Hunt,Charges to target,data,"Short state, 2s (charge)",data
+370965,The Hunt,Charges to target,data,"Short state, 2s (charge)",data
+404977,Time Skip,None,game,"Short state, 2s (channel)",data
+370553,Tip the Scales,None,game,"Self buff, until used",data
+288613,Trueshot,None,game,"Self buff, 15s",data
+198793,Vengeful Retreat,Leaps backward,data,"Short state, 1s (leap)",data
+1217605,Void Metamorphosis,None known,unverified,"Self buff, until cancelled",data
+1245412,Voidblade,Possibly a gap closer; has 25 yd range check,unverified,None,data
+228260,Voidform,None,game,Self buff,game
+1249625,Zenith,None known,unverified,"Self buff, 15s",data
