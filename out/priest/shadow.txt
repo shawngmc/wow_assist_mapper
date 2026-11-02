@@ -65,13 +65,13 @@ Shadow
     if talent 'Shadow Word: Madness' is taken
     if player has resources to cast spell 'Shadow Word: Madness'
     if spell 'Shadow Word: Madness' is off cooldown
-    if player has at least 9000 insanity
+    if player has at least 90 insanity
     if player does not have buff/debuff 'Voidtouched'
 13: Spell: Shadow Word: Madness
     if talent 'Shadow Word: Madness' is taken
     if player has resources to cast spell 'Shadow Word: Madness'
     if spell 'Shadow Word: Madness' is off cooldown
-    if player has at least 14000 insanity
+    if player has at least 140 insanity
     if player has buff/debuff 'Voidtouched'
 14: Spell: Halo
     if talent 'Halo' is taken

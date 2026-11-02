@@ -41,6 +41,15 @@ Why?
 TODOs
 - Make an HTML visual representation of the rotations
 
+Suspected useless rules
+Some resources (rage, runic power, soul shards, lunar power, pain, insanity) are stored at 10x or 100x their displayed value,
+and the output converts them. A few rules come out far below the spell's own cost, so they can never block the step;
+they look like values entered in display units by mistake. Tested in game on Guardian: Maul is suggested at 40-79 rage.
+- Guardian Druid, Maul: "at least 8 rage" (stored 80); Maul costs 40 rage
+- Frost Death Knight, Frost Strike: "at least 8 runic power" (stored 80); costs 35 runic power
+- Frost Death Knight, Glacial Advance: "at least 8 runic power" (stored 80); costs 35 runic power
+- Frost Death Knight, Empower Rune Weapon: "at most 8 runic power" (stored 80), while a second Empower Rune Weapon step uses "at most 80"
+
 Example rotation for a Balance Druid:
 ```
 1: Spell: Mark of the Wild
@@ -102,26 +111,26 @@ Example rotation for a Balance Druid:
     if spell 'Fury of Elune' is within allowed range
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
-    if player has at least 550 lunar power
+    if player has at least 55 lunar power
 10: Spell: Solar Eclipse
     if player has buff/debuff 'Eclipse'
     if player has resources to cast spell 'Solar Eclipse'
     if spell 'Solar Eclipse' is off cooldown
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
-    if player has at least 600 lunar power
+    if player has at least 60 lunar power
 11: Spell: Starfall
     if talent 'Starfall' is taken
     if player has resources to cast spell 'Starfall'
     if spell 'Starfall' is off cooldown
     if there are at least 3 targets within 45 yards of player
-    if player has at least 900 lunar power
+    if player has at least 90 lunar power
 12: Spell: Starsurge
     if talent 'Starsurge' is taken
     if player has resources to cast spell 'Starsurge'
     if spell 'Starsurge' is off cooldown
     if there are at most 2 targets within 45 yards of player
-    if player has at least 900 lunar power
+    if player has at least 90 lunar power
 13: Spell: Wrath
     if talent 'Wrath' is taken
     if player has resources to cast spell 'Wrath'
@@ -129,7 +138,7 @@ Example rotation for a Balance Druid:
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
     if player does not have buff/debuff 'Lunar Eclipse Override'
-    if player has at most 599 lunar power
+    if player has at most 59.9 lunar power
 14: Spell: Starfire
     if talent 'Starfire' is taken
     if player has resources to cast spell 'Starfire'
@@ -137,7 +146,7 @@ Example rotation for a Balance Druid:
     if player does not have buff/debuff 'Eclipse (Solar)'
     if player does not have buff/debuff 'Eclipse (Lunar)'
     if player has buff/debuff 'Lunar Eclipse Override'
-    if player has at most 599 lunar power
+    if player has at most 59.9 lunar power
 15: Spell: Starfall
     if talent 'Starfall' is taken
     if player has resources to cast spell 'Starfall'
@@ -162,7 +171,7 @@ Example rotation for a Balance Druid:
     if talent 'Starsurge' is taken
     if player has resources to cast spell 'Starsurge'
     if spell 'Starsurge' is off cooldown
-    if player has at least 500 lunar power
+    if player has at least 50 lunar power
 20: Spell: Convoke the Spirits
     if talent 'Convoke the Spirits' is taken
     if player has resources to cast spell 'Convoke the Spirits'

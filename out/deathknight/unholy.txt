@@ -24,12 +24,12 @@ Unholy
     if spell 'Dark Transformation' is off cooldown
     if player has pet
 6: Spell: Death Coil
-    if player has at least 500 runic power
+    if player has at least 50 runic power
     if there are at most 3 targets within 10 yards of target
     if spell 'Death Coil' is off cooldown
     if player has buff/debuff 'Forbidden Knowledge'
 7: Spell: Epidemic
-    if player has at least 500 runic power
+    if player has at least 50 runic power
     if there are at least 4 targets within 10 yards of target
     if target has buff/debuff 'Virulent Plague'
     if player has buff/debuff 'Forbidden Knowledge'

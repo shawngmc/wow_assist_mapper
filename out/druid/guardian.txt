@@ -59,7 +59,7 @@ Guardian
     if talent 'Maul' is taken
     if player has resources to cast spell 'Maul'
     if spell 'Maul' is off cooldown
-    if player has at least 80 rage
+    if player has at least 8 rage
     if spell 'Maul' is within allowed range
 13: Spell: Swipe
     if talent 'Swipe' is taken

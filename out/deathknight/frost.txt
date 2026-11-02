@@ -21,14 +21,14 @@ Frost
     if player has resources to cast spell 'Empower Rune Weapon'
     if spell 'Empower Rune Weapon' is off cooldown
     if spell 'Empower Rune Weapon' is within allowed range
-    if player has at most 800 runic power
+    if player has at most 80 runic power
     if player has at most 1 stacks of buff/debuff 'Killing Machine'
 5: Spell: Empower Rune Weapon
     if talent 'Empower Rune Weapon' is taken
     if player has resources to cast spell 'Empower Rune Weapon'
     if spell 'Empower Rune Weapon' is off cooldown
     if spell 'Empower Rune Weapon' is within allowed range
-    if player has at most 80 runic power
+    if player has at most 8 runic power
     if player does not have buff/debuff 'Killing Machine'
 6: Spell: Frostwyrm's Fury
     if talent 'Frostwyrm's Fury' is taken
@@ -83,9 +83,9 @@ Frost
     if talent 'Glacial Advance' is taken
     if player has resources to cast spell 'Glacial Advance'
     if spell 'Glacial Advance' is off cooldown
-    if player has at least 80 runic power
+    if player has at least 8 runic power
 15: Spell: Frost Strike
-    if player has at least 80 runic power
+    if player has at least 8 runic power
     if talent 'Frost Strike' is taken
     if player has resources to cast spell 'Frost Strike'
     if spell 'Frost Strike' is off cooldown

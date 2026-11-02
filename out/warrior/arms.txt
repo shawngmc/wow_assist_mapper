@@ -78,7 +78,7 @@ Arms
     if spell 'Whirlwind' is off cooldown
     if player has resources to cast spell 'Whirlwind'
 16: Spell: Slam
-    if player has at least 500 rage
+    if player has at least 50 rage
     if talent 'Slam' is taken
     if player has resources to cast spell 'Slam'
     if spell 'Slam' is off cooldown

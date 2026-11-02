@@ -65,7 +65,7 @@ Blood
     if talent 'Death Strike' is taken
     if player has resources to cast spell 'Death Strike'
     if spell 'Death Strike' is off cooldown
-    if player has at least 800 runic power
+    if player has at least 80 runic power
     if spell 'Death Strike' is within allowed range
 12: Spell: Consumption
     if talent 'Consumption' is taken

@@ -68,7 +68,7 @@ Affliction
     if talent 'Unstable Affliction' is taken
     if player has resources to cast spell 'Unstable Affliction'
     if spell 'Unstable Affliction' is off cooldown
-    if player has at least 50 soul shards
+    if player has at least 5 soul shards
 11: Spell: Shadow Bolt
     if talent 'Shadow Bolt' is taken
     if player has resources to cast spell 'Shadow Bolt'
@@ -101,7 +101,7 @@ Affliction
     if player has resources to cast spell 'Unstable Affliction'
     if spell 'Unstable Affliction' is off cooldown
     if spell 'Unstable Affliction' can be successfully cast
-    if player has at least 20 soul shards
+    if player has at least 2 soul shards
 18: Spell: Unstable Affliction
     if talent 'Unstable Affliction' is taken
     if player has resources to cast spell 'Unstable Affliction'

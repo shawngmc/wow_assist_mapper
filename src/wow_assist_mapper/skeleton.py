@@ -351,6 +351,10 @@ def get_plaintext_rotation(classes, class_name, spec_name, condition_map):
             arg1 = rule['raw'].get('ConditionValue1')
             if rule_props.iloc[0]['Value1'].lower().startswith("spell"):
                 arg1 = f"'{get_spell_name(arg1)}'"
+            # Some resources are stored at 10x/100x their displayed value (PowerType.DisplayModifier)
+            value1_scale = rule_props.iloc[0]['Value1Scale']
+            if value1_scale != 1:
+                arg1 = f"{arg1 / value1_scale:g}"
             arg2 = rule['raw'].get('ConditionValue2')
             if rule_props.iloc[0]['Value2'].lower().startswith("spell"):
                 arg2 = f"'{get_spell_name(arg2)}'"
